@@ -1,0 +1,5 @@
+avrpaths/AVRDUDE=D\:\\ITI\\Subjects\\Intro to ES-Assaf\\Tools\\SDK\\IMT_SDK_Win_64_AVR\\WinAVR\\bin
+avrpaths/AVRGCC=D\:\\ITI\\Subjects\\Intro to ES-Assaf\\Tools\\SDK\\IMT_SDK_Win_64_AVR\\WinAVR\\bin
+avrpaths/AVRINCLUDE=D\:\\ITI\\Subjects\\Intro to ES-Assaf\\Tools\\SDK\\IMT_SDK_Win_64_AVR\\WinAVR\\avr\\include
+avrpaths/MAKE=D\:\\ITI\\Subjects\\Intro to ES-Assaf\\Tools\\SDK\\IMT_SDK_Win_64_AVR\\WinAVR\\utils\\bin
+eclipse.preferences.version=1
