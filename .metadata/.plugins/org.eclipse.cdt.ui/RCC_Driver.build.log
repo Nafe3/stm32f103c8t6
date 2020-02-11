@@ -1,4 +1,4 @@
-19:43:07 **** Incremental Build of configuration Debug for project RCC_Driver ****
+15:25:21 **** Build of configuration Debug for project RCC_Driver ****
 make all 
 'Invoking: GNU ARM Cross Print Size'
 arm-none-eabi-size --format=berkeley "RCC_Driver.elf"
@@ -7,5 +7,5 @@ arm-none-eabi-size --format=berkeley "RCC_Driver.elf"
 'Finished building: RCC_Driver.siz'
 ' '
 
-19:43:07 Build Finished. 0 errors, 0 warnings. (took 452ms)
+15:25:21 Build Finished. 0 errors, 0 warnings. (took 442ms)
 

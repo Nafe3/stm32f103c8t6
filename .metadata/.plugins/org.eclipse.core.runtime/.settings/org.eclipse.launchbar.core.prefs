@@ -1,10 +1,11 @@
+LaunchTargetManager/configs/RTOS_test\ Debug=org.eclipse.launchbar.core.launchTargetType.local\:Local
 LaunchTargetManager/configs/hello\ Debug=org.eclipse.launchbar.core.launchTargetType.local\:Local
 LaunchTargetManager/configs/hello\ Debug\ (1)=org.eclipse.launchbar.core.launchTargetType.local\:Local
 LaunchTargetManager/configs/hello.elf=org.eclipse.launchbar.core.launchTargetType.local\:Local
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
-configDescList=org.eclipse.launchbar.core.descriptorType.default\:hello.elf,org.eclipse.launchbar.core.descriptorType.default\:hello Debug (1),org.eclipse.launchbar.core.descriptorType.default\:hello Debug
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:hello.elf,org.eclipse.launchbar.core.descriptorType.default\:hello Debug (1),org.eclipse.launchbar.core.descriptorType.default\:hello Debug,org.eclipse.launchbar.core.descriptorType.default\:RTOS_test Debug
 eclipse.preferences.version=1
 org.eclipse.launchbar.core.descriptorType.default\:hello\ Debug\ (1)/activeLaunchMode=run
 org.eclipse.launchbar.core.descriptorType.default\:hello\ Debug\ (1)/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
