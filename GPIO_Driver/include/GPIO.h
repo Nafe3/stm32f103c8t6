@@ -1,3 +1,4 @@
+//Standard Types
 #define u8	unsigned char
 #define u16 unsigned short int
 #define u32 unsigned long int
@@ -5,6 +6,23 @@
 #define s8	signed char
 #define s16	signed short int
 #define s32	signed long int
+
+//Ports Selection
+#define PORTA GPIOA
+#define PORTB GPIOB
+#define PORTC GPIOC
+
+//use this type to assign new pin in your program
+typedef struct{
+	u32   port;
+	u16   pin;
+	u8    mode;
+	u8    speed;
+}GPIO_Pin_t;
+
+//use HIGH or LOw to set pin states
+#define HIGH 1U
+#define LOW  0U
 
 
 /******************************************************************************/
@@ -261,3 +279,9 @@
 
 /*----------------------------------------------------------------------------*/
 
+std_err GPIO_Init     (GPIO_Pin_t*);
+std_err GPIO_Write    (GPIO_Pin_t*,u8  State);
+std_err GPIO_Read     (GPIO_Pin_t*,u8* ReturnValue);
+std_err GPIO_FastSet  (GPIO_Pin_t*);
+std_err GPIO_FastReset(GPIO_Pin_t*);
+std_err GPIO_Lock     (GPIO_Pin_t*);

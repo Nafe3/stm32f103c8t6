@@ -13,7 +13,7 @@
 #define s16 signed short int
 #define s32 signed long int
 
-/*Macros for input arguments*/
+/*Macros for user input arguments*/
 //bus
 #define AHB 	1
 #define	APB2 	2

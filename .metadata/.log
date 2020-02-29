@@ -4811,3 +4811,73 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.eclipse.oomph.setup.ui 1 0 2020-02-17 22:42:00.801
 !MESSAGE Setup tasks were performed during startup updating 218 preferences. See 'C:\Users\moham\eclipse\cpp-2019-12\eclipse\configuration\org.eclipse.oomph.setup\setup.log' for details
+!SESSION 2020-02-25 23:46:30.246 -----------------------------------------------
+eclipse.buildId=4.14.0.I20191210-0610
+java.version=1.8.0_231
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-02-25 23:46:58.508
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\moham'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.oomph.setup.ui 1 0 2020-02-25 23:48:06.522
+!MESSAGE Setup tasks were performed during startup updating 218 preferences. See 'C:\Users\moham\eclipse\cpp-2019-12\eclipse\configuration\org.eclipse.oomph.setup\setup.log' for details
+!SESSION 2020-02-27 22:37:45.232 -----------------------------------------------
+eclipse.buildId=4.14.0.I20191210-0610
+java.version=1.8.0_231
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-02-27 22:39:50.794
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\moham'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.oomph.setup.ui 1 0 2020-02-27 22:40:02.857
+!MESSAGE Setup tasks were performed during startup updating 218 preferences. See 'C:\Users\moham\eclipse\cpp-2019-12\eclipse\configuration\org.eclipse.oomph.setup\setup.log' for details
+
+!ENTRY org.eclipse.core.filesystem 4 272 2020-02-28 21:57:43.979
+!MESSAGE Could not move: D:\ITI\Subjects\Embedded_Computer_Architecture_Eng.Tourky\Nafe3_Workspace-v2019\GPIO_Driver\Debug\src\GPIO.o.
+!STACK 0
+java.io.IOException: The process cannot access the file because it is being used by another process
+	at java.io.WinNTFileSystem.canonicalize0(Native Method)
+	at java.io.WinNTFileSystem.canonicalize(Unknown Source)
+	at java.io.File.getCanonicalPath(Unknown Source)
+	at java.io.File.getCanonicalFile(Unknown Source)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.move(LocalFile.java:356)
+	at org.eclipse.core.internal.localstore.BlobStore.addBlob(BlobStore.java:57)
+	at org.eclipse.core.internal.localstore.HistoryStore2.addState(HistoryStore2.java:99)
+	at org.eclipse.core.internal.localstore.DeleteVisitor.recursiveKeepHistory(DeleteVisitor.java:121)
+	at org.eclipse.core.internal.localstore.DeleteVisitor.recursiveKeepHistory(DeleteVisitor.java:116)
+	at org.eclipse.core.internal.localstore.DeleteVisitor.recursiveKeepHistory(DeleteVisitor.java:116)
+	at org.eclipse.core.internal.localstore.DeleteVisitor.delete(DeleteVisitor.java:60)
+	at org.eclipse.core.internal.localstore.DeleteVisitor.visit(DeleteVisitor.java:154)
+	at org.eclipse.core.internal.localstore.UnifiedTree.accept(UnifiedTree.java:118)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.delete(FileSystemResourceManager.java:364)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFolder(ResourceTree.java:361)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFolder(ResourceTree.java:813)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1783)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:757)
+	at org.eclipse.ltk.core.refactoring.resource.DeleteResourceChange.perform(DeleteResourceChange.java:166)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:281)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:281)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation$1.run(PerformChangeOperation.java:260)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2317)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:298)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:99)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:219)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2317)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:89)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
