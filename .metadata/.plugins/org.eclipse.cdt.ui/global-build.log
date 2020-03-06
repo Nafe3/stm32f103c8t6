@@ -1,116 +1,18 @@
-22:43:18 **** Build of configuration Debug for project DC_Motor_Handler ****
+22:53:46 **** Clean-only build of configuration Debug for project GPIO_Driver ****
+make clean 
+rm -rf  ./system/src/stm32f1-stdperiph/misc.o ./system/src/stm32f1-stdperiph/stm32f10x_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f10x.o ./system/src/cmsis/vectors_stm32f10x.o  ./src/GPIO.o ./src/test.o  GPIO_Driver.hex  GPIO_Driver.siz  ./system/src/stm32f1-stdperiph/misc.d ./system/src/stm32f1-stdperiph/stm32f10x_rcc.d  ./system/src/newlib/_exit.d ./system/src/newlib/_sbrk.d ./system/src/newlib/_startup.d ./system/src/newlib/_syscalls.d ./system/src/newlib/assert.d  ./system/src/diag/Trace.d ./system/src/diag/trace_impl.d  ./system/src/cortexm/_initialize_hardware.d ./system/src/cortexm/_reset_hardware.d ./system/src/cortexm/exception_handlers.d  ./system/src/cmsis/system_stm32f10x.d ./system/src/cmsis/vectors_stm32f10x.d  ./src/GPIO.d ./src/test.d  ./system/src/newlib/_cxx.d  GPIO_Driver.elf
+makefile:82: recipe for target 'clean' failed
+process_begin: CreateProcess(NULL, rm -rf ./system/src/stm32f1-stdperiph/misc.o ./system/src/stm32f1-stdperiph/stm32f10x_rcc.o ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o ./system/src/cmsis/system_stm32f10x.o ./system/src/cmsis/vectors_stm32f10x.o ./src/GPIO.o ./src/test.o GPIO_Driver.hex GPIO_Driver.siz ./system/src/stm32f1-stdperiph/misc.d ./system/src/stm32f1-stdperiph/stm32f10x_rcc.d ./system/src/newlib/_exit.d ./system/src/newlib/_sbrk.d ./system/src/newlib/_startup.d ./system/src/newlib/_syscalls.d ./system/src/newlib/assert.d ./system/src/diag/Trace.d ./system/src/diag/trace_impl.d ./system/src/cortexm/_initialize_hardware.d ./system/src/cortexm/_reset_hardware.d ./system/src/cortexm/exception_handlers.d ./system/src/cmsis/system_stm32f10x.d ./system/src/cmsis/vectors_stm32f10x.d ./src/GPIO.d ./src/test.d ./system/src/newlib/_cxx.d GPIO_Driver.elf, ...) failed.
+make (e=2): The system cannot find the file specified.
+
+make: [clean] Error 2 (ignored)
+' '
+22:53:58 **** Build of configuration Debug for project GPIO_Driver ****
 make all 
 'Building file: ../system/src/stm32f1-stdperiph/misc.c'
 'Invoking: GNU ARM Cross C Compiler'
 arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"system/src/stm32f1-stdperiph/misc.d" -MT"system/src/stm32f1-stdperiph/misc.o" -c -o "system/src/stm32f1-stdperiph/misc.o" "../system/src/stm32f1-stdperiph/misc.c"
 'Finished building: ../system/src/stm32f1-stdperiph/misc.c'
-' '
-'Building file: ../system/src/stm32f1-stdperiph/stm32f10x_gpio.c'
-'Invoking: GNU ARM Cross C Compiler'
-arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"system/src/stm32f1-stdperiph/stm32f10x_gpio.d" -MT"system/src/stm32f1-stdperiph/stm32f10x_gpio.o" -c -o "system/src/stm32f1-stdperiph/stm32f10x_gpio.o" "../system/src/stm32f1-stdperiph/stm32f10x_gpio.c"
-'Finished building: ../system/src/stm32f1-stdperiph/stm32f10x_gpio.c'
-' '
-'Building file: ../system/src/stm32f1-stdperiph/stm32f10x_rcc.c'
-'Invoking: GNU ARM Cross C Compiler'
-arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"system/src/stm32f1-stdperiph/stm32f10x_rcc.d" -MT"system/src/stm32f1-stdperiph/stm32f10x_rcc.o" -c -o "system/src/stm32f1-stdperiph/stm32f10x_rcc.o" "../system/src/stm32f1-stdperiph/stm32f10x_rcc.c"
-'Finished building: ../system/src/stm32f1-stdperiph/stm32f10x_rcc.c'
-' '
-'Building file: ../system/src/newlib/_cxx.cpp'
-'Invoking: GNU ARM Cross C++ Compiler'
-arm-none-eabi-g++ -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu++11 -fabi-version=0 -fno-exceptions -fno-rtti -fno-use-cxa-atexit -fno-threadsafe-statics -MMD -MP -MF"system/src/newlib/_cxx.d" -MT"system/src/newlib/_cxx.o" -c -o "system/src/newlib/_cxx.o" "../system/src/newlib/_cxx.cpp"
-'Finished building: ../system/src/newlib/_cxx.cpp'
-' '
-'Building file: ../system/src/newlib/_exit.c'
-'Invoking: GNU ARM Cross C Compiler'
-arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"system/src/newlib/_exit.d" -MT"system/src/newlib/_exit.o" -c -o "system/src/newlib/_exit.o" "../system/src/newlib/_exit.c"
-'Finished building: ../system/src/newlib/_exit.c'
-' '
-'Building file: ../system/src/newlib/_sbrk.c'
-'Invoking: GNU ARM Cross C Compiler'
-arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"system/src/newlib/_sbrk.d" -MT"system/src/newlib/_sbrk.o" -c -o "system/src/newlib/_sbrk.o" "../system/src/newlib/_sbrk.c"
-'Finished building: ../system/src/newlib/_sbrk.c'
-' '
-'Building file: ../system/src/newlib/_startup.c'
-'Invoking: GNU ARM Cross C Compiler'
-arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"system/src/newlib/_startup.d" -MT"system/src/newlib/_startup.o" -c -o "system/src/newlib/_startup.o" "../system/src/newlib/_startup.c"
-'Finished building: ../system/src/newlib/_startup.c'
-' '
-'Building file: ../system/src/newlib/_syscalls.c'
-'Invoking: GNU ARM Cross C Compiler'
-arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"system/src/newlib/_syscalls.d" -MT"system/src/newlib/_syscalls.o" -c -o "system/src/newlib/_syscalls.o" "../system/src/newlib/_syscalls.c"
-'Finished building: ../system/src/newlib/_syscalls.c'
-' '
-'Building file: ../system/src/newlib/assert.c'
-'Invoking: GNU ARM Cross C Compiler'
-arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"system/src/newlib/assert.d" -MT"system/src/newlib/assert.o" -c -o "system/src/newlib/assert.o" "../system/src/newlib/assert.c"
-'Finished building: ../system/src/newlib/assert.c'
-' '
-'Building file: ../system/src/diag/Trace.c'
-'Invoking: GNU ARM Cross C Compiler'
-arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"system/src/diag/Trace.d" -MT"system/src/diag/Trace.o" -c -o "system/src/diag/Trace.o" "../system/src/diag/Trace.c"
-'Finished building: ../system/src/diag/Trace.c'
-' '
-'Building file: ../system/src/diag/trace_impl.c'
-'Invoking: GNU ARM Cross C Compiler'
-arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"system/src/diag/trace_impl.d" -MT"system/src/diag/trace_impl.o" -c -o "system/src/diag/trace_impl.o" "../system/src/diag/trace_impl.c"
-'Finished building: ../system/src/diag/trace_impl.c'
-' '
-'Building file: ../system/src/cortexm/_initialize_hardware.c'
-'Invoking: GNU ARM Cross C Compiler'
-arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"system/src/cortexm/_initialize_hardware.d" -MT"system/src/cortexm/_initialize_hardware.o" -c -o "system/src/cortexm/_initialize_hardware.o" "../system/src/cortexm/_initialize_hardware.c"
-'Finished building: ../system/src/cortexm/_initialize_hardware.c'
-' '
-'Building file: ../system/src/cortexm/_reset_hardware.c'
-'Invoking: GNU ARM Cross C Compiler'
-arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"system/src/cortexm/_reset_hardware.d" -MT"system/src/cortexm/_reset_hardware.o" -c -o "system/src/cortexm/_reset_hardware.o" "../system/src/cortexm/_reset_hardware.c"
-'Finished building: ../system/src/cortexm/_reset_hardware.c'
-' '
-'Building file: ../system/src/cortexm/exception_handlers.c'
-'Invoking: GNU ARM Cross C Compiler'
-arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"system/src/cortexm/exception_handlers.d" -MT"system/src/cortexm/exception_handlers.o" -c -o "system/src/cortexm/exception_handlers.o" "../system/src/cortexm/exception_handlers.c"
-'Finished building: ../system/src/cortexm/exception_handlers.c'
-' '
-'Building file: ../system/src/cmsis/system_stm32f10x.c'
-'Invoking: GNU ARM Cross C Compiler'
-arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"system/src/cmsis/system_stm32f10x.d" -MT"system/src/cmsis/system_stm32f10x.o" -c -o "system/src/cmsis/system_stm32f10x.o" "../system/src/cmsis/system_stm32f10x.c"
-'Finished building: ../system/src/cmsis/system_stm32f10x.c'
-' '
-'Building file: ../system/src/cmsis/vectors_stm32f10x.c'
-'Invoking: GNU ARM Cross C Compiler'
-arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"system/src/cmsis/vectors_stm32f10x.d" -MT"system/src/cmsis/vectors_stm32f10x.o" -c -o "system/src/cmsis/vectors_stm32f10x.o" "../system/src/cmsis/vectors_stm32f10x.c"
-'Finished building: ../system/src/cmsis/vectors_stm32f10x.c'
-' '
-'Building file: ../src/main.c'
-'Invoking: GNU ARM Cross C Compiler'
-arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
-'Finished building: ../src/main.c'
-' '
-'Building target: DC_Motor_Handler.elf'
-'Invoking: GNU ARM Cross C++ Linker'
-arm-none-eabi-g++ -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"DC_Motor_Handler.map" --specs=nano.specs -o "DC_Motor_Handler.elf"  ./system/src/stm32f1-stdperiph/misc.o ./system/src/stm32f1-stdperiph/stm32f10x_gpio.o ./system/src/stm32f1-stdperiph/stm32f10x_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f10x.o ./system/src/cmsis/vectors_stm32f10x.o  ./src/main.o   
-'Finished building target: DC_Motor_Handler.elf'
-' '
-'Invoking: GNU ARM Cross Create Flash Image'
-arm-none-eabi-objcopy -O ihex "DC_Motor_Handler.elf"  "DC_Motor_Handler.hex"
-'Finished building: DC_Motor_Handler.hex'
-' '
-'Invoking: GNU ARM Cross Print Size'
-arm-none-eabi-size --format=berkeley "DC_Motor_Handler.elf"
-   text	   data	    bss	    dec	    hex	filename
-   4407	    176	    424	   5007	   138f	DC_Motor_Handler.elf
-'Finished building: DC_Motor_Handler.siz'
-' '
-20:46:49 **** Build of configuration Debug for project GPIO_Driver ****
-make all 
-'Building file: ../system/src/stm32f1-stdperiph/misc.c'
-'Invoking: GNU ARM Cross C Compiler'
-arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"system/src/stm32f1-stdperiph/misc.d" -MT"system/src/stm32f1-stdperiph/misc.o" -c -o "system/src/stm32f1-stdperiph/misc.o" "../system/src/stm32f1-stdperiph/misc.c"
-'Finished building: ../system/src/stm32f1-stdperiph/misc.c'
-' '
-'Building file: ../system/src/stm32f1-stdperiph/stm32f10x_gpio.c'
-'Invoking: GNU ARM Cross C Compiler'
-arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"system/src/stm32f1-stdperiph/stm32f10x_gpio.d" -MT"system/src/stm32f1-stdperiph/stm32f10x_gpio.o" -c -o "system/src/stm32f1-stdperiph/stm32f10x_gpio.o" "../system/src/stm32f1-stdperiph/stm32f10x_gpio.c"
-'Finished building: ../system/src/stm32f1-stdperiph/stm32f10x_gpio.c'
 ' '
 'Building file: ../system/src/stm32f1-stdperiph/stm32f10x_rcc.c'
 'Invoking: GNU ARM Cross C Compiler'
@@ -185,6 +87,32 @@ arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -
 'Building file: ../src/GPIO.c'
 'Invoking: GNU ARM Cross C Compiler'
 arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/GPIO.d" -MT"src/GPIO.o" -c -o "src/GPIO.o" "../src/GPIO.c"
+../src/GPIO.c: In function 'GPIO_Init':
+../src/GPIO.c:291:22: warning: comparison is always true due to limited range of data type [-Wtype-limits]
+  if     (((Pin->pin) >= (u16)0) && (Pin->pin <= 7))//CRL
+                      ^~
+../src/GPIO.c: In function 'GPIO_Pin_Read':
+../src/GPIO.c:330:14: warning: comparison is always true due to limited range of data type [-Wtype-limits]
+  if(Pin->pin >= 0 && Pin->pin < 16 ) *ReturnValue = (u8)(RegPtr->IDR & Pin->pin) >> Pin->pin;
+              ^~
+../src/GPIO.c: In function 'GPIO_Pin_FastSet':
+../src/GPIO.c:336:32: warning: unused parameter 'Port_Mask' [-Wunused-parameter]
+ std_err GPIO_Pin_FastSet  (u32 Port_Mask, GPIO_Pin_t* Pin){
+../src/GPIO.c:336:55: warning: unused parameter 'Pin' [-Wunused-parameter]
+ std_err GPIO_Pin_FastSet  (u32 Port_Mask, GPIO_Pin_t* Pin){
+                                           ~~~~~~~~~~~~^~~
+../src/GPIO.c: In function 'GPIO_Pin_FastReset':
+../src/GPIO.c:344:32: warning: unused parameter 'Port_Mask' [-Wunused-parameter]
+ std_err GPIO_Pin_FastReset(u32 Port_Mask, GPIO_Pin_t* Pin){
+../src/GPIO.c:344:55: warning: unused parameter 'Pin' [-Wunused-parameter]
+ std_err GPIO_Pin_FastReset(u32 Port_Mask, GPIO_Pin_t* Pin){
+                                           ~~~~~~~~~~~~^~~
+../src/GPIO.c: In function 'GPIO_Pin_Lock':
+../src/GPIO.c:352:32: warning: unused parameter 'Port_Mask' [-Wunused-parameter]
+ std_err GPIO_Pin_Lock     (u32 Port_Mask, GPIO_Pin_t* Pin){
+../src/GPIO.c:352:55: warning: unused parameter 'Pin' [-Wunused-parameter]
+ std_err GPIO_Pin_Lock     (u32 Port_Mask, GPIO_Pin_t* Pin){
+                                           ~~~~~~~~~~~~^~~
 'Finished building: ../src/GPIO.c'
 ' '
 'Building file: ../src/test.c'
@@ -194,7 +122,7 @@ arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -
 ' '
 'Building target: GPIO_Driver.elf'
 'Invoking: GNU ARM Cross C++ Linker'
-arm-none-eabi-g++ -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"GPIO_Driver.map" --specs=nano.specs -o "GPIO_Driver.elf"  ./system/src/stm32f1-stdperiph/misc.o ./system/src/stm32f1-stdperiph/stm32f10x_gpio.o ./system/src/stm32f1-stdperiph/stm32f10x_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f10x.o ./system/src/cmsis/vectors_stm32f10x.o  ./src/GPIO.o ./src/test.o   
+arm-none-eabi-g++ -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"GPIO_Driver.map" --specs=nano.specs -o "GPIO_Driver.elf"  ./system/src/stm32f1-stdperiph/misc.o ./system/src/stm32f1-stdperiph/stm32f10x_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f10x.o ./system/src/cmsis/vectors_stm32f10x.o  ./src/GPIO.o ./src/test.o   
 'Finished building target: GPIO_Driver.elf'
 ' '
 'Invoking: GNU ARM Cross Create Flash Image'
@@ -207,30 +135,750 @@ arm-none-eabi-size --format=berkeley "GPIO_Driver.elf"
    4407	    176	    424	   5007	   138f	GPIO_Driver.elf
 'Finished building: GPIO_Driver.siz'
 ' '
-20:47:01 **** Build of configuration Debug for project RCC_Driver ****
+22:54:38 **** Incremental Build of configuration Debug for project GPIO_Driver ****
 make all 
-'Building file: ../src/RCC.c'
+'Building file: ../src/GPIO.c'
 'Invoking: GNU ARM Cross C Compiler'
-arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/RCC.d" -MT"src/RCC.o" -c -o "src/RCC.o" "../src/RCC.c"
-'Finished building: ../src/RCC.c'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/GPIO.d" -MT"src/GPIO.o" -c -o "src/GPIO.o" "../src/GPIO.c"
+../src/GPIO.c: In function 'GPIO_Pin_FastSet':
+../src/GPIO.c:336:32: warning: unused parameter 'Port_Mask' [-Wunused-parameter]
+ std_err GPIO_Pin_FastSet  (u32 Port_Mask, GPIO_Pin_t* Pin){
+../src/GPIO.c:336:55: warning: unused parameter 'Pin' [-Wunused-parameter]
+ std_err GPIO_Pin_FastSet  (u32 Port_Mask, GPIO_Pin_t* Pin){
+                                           ~~~~~~~~~~~~^~~
+../src/GPIO.c: In function 'GPIO_Pin_FastReset':
+../src/GPIO.c:344:32: warning: unused parameter 'Port_Mask' [-Wunused-parameter]
+ std_err GPIO_Pin_FastReset(u32 Port_Mask, GPIO_Pin_t* Pin){
+../src/GPIO.c:344:55: warning: unused parameter 'Pin' [-Wunused-parameter]
+ std_err GPIO_Pin_FastReset(u32 Port_Mask, GPIO_Pin_t* Pin){
+                                           ~~~~~~~~~~~~^~~
+../src/GPIO.c: In function 'GPIO_Pin_Lock':
+../src/GPIO.c:352:32: warning: unused parameter 'Port_Mask' [-Wunused-parameter]
+ std_err GPIO_Pin_Lock     (u32 Port_Mask, GPIO_Pin_t* Pin){
+../src/GPIO.c:352:55: warning: unused parameter 'Pin' [-Wunused-parameter]
+ std_err GPIO_Pin_Lock     (u32 Port_Mask, GPIO_Pin_t* Pin){
+                                           ~~~~~~~~~~~~^~~
+'Finished building: ../src/GPIO.c'
 ' '
-'Building file: ../src/main.c'
+'Building file: ../src/test.c'
 'Invoking: GNU ARM Cross C Compiler'
-arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
-'Finished building: ../src/main.c'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/test.d" -MT"src/test.o" -c -o "src/test.o" "../src/test.c"
+'Finished building: ../src/test.c'
 ' '
-'Building target: RCC_Driver.elf'
+'Building target: GPIO_Driver.elf'
 'Invoking: GNU ARM Cross C++ Linker'
-arm-none-eabi-g++ -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"RCC_Driver.map" --specs=nano.specs -o "RCC_Driver.elf"  ./system/src/stm32f1-stdperiph/misc.o ./system/src/stm32f1-stdperiph/stm32f10x_gpio.o ./system/src/stm32f1-stdperiph/stm32f10x_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f10x.o ./system/src/cmsis/vectors_stm32f10x.o  ./src/RCC.o ./src/main.o   
-'Finished building target: RCC_Driver.elf'
+arm-none-eabi-g++ -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"GPIO_Driver.map" --specs=nano.specs -o "GPIO_Driver.elf"  ./system/src/stm32f1-stdperiph/misc.o ./system/src/stm32f1-stdperiph/stm32f10x_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f10x.o ./system/src/cmsis/vectors_stm32f10x.o  ./src/GPIO.o ./src/test.o   
+'Finished building target: GPIO_Driver.elf'
 ' '
 'Invoking: GNU ARM Cross Create Flash Image'
-arm-none-eabi-objcopy -O ihex "RCC_Driver.elf"  "RCC_Driver.hex"
-'Finished building: RCC_Driver.hex'
+arm-none-eabi-objcopy -O ihex "GPIO_Driver.elf"  "GPIO_Driver.hex"
+'Finished building: GPIO_Driver.hex'
 ' '
 'Invoking: GNU ARM Cross Print Size'
-arm-none-eabi-size --format=berkeley "RCC_Driver.elf"
+arm-none-eabi-size --format=berkeley "GPIO_Driver.elf"
    text	   data	    bss	    dec	    hex	filename
-   4407	    176	    424	   5007	   138f	RCC_Driver.elf
-'Finished building: RCC_Driver.siz'
+   4407	    176	    424	   5007	   138f	GPIO_Driver.elf
+'Finished building: GPIO_Driver.siz'
+' '
+15:08:39 **** Incremental Build of configuration Debug for project GPIO_Driver ****
+make all 
+'Building file: ../src/GPIO.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/GPIO.d" -MT"src/GPIO.o" -c -o "src/GPIO.o" "../src/GPIO.c"
+../src/GPIO.c: In function 'GPIO_Pin_Lock':
+../src/GPIO.c:360:55: warning: unused parameter 'Pin' [-Wunused-parameter]
+ std_err GPIO_Pin_Lock     (u32 Port_Mask, GPIO_Pin_t* Pin, u8  State){
+                                           ~~~~~~~~~~~~^~~
+../src/GPIO.c:360:64: warning: unused parameter 'State' [-Wunused-parameter]
+ std_err GPIO_Pin_Lock     (u32 Port_Mask, GPIO_Pin_t* Pin, u8  State){
+'Finished building: ../src/GPIO.c'
+' '
+'Building file: ../src/test.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/test.d" -MT"src/test.o" -c -o "src/test.o" "../src/test.c"
+'Finished building: ../src/test.c'
+' '
+'Building target: GPIO_Driver.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"GPIO_Driver.map" --specs=nano.specs -o "GPIO_Driver.elf"  ./system/src/stm32f1-stdperiph/misc.o ./system/src/stm32f1-stdperiph/stm32f10x_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f10x.o ./system/src/cmsis/vectors_stm32f10x.o  ./src/GPIO.o ./src/test.o   
+'Finished building target: GPIO_Driver.elf'
+' '
+'Invoking: GNU ARM Cross Create Flash Image'
+arm-none-eabi-objcopy -O ihex "GPIO_Driver.elf"  "GPIO_Driver.hex"
+'Finished building: GPIO_Driver.hex'
+' '
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "GPIO_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4407	    176	    424	   5007	   138f	GPIO_Driver.elf
+'Finished building: GPIO_Driver.siz'
+' '
+15:44:09 **** Incremental Build of configuration Debug for project GPIO_Driver ****
+make all 
+'Building file: ../src/GPIO.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/GPIO.d" -MT"src/GPIO.o" -c -o "src/GPIO.o" "../src/GPIO.c"
+'Finished building: ../src/GPIO.c'
+' '
+'Building file: ../src/test.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/test.d" -MT"src/test.o" -c -o "src/test.o" "../src/test.c"
+'Finished building: ../src/test.c'
+' '
+'Building target: GPIO_Driver.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"GPIO_Driver.map" --specs=nano.specs -o "GPIO_Driver.elf"  ./system/src/stm32f1-stdperiph/misc.o ./system/src/stm32f1-stdperiph/stm32f10x_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f10x.o ./system/src/cmsis/vectors_stm32f10x.o  ./src/GPIO.o ./src/test.o   
+'Finished building target: GPIO_Driver.elf'
+' '
+'Invoking: GNU ARM Cross Create Flash Image'
+arm-none-eabi-objcopy -O ihex "GPIO_Driver.elf"  "GPIO_Driver.hex"
+'Finished building: GPIO_Driver.hex'
+' '
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "GPIO_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4407	    176	    424	   5007	   138f	GPIO_Driver.elf
+'Finished building: GPIO_Driver.siz'
+' '
+15:47:59 **** Incremental Build of configuration Debug for project GPIO_Driver ****
+make all 
+'Building file: ../src/GPIO.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/GPIO.d" -MT"src/GPIO.o" -c -o "src/GPIO.o" "../src/GPIO.c"
+../src/GPIO.c: In function 'GPIO_Pin_Lock':
+../src/GPIO.c:389:5: warning: suggest parentheses around operand of '!' or change '&' to '&&' or '!' to '~' [-Wparentheses]
+  if(!RegPtr->LCKR & Pin->pin) err.error_status=STATUS_NOK;
+     ^~~~~~~~~~~~~
+'Finished building: ../src/GPIO.c'
+' '
+'Building target: GPIO_Driver.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"GPIO_Driver.map" --specs=nano.specs -o "GPIO_Driver.elf"  ./system/src/stm32f1-stdperiph/misc.o ./system/src/stm32f1-stdperiph/stm32f10x_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f10x.o ./system/src/cmsis/vectors_stm32f10x.o  ./src/GPIO.o ./src/test.o   
+'Finished building target: GPIO_Driver.elf'
+' '
+'Invoking: GNU ARM Cross Create Flash Image'
+arm-none-eabi-objcopy -O ihex "GPIO_Driver.elf"  "GPIO_Driver.hex"
+'Finished building: GPIO_Driver.hex'
+' '
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "GPIO_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4407	    176	    424	   5007	   138f	GPIO_Driver.elf
+'Finished building: GPIO_Driver.siz'
+' '
+15:48:20 **** Incremental Build of configuration Debug for project GPIO_Driver ****
+make all 
+'Building file: ../src/GPIO.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/GPIO.d" -MT"src/GPIO.o" -c -o "src/GPIO.o" "../src/GPIO.c"
+'Finished building: ../src/GPIO.c'
+' '
+'Building target: GPIO_Driver.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"GPIO_Driver.map" --specs=nano.specs -o "GPIO_Driver.elf"  ./system/src/stm32f1-stdperiph/misc.o ./system/src/stm32f1-stdperiph/stm32f10x_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f10x.o ./system/src/cmsis/vectors_stm32f10x.o  ./src/GPIO.o ./src/test.o   
+'Finished building target: GPIO_Driver.elf'
+' '
+'Invoking: GNU ARM Cross Create Flash Image'
+arm-none-eabi-objcopy -O ihex "GPIO_Driver.elf"  "GPIO_Driver.hex"
+'Finished building: GPIO_Driver.hex'
+' '
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "GPIO_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4407	    176	    424	   5007	   138f	GPIO_Driver.elf
+'Finished building: GPIO_Driver.siz'
+' '
+15:52:01 **** Incremental Build of configuration Debug for project GPIO_Driver ****
+make all 
+'Building file: ../src/test.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/test.d" -MT"src/test.o" -c -o "src/test.o" "../src/test.c"
+In file included from ../src/test.c:1:
+../src/test.c: In function 'main':
+../include/GPIO.h:32:16: error: 'GPIOA' undeclared (first use in this function)
+ #define  PORTA GPIOA
+                ^~~~~
+../src/test.c:4:16: note: in expansion of macro 'PORTA'
+  GPIO_Pin_Lock(PORTA,GPIO_PIN_0);
+                ^~~~~
+../include/GPIO.h:32:16: note: each undeclared identifier is reported only once for each function it appears in
+ #define  PORTA GPIOA
+                ^~~~~
+../src/test.c:4:16: note: in expansion of macro 'PORTA'
+  GPIO_Pin_Lock(PORTA,GPIO_PIN_0);
+                ^~~~~
+../include/GPIO.h:41:26: warning: passing argument 2 of 'GPIO_Pin_Lock' makes pointer from integer without a cast [-Wint-conversion]
+ #define GPIO_PIN_0       ((u16)0x0001)
+                          ^~~~~~~~~~~~~
+../src/test.c:4:22: note: in expansion of macro 'GPIO_PIN_0'
+  GPIO_Pin_Lock(PORTA,GPIO_PIN_0);
+                      ^~~~~~~~~~
+../include/GPIO.h:91:55: note: expected 'GPIO_Pin_t *' {aka 'struct <anonymous> *'} but argument is of type 'short unsigned int'
+ std_err GPIO_Pin_Lock     (u32 Port_Mask, GPIO_Pin_t* Pin);
+                                           ~~~~~~~~~~~~^~~
+make: *** [src/test.o] Error 1
+src/subdir.mk:21: recipe for target 'src/test.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+15:58:00 **** Incremental Build of configuration Debug for project GPIO_Driver ****
+make all 
+'Building file: ../src/GPIO.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/GPIO.d" -MT"src/GPIO.o" -c -o "src/GPIO.o" "../src/GPIO.c"
+'Finished building: ../src/GPIO.c'
+' '
+'Building file: ../src/test.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/test.d" -MT"src/test.o" -c -o "src/test.o" "../src/test.c"
+In file included from ../src/test.c:1:
+../src/test.c: In function 'main':
+../include/GPIO.h:7:13: error: expected expression before 'unsigned'
+ #define u32 unsigned long int
+             ^~~~~~~~
+../include/GPIO.h:32:16: note: in expansion of macro 'u32'
+ #define  PORTA u32 GPIOA
+                ^~~
+../src/test.c:4:16: note: in expansion of macro 'PORTA'
+  GPIO_Pin_Lock(PORTA,GPIO_PIN_0);
+                ^~~~~
+../src/test.c:4:2: error: too few arguments to function 'GPIO_Pin_Lock'
+  GPIO_Pin_Lock(PORTA,GPIO_PIN_0);
+  ^~~~~~~~~~~~~
+In file included from ../src/test.c:1:
+../include/GPIO.h:91:9: note: declared here
+ std_err GPIO_Pin_Lock     (u32 Port_Mask, GPIO_Pin_t* Pin);
+         ^~~~~~~~~~~~~
+src/subdir.mk:21: recipe for target 'src/test.o' failed
+make: *** [src/test.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+15:58:08 **** Incremental Build of configuration Debug for project GPIO_Driver ****
+make all 
+'Building file: ../src/GPIO.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/GPIO.d" -MT"src/GPIO.o" -c -o "src/GPIO.o" "../src/GPIO.c"
+'Finished building: ../src/GPIO.c'
+' '
+'Building file: ../src/test.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/test.d" -MT"src/test.o" -c -o "src/test.o" "../src/test.c"
+In file included from ../src/test.c:1:
+../src/test.c: In function 'main':
+../include/GPIO.h:32:21: error: 'GPIOA' undeclared (first use in this function)
+ #define  PORTA (u32)GPIOA
+                     ^~~~~
+../src/test.c:4:16: note: in expansion of macro 'PORTA'
+  GPIO_Pin_Lock(PORTA,GPIO_PIN_0);
+                ^~~~~
+../include/GPIO.h:32:21: note: each undeclared identifier is reported only once for each function it appears in
+ #define  PORTA (u32)GPIOA
+                     ^~~~~
+../src/test.c:4:16: note: in expansion of macro 'PORTA'
+  GPIO_Pin_Lock(PORTA,GPIO_PIN_0);
+                ^~~~~
+../include/GPIO.h:41:26: warning: passing argument 2 of 'GPIO_Pin_Lock' makes pointer from integer without a cast [-Wint-conversion]
+ #define GPIO_PIN_0       ((u16)0x0001)
+                          ^~~~~~~~~~~~~
+../src/test.c:4:22: note: in expansion of macro 'GPIO_PIN_0'
+  GPIO_Pin_Lock(PORTA,GPIO_PIN_0);
+                      ^~~~~~~~~~
+../include/GPIO.h:91:55: note: expected 'GPIO_Pin_t *' {aka 'struct <anonymous> *'} but argument is of type 'short unsigned int'
+ std_err GPIO_Pin_Lock     (u32 Port_Mask, GPIO_Pin_t* Pin);
+                                           ~~~~~~~~~~~~^~~
+make: *** [src/test.o] Error 1
+src/subdir.mk:21: recipe for target 'src/test.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+15:58:22 **** Incremental Build of configuration Debug for project GPIO_Driver ****
+make all 
+'Building file: ../src/test.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/test.d" -MT"src/test.o" -c -o "src/test.o" "../src/test.c"
+In file included from ../src/test.c:1:
+../src/test.c: In function 'main':
+../include/GPIO.h:32:21: error: 'GPIOA' undeclared (first use in this function)
+ #define  PORTA (u32)GPIOA
+                     ^~~~~
+../src/test.c:4:16: note: in expansion of macro 'PORTA'
+  GPIO_Pin_Lock(PORTA,GPIO_PIN_0);
+                ^~~~~
+../include/GPIO.h:32:21: note: each undeclared identifier is reported only once for each function it appears in
+ #define  PORTA (u32)GPIOA
+                     ^~~~~
+../src/test.c:4:16: note: in expansion of macro 'PORTA'
+  GPIO_Pin_Lock(PORTA,GPIO_PIN_0);
+                ^~~~~
+../include/GPIO.h:41:26: warning: passing argument 2 of 'GPIO_Pin_Lock' makes pointer from integer without a cast [-Wint-conversion]
+ #define GPIO_PIN_0       ((u16)0x0001)
+                          ^~~~~~~~~~~~~
+../src/test.c:4:22: note: in expansion of macro 'GPIO_PIN_0'
+  GPIO_Pin_Lock(PORTA,GPIO_PIN_0);
+                      ^~~~~~~~~~
+../include/GPIO.h:91:55: note: expected 'GPIO_Pin_t *' {aka 'struct <anonymous> *'} but argument is of type 'short unsigned int'
+ std_err GPIO_Pin_Lock     (u32 Port_Mask, GPIO_Pin_t* Pin);
+                                           ~~~~~~~~~~~~^~~
+make: *** [src/test.o] Error 1
+src/subdir.mk:21: recipe for target 'src/test.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+15:58:36 **** Incremental Build of configuration Debug for project GPIO_Driver ****
+make all 
+'Building file: ../src/GPIO.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/GPIO.d" -MT"src/GPIO.o" -c -o "src/GPIO.o" "../src/GPIO.c"
+'Finished building: ../src/GPIO.c'
+' '
+'Building file: ../src/test.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/test.d" -MT"src/test.o" -c -o "src/test.o" "../src/test.c"
+In file included from ../src/test.c:1:
+../src/test.c: In function 'main':
+../include/GPIO.h:32:21: error: 'GPIOA' undeclared (first use in this function)
+ #define  PORTA (u32)GPIOA
+                     ^~~~~
+../src/test.c:4:16: note: in expansion of macro 'PORTA'
+  GPIO_Pin_Lock(PORTA,GPIO_PIN_0);
+                ^~~~~
+../include/GPIO.h:32:21: note: each undeclared identifier is reported only once for each function it appears in
+ #define  PORTA (u32)GPIOA
+                     ^~~~~
+../src/test.c:4:16: note: in expansion of macro 'PORTA'
+  GPIO_Pin_Lock(PORTA,GPIO_PIN_0);
+                ^~~~~
+../include/GPIO.h:41:26: warning: passing argument 2 of 'GPIO_Pin_Lock' makes pointer from integer without a cast [-Wint-conversion]
+ #define GPIO_PIN_0       ((u16)0x0001)
+                          ^~~~~~~~~~~~~
+../src/test.c:4:22: note: in expansion of macro 'GPIO_PIN_0'
+  GPIO_Pin_Lock(PORTA,GPIO_PIN_0);
+                      ^~~~~~~~~~
+../include/GPIO.h:91:55: note: expected 'GPIO_Pin_t *' {aka 'struct <anonymous> *'} but argument is of type 'short unsigned int'
+ std_err GPIO_Pin_Lock     (u32 Port_Mask, GPIO_Pin_t* Pin);
+                                           ~~~~~~~~~~~~^~~
+make: *** [src/test.o] Error 1
+src/subdir.mk:21: recipe for target 'src/test.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+16:01:50 **** Incremental Build of configuration Debug for project GPIO_Driver ****
+make all 
+'Building file: ../src/GPIO.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/GPIO.d" -MT"src/GPIO.o" -c -o "src/GPIO.o" "../src/GPIO.c"
+'Finished building: ../src/GPIO.c'
+' '
+'Building file: ../src/test.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/test.d" -MT"src/test.o" -c -o "src/test.o" "../src/test.c"
+In file included from ../src/test.c:1:
+../src/test.c: In function 'main':
+../include/GPIO.h:32:21: error: 'GPIOA' undeclared (first use in this function)
+ #define  PORTA (u32)GPIOA
+                     ^~~~~
+../src/test.c:4:16: note: in expansion of macro 'PORTA'
+  GPIO_Pin_Lock(PORTA,&GPIO_PIN_0);
+                ^~~~~
+../include/GPIO.h:32:21: note: each undeclared identifier is reported only once for each function it appears in
+ #define  PORTA (u32)GPIOA
+                     ^~~~~
+../src/test.c:4:16: note: in expansion of macro 'PORTA'
+  GPIO_Pin_Lock(PORTA,&GPIO_PIN_0);
+                ^~~~~
+../src/test.c:4:22: error: lvalue required as unary '&' operand
+  GPIO_Pin_Lock(PORTA,&GPIO_PIN_0);
+                      ^
+src/subdir.mk:21: recipe for target 'src/test.o' failed
+make: *** [src/test.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:03:09 **** Incremental Build of configuration Debug for project GPIO_Driver ****
+make all 
+'Building file: ../src/GPIO.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/GPIO.d" -MT"src/GPIO.o" -c -o "src/GPIO.o" "../src/GPIO.c"
+'Finished building: ../src/GPIO.c'
+' '
+'Building file: ../src/test.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/test.d" -MT"src/test.o" -c -o "src/test.o" "../src/test.c"
+../src/test.c: In function 'main':
+../src/test.c:4:22: error: lvalue required as unary '&' operand
+  GPIO_Pin_Lock(PORTA,&GPIO_PIN_0);
+                      ^
+In file included from ../src/test.c:1:
+../include/GPIO.h:37:18: warning: passing argument 1 of 'GPIO_Pin_Lock' makes integer from pointer without a cast [-Wint-conversion]
+ #define GPIOA    ((void*)GPIO_PORTA_BASE_ADDRESS)
+                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../include/GPIO.h:50:16: note: in expansion of macro 'GPIOA'
+ #define  PORTA GPIOA
+                ^~~~~
+../src/test.c:4:16: note: in expansion of macro 'PORTA'
+  GPIO_Pin_Lock(PORTA,&GPIO_PIN_0);
+                ^~~~~
+../include/GPIO.h:109:32: note: expected 'long unsigned int' but argument is of type 'void *'
+ std_err GPIO_Pin_Lock     (u32 Port_Mask, GPIO_Pin_t* Pin);
+                                ^
+src/subdir.mk:21: recipe for target 'src/test.o' failed
+make: *** [src/test.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:03:41 **** Incremental Build of configuration Debug for project GPIO_Driver ****
+make all 
+'Building file: ../src/GPIO.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/GPIO.d" -MT"src/GPIO.o" -c -o "src/GPIO.o" "../src/GPIO.c"
+'Finished building: ../src/GPIO.c'
+' '
+'Building file: ../src/test.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/test.d" -MT"src/test.o" -c -o "src/test.o" "../src/test.c"
+../src/test.c: In function 'main':
+../src/test.c:4:22: error: lvalue required as unary '&' operand
+  GPIO_Pin_Lock(PORTA,&GPIO_PIN_0);
+                      ^
+In file included from ../src/test.c:1:
+../include/GPIO.h:52:18: warning: passing argument 1 of 'GPIO_Pin_Lock' makes integer from pointer without a cast [-Wint-conversion]
+ #define GPIOA    ((void*)GPIO_PORTA_BASE_ADDRESS)
+                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../include/GPIO.h:35:16: note: in expansion of macro 'GPIOA'
+ #define  PORTA GPIOA
+                ^~~~~
+../src/test.c:4:16: note: in expansion of macro 'PORTA'
+  GPIO_Pin_Lock(PORTA,&GPIO_PIN_0);
+                ^~~~~
+../include/GPIO.h:111:32: note: expected 'long unsigned int' but argument is of type 'void *'
+ std_err GPIO_Pin_Lock     (u32 Port_Mask, GPIO_Pin_t* Pin);
+                                ^
+make: *** [src/test.o] Error 1
+src/subdir.mk:21: recipe for target 'src/test.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+16:05:35 **** Incremental Build of configuration Debug for project GPIO_Driver ****
+make all 
+'Building file: ../src/GPIO.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/GPIO.d" -MT"src/GPIO.o" -c -o "src/GPIO.o" "../src/GPIO.c"
+../src/GPIO.c:346:9: error: conflicting types for 'GPIO_Pin_Lock'
+ std_err GPIO_Pin_Lock     (u32 Port_Mask, GPIO_Pin_t* Pin){
+         ^~~~~~~~~~~~~
+In file included from ../src/GPIO.c:1:
+../include/GPIO.h:111:9: note: previous declaration of 'GPIO_Pin_Lock' was here
+ std_err GPIO_Pin_Lock     (u32* Port_Mask, GPIO_Pin_t* Pin);
+         ^~~~~~~~~~~~~
+make: *** [src/GPIO.o] Error 1
+src/subdir.mk:21: recipe for target 'src/GPIO.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+16:05:42 **** Incremental Build of configuration Debug for project GPIO_Driver ****
+make all 
+'Building file: ../src/GPIO.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/GPIO.d" -MT"src/GPIO.o" -c -o "src/GPIO.o" "../src/GPIO.c"
+'Finished building: ../src/GPIO.c'
+' '
+'Building file: ../src/test.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/test.d" -MT"src/test.o" -c -o "src/test.o" "../src/test.c"
+../src/test.c: In function 'main':
+../src/test.c:4:22: error: lvalue required as unary '&' operand
+  GPIO_Pin_Lock(PORTA,&GPIO_PIN_0);
+                      ^
+src/subdir.mk:21: recipe for target 'src/test.o' failed
+make: *** [src/test.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:05:59 **** Incremental Build of configuration Debug for project GPIO_Driver ****
+make all 
+'Building file: ../src/test.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/test.d" -MT"src/test.o" -c -o "src/test.o" "../src/test.c"
+In file included from ../src/test.c:1:
+../src/test.c: In function 'main':
+../include/GPIO.h:61:26: warning: passing argument 2 of 'GPIO_Pin_Lock' makes pointer from integer without a cast [-Wint-conversion]
+ #define GPIO_PIN_0       ((u16)0x0001)
+                          ^~~~~~~~~~~~~
+../src/test.c:4:22: note: in expansion of macro 'GPIO_PIN_0'
+  GPIO_Pin_Lock(PORTA,GPIO_PIN_0);
+                      ^~~~~~~~~~
+../include/GPIO.h:111:56: note: expected 'GPIO_Pin_t *' {aka 'struct <anonymous> *'} but argument is of type 'short unsigned int'
+ std_err GPIO_Pin_Lock     (u32* Port_Mask, GPIO_Pin_t* Pin);
+                                            ~~~~~~~~~~~~^~~
+'Finished building: ../src/test.c'
+' '
+'Building target: GPIO_Driver.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"GPIO_Driver.map" --specs=nano.specs -o "GPIO_Driver.elf"  ./system/src/stm32f1-stdperiph/misc.o ./system/src/stm32f1-stdperiph/stm32f10x_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f10x.o ./system/src/cmsis/vectors_stm32f10x.o  ./src/GPIO.o ./src/test.o   
+'Finished building target: GPIO_Driver.elf'
+' '
+'Invoking: GNU ARM Cross Create Flash Image'
+arm-none-eabi-objcopy -O ihex "GPIO_Driver.elf"  "GPIO_Driver.hex"
+'Finished building: GPIO_Driver.hex'
+' '
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "GPIO_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4507	    176	    424	   5107	   13f3	GPIO_Driver.elf
+'Finished building: GPIO_Driver.siz'
+' '
+16:06:40 **** Incremental Build of configuration Debug for project GPIO_Driver ****
+make all 
+'Building file: ../src/GPIO.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/GPIO.d" -MT"src/GPIO.o" -c -o "src/GPIO.o" "../src/GPIO.c"
+'Finished building: ../src/GPIO.c'
+' '
+'Building file: ../src/test.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/test.d" -MT"src/test.o" -c -o "src/test.o" "../src/test.c"
+In file included from ../src/test.c:1:
+../src/test.c: In function 'main':
+../include/GPIO.h:61:26: warning: passing argument 2 of 'GPIO_Pin_Lock' from incompatible pointer type [-Wincompatible-pointer-types]
+ #define GPIO_PIN_0       ((u16*)0x0001)
+                          ^~~~~~~~~~~~~~
+../src/test.c:4:22: note: in expansion of macro 'GPIO_PIN_0'
+  GPIO_Pin_Lock(PORTA,GPIO_PIN_0);
+                      ^~~~~~~~~~
+../include/GPIO.h:111:56: note: expected 'GPIO_Pin_t *' {aka 'struct <anonymous> *'} but argument is of type 'short unsigned int *'
+ std_err GPIO_Pin_Lock     (u32* Port_Mask, GPIO_Pin_t* Pin);
+                                            ~~~~~~~~~~~~^~~
+'Finished building: ../src/test.c'
+' '
+'Building target: GPIO_Driver.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"GPIO_Driver.map" --specs=nano.specs -o "GPIO_Driver.elf"  ./system/src/stm32f1-stdperiph/misc.o ./system/src/stm32f1-stdperiph/stm32f10x_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f10x.o ./system/src/cmsis/vectors_stm32f10x.o  ./src/GPIO.o ./src/test.o   
+'Finished building target: GPIO_Driver.elf'
+' '
+'Invoking: GNU ARM Cross Create Flash Image'
+arm-none-eabi-objcopy -O ihex "GPIO_Driver.elf"  "GPIO_Driver.hex"
+'Finished building: GPIO_Driver.hex'
+' '
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "GPIO_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4507	    176	    424	   5107	   13f3	GPIO_Driver.elf
+'Finished building: GPIO_Driver.siz'
+' '
+16:08:45 **** Incremental Build of configuration Debug for project GPIO_Driver ****
+make all 
+'Building file: ../src/GPIO.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/GPIO.d" -MT"src/GPIO.o" -c -o "src/GPIO.o" "../src/GPIO.c"
+'Finished building: ../src/GPIO.c'
+' '
+'Building file: ../src/test.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/test.d" -MT"src/test.o" -c -o "src/test.o" "../src/test.c"
+'Finished building: ../src/test.c'
+' '
+'Building target: GPIO_Driver.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"GPIO_Driver.map" --specs=nano.specs -o "GPIO_Driver.elf"  ./system/src/stm32f1-stdperiph/misc.o ./system/src/stm32f1-stdperiph/stm32f10x_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f10x.o ./system/src/cmsis/vectors_stm32f10x.o  ./src/GPIO.o ./src/test.o   
+'Finished building target: GPIO_Driver.elf'
+' '
+'Invoking: GNU ARM Cross Create Flash Image'
+arm-none-eabi-objcopy -O ihex "GPIO_Driver.elf"  "GPIO_Driver.hex"
+'Finished building: GPIO_Driver.hex'
+' '
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "GPIO_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4515	    176	    424	   5115	   13fb	GPIO_Driver.elf
+'Finished building: GPIO_Driver.siz'
+' '
+16:09:08 **** Incremental Build of configuration Debug for project GPIO_Driver ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "GPIO_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4515	    176	    424	   5115	   13fb	GPIO_Driver.elf
+'Finished building: GPIO_Driver.siz'
+' '
+16:10:36 **** Incremental Build of configuration Debug for project GPIO_Driver ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "GPIO_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4515	    176	    424	   5115	   13fb	GPIO_Driver.elf
+'Finished building: GPIO_Driver.siz'
+' '
+16:13:47 **** Incremental Build of configuration Debug for project GPIO_Driver ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "GPIO_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4515	    176	    424	   5115	   13fb	GPIO_Driver.elf
+'Finished building: GPIO_Driver.siz'
+' '
+16:16:51 **** Incremental Build of configuration Debug for project GPIO_Driver ****
+make all 
+'Building file: ../src/test.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/test.d" -MT"src/test.o" -c -o "src/test.o" "../src/test.c"
+In file included from ../src/test.c:1:
+../src/test.c: In function 'main':
+../include/GPIO.h:52:18: warning: passing argument 1 of 'GPIO_Init' makes integer from pointer without a cast [-Wint-conversion]
+ #define GPIOA    ((void*)GPIO_PORTA_BASE_ADDRESS)
+                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../include/GPIO.h:35:16: note: in expansion of macro 'GPIOA'
+ #define  PORTA GPIOA
+                ^~~~~
+../src/test.c:9:12: note: in expansion of macro 'PORTA'
+  GPIO_Init(PORTA,&testpin);
+            ^~~~~
+../include/GPIO.h:106:32: note: expected 'long unsigned int' but argument is of type 'void *'
+ std_err GPIO_Init         (u32 Port_Mask, GPIO_Pin_t* Pin);
+                                ^
+'Finished building: ../src/test.c'
+' '
+'Building target: GPIO_Driver.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"GPIO_Driver.map" --specs=nano.specs -o "GPIO_Driver.elf"  ./system/src/stm32f1-stdperiph/misc.o ./system/src/stm32f1-stdperiph/stm32f10x_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f10x.o ./system/src/cmsis/vectors_stm32f10x.o  ./src/GPIO.o ./src/test.o   
+'Finished building target: GPIO_Driver.elf'
+' '
+'Invoking: GNU ARM Cross Create Flash Image'
+arm-none-eabi-objcopy -O ihex "GPIO_Driver.elf"  "GPIO_Driver.hex"
+'Finished building: GPIO_Driver.hex'
+' '
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "GPIO_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4507	    176	    424	   5107	   13f3	GPIO_Driver.elf
+'Finished building: GPIO_Driver.siz'
+' '
+16:17:43 **** Incremental Build of configuration Debug for project GPIO_Driver ****
+make all 
+'Building file: ../src/GPIO.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/GPIO.d" -MT"src/GPIO.o" -c -o "src/GPIO.o" "../src/GPIO.c"
+'Finished building: ../src/GPIO.c'
+' '
+'Building file: ../src/test.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/test.d" -MT"src/test.o" -c -o "src/test.o" "../src/test.c"
+'Finished building: ../src/test.c'
+' '
+'Building target: GPIO_Driver.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"GPIO_Driver.map" --specs=nano.specs -o "GPIO_Driver.elf"  ./system/src/stm32f1-stdperiph/misc.o ./system/src/stm32f1-stdperiph/stm32f10x_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f10x.o ./system/src/cmsis/vectors_stm32f10x.o  ./src/GPIO.o ./src/test.o   
+'Finished building target: GPIO_Driver.elf'
+' '
+'Invoking: GNU ARM Cross Create Flash Image'
+arm-none-eabi-objcopy -O ihex "GPIO_Driver.elf"  "GPIO_Driver.hex"
+'Finished building: GPIO_Driver.hex'
+' '
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "GPIO_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4507	    176	    424	   5107	   13f3	GPIO_Driver.elf
+'Finished building: GPIO_Driver.siz'
+' '
+16:18:01 **** Incremental Build of configuration Debug for project GPIO_Driver ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "GPIO_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4507	    176	    424	   5107	   13f3	GPIO_Driver.elf
+'Finished building: GPIO_Driver.siz'
+' '
+16:19:53 **** Incremental Build of configuration Debug for project GPIO_Driver ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "GPIO_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4507	    176	    424	   5107	   13f3	GPIO_Driver.elf
+'Finished building: GPIO_Driver.siz'
+' '
+16:25:41 **** Incremental Build of configuration Debug for project GPIO_Driver ****
+make all 
+'Building file: ../src/GPIO.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/GPIO.d" -MT"src/GPIO.o" -c -o "src/GPIO.o" "../src/GPIO.c"
+'Finished building: ../src/GPIO.c'
+' '
+'Building target: GPIO_Driver.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"GPIO_Driver.map" --specs=nano.specs -o "GPIO_Driver.elf"  ./system/src/stm32f1-stdperiph/misc.o ./system/src/stm32f1-stdperiph/stm32f10x_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f10x.o ./system/src/cmsis/vectors_stm32f10x.o  ./src/GPIO.o ./src/test.o   
+'Finished building target: GPIO_Driver.elf'
+' '
+'Invoking: GNU ARM Cross Create Flash Image'
+arm-none-eabi-objcopy -O ihex "GPIO_Driver.elf"  "GPIO_Driver.hex"
+'Finished building: GPIO_Driver.hex'
+' '
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "GPIO_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4511	    176	    424	   5111	   13f7	GPIO_Driver.elf
+'Finished building: GPIO_Driver.siz'
+' '
+16:26:56 **** Incremental Build of configuration Debug for project GPIO_Driver ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "GPIO_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4511	    176	    424	   5111	   13f7	GPIO_Driver.elf
+'Finished building: GPIO_Driver.siz'
+' '
+16:27:01 **** Incremental Build of configuration Debug for project GPIO_Driver ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "GPIO_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4511	    176	    424	   5111	   13f7	GPIO_Driver.elf
+'Finished building: GPIO_Driver.siz'
+' '
+16:28:18 **** Incremental Build of configuration Debug for project GPIO_Driver ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "GPIO_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4511	    176	    424	   5111	   13f7	GPIO_Driver.elf
+'Finished building: GPIO_Driver.siz'
+' '
+16:30:17 **** Incremental Build of configuration Debug for project GPIO_Driver ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "GPIO_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4511	    176	    424	   5111	   13f7	GPIO_Driver.elf
+'Finished building: GPIO_Driver.siz'
+' '
+16:33:05 **** Incremental Build of configuration Debug for project GPIO_Driver ****
+make all 
+'Building file: ../src/GPIO.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/GPIO.d" -MT"src/GPIO.o" -c -o "src/GPIO.o" "../src/GPIO.c"
+'Finished building: ../src/GPIO.c'
+' '
+'Building target: GPIO_Driver.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"GPIO_Driver.map" --specs=nano.specs -o "GPIO_Driver.elf"  ./system/src/stm32f1-stdperiph/misc.o ./system/src/stm32f1-stdperiph/stm32f10x_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f10x.o ./system/src/cmsis/vectors_stm32f10x.o  ./src/GPIO.o ./src/test.o   
+'Finished building target: GPIO_Driver.elf'
+' '
+'Invoking: GNU ARM Cross Create Flash Image'
+arm-none-eabi-objcopy -O ihex "GPIO_Driver.elf"  "GPIO_Driver.hex"
+'Finished building: GPIO_Driver.hex'
+' '
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "GPIO_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4511	    176	    424	   5111	   13f7	GPIO_Driver.elf
+'Finished building: GPIO_Driver.siz'
+' '
+16:33:09 **** Incremental Build of configuration Debug for project GPIO_Driver ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "GPIO_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4511	    176	    424	   5111	   13f7	GPIO_Driver.elf
+'Finished building: GPIO_Driver.siz'
+' '
+16:35:16 **** Incremental Build of configuration Debug for project GPIO_Driver ****
+make all 
+'Building file: ../src/GPIO.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/GPIO.d" -MT"src/GPIO.o" -c -o "src/GPIO.o" "../src/GPIO.c"
+'Finished building: ../src/GPIO.c'
+' '
+'Building target: GPIO_Driver.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"GPIO_Driver.map" --specs=nano.specs -o "GPIO_Driver.elf"  ./system/src/stm32f1-stdperiph/misc.o ./system/src/stm32f1-stdperiph/stm32f10x_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f10x.o ./system/src/cmsis/vectors_stm32f10x.o  ./src/GPIO.o ./src/test.o   
+'Finished building target: GPIO_Driver.elf'
+' '
+'Invoking: GNU ARM Cross Create Flash Image'
+arm-none-eabi-objcopy -O ihex "GPIO_Driver.elf"  "GPIO_Driver.hex"
+'Finished building: GPIO_Driver.hex'
+' '
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "GPIO_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4515	    176	    424	   5115	   13fb	GPIO_Driver.elf
+'Finished building: GPIO_Driver.siz'
 ' '
