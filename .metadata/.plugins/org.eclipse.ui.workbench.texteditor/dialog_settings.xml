@@ -1,36 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value=";"/>
+		<item key="selection" value="STATUS_OK"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="OK"/>
+			<item value="PERIPH_BASE"/>
+			<item value="APB1PERIPH_BASE"/>
+			<item value="APB2PERIPH_BASE"/>
+			<item value="gpio"/>
+			<item value="base"/>
+			<item value="nvic"/>
 			<item value=";"/>
 			<item value=":"/>
 			<item value="uint16_t"/>
 			<item value="uint32_t"/>
-			<item value="gpio"/>
 			<item value="struct"/>
 			<item value="pllcon"/>
 			<item value="rcc_cfgr"/>
 			<item value="rcc"/>
-			<item value="pllsrc"/>
-			<item value="usbpre"/>
-			<item value="pll"/>
-			<item value="sw"/>
-			<item value="rdy"/>
-			<item value="ahbenr"/>
 		</list>
 		<list key="replacehistory">
+			<item value="STATUS_OK"/>
 			<item value="u16"/>
 			<item value="u32"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="1078"/>
+		<item key="DIALOG_X_ORIGIN" value="395"/>
 		<item key="DIALOG_Y_ORIGIN" value="332"/>
 		<item key="DIALOG_WIDTH" value="284"/>
 		<item key="DIALOG_HEIGHT" value="391"/>

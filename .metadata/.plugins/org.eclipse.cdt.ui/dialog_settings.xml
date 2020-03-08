@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<item key="LastUsedSourceTemplate" value="Default C++ source template"/>
+	<item key="LexicalSortingAction.sort" value="true"/>
 	<section name="completion_proposal_size">
 		<item key="size.x" value="552"/>
 		<item key="size.y" value="309"/>
@@ -12,5 +13,8 @@
 		<item key="size.height" value="180"/>
 	</section>
 	<section name="PDOMSearchPage">
+	</section>
+	<section name="CResourceRenameRefactoringInputPage">
+		<item key="updateReferences" value="true"/>
 	</section>
 </section>
