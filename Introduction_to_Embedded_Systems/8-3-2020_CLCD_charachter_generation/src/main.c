@@ -1,69 +1,112 @@
-/*
- * This file is part of the µOS++ distribution.
- *   (https://github.com/micro-os-plus)
- * Copyright (c) 2014 Liviu Ionescu.
- *
- * Permission is hereby granted, free of charge, to any person
- * obtaining a copy of this software and associated documentation
- * files (the "Software"), to deal in the Software without
- * restriction, including without limitation the rights to use,
- * copy, modify, merge, publish, distribute, sublicense, and/or
- * sell copies of the Software, and to permit persons to whom
- * the Software is furnished to do so, subject to the following
- * conditions:
- *
- * The above copyright notice and this permission notice shall be
- * included in all copies or substantial portions of the Software.
- *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
- * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
- * OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
- * NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
- * HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
- * WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
- * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
- * OTHER DEALINGS IN THE SOFTWARE.
- */
+#include "STD_TYPES.h"
+#include "BIT_MATH.h"
+#include "DIO_interface.h"
+#include "LCD_interface.h"
+#include "RCC_interface.h"
+#include"Delay_interface.h"
+//LCD Commands
+#define CLEAR_DISPLAY				0b00000001 //clear
+#define RETURN_HOME					0b00000010 //return to home
+#define ENTRY_MODE_SET				0b00000100 //mask the two least significant bits
+#define DISPLAY_ON_OFF_CONTROL		0b00001000 //mask the three LSBs (D,C,B) display, cursor, blinking of cursor
+#define START_OF_CGRAM 				0b01000000
+//LCD Display
+#define screenUpperRigtLimit 0x0F
+#define screenLowerRigtLimit 0x4F
+#define screenUpperLeftLimit 0x00
+#define screenLowerLeftLimit 0x40
 
-// ----------------------------------------------------------------------------
+#define default_Password	 1234
 
-#include <stdio.h>
-#include <stdlib.h>
-#include "diag/Trace.h"
-
-// ----------------------------------------------------------------------------
-//
-// Standalone STM32F1 empty sample (trace via DEBUG).
-//
-// Trace support is enabled by adding the TRACE macro definition.
-// By default the trace messages are forwarded to the DEBUG output,
-// but can be rerouted to any device or completely suppressed, by
-// changing the definitions required in system/src/diag/trace_impl.c
-// (currently OS_USE_TRACE_ITM, OS_USE_TRACE_SEMIHOSTING_DEBUG/_STDOUT).
-//
-
-// ----- main() ---------------------------------------------------------------
-
-// Sample pragmas to cope with warnings. Please note the related line at
-// the end of this function, used to pop the compiler diagnostics status.
-#pragma GCC diagnostic push
-#pragma GCC diagnostic ignored "-Wunused-parameter"
-#pragma GCC diagnostic ignored "-Wmissing-declarations"
-#pragma GCC diagnostic ignored "-Wreturn-type"
-
-int
-main(int argc, char* argv[])
+int main (void)
 {
-  // At this stage the system clock should have already been configured
-  // at high speed.
+	delay_setCPUclockFactor(8000000);
+	RCC_Init();
+	RCC_EnablePeripheralClock(2,2);
+	//portInitialize();
+	setPinMode('A',0,1);
+	setPinMode('A',1,1);
+	setPinMode('A',2,1);
+	setPinMode('A',3,1);
+	setPinMode('A',4,1);
+	setPinMode('A',5,1);
+	setPinMode('A',6,1);
+	setPinMode('A',7,1);
+	setPinMode('A',8,1);
+	setPinMode('A',9,1);
+	setPinMode('A',10,1);
 
-  // Infinite loop
-  while (1)
-    {
-       // Add your code here.
-    }
+	CLCD_voidInitialize();
+
+	//Start of CGRAM
+	CLCD_voidWriteCmd(START_OF_CGRAM);
+	//1 standing arms down
+	  CLCD_voidWriteData(0b01110);
+	  CLCD_voidWriteData(0b01110);
+	  CLCD_voidWriteData(0b01110);
+	  CLCD_voidWriteData(0b00100);
+	  CLCD_voidWriteData(0b01110);
+	  CLCD_voidWriteData(0b10101);
+	  CLCD_voidWriteData(0b01010);
+	  CLCD_voidWriteData(0b10001);
+	  //2 standing arms up
+	//  B01110,
+	//   B01110,
+	//   B01110,
+	//   B10101,
+	//   B01110,
+	//   B00100,
+	//   B00100,
+	//   B00100
+	//   //3 ball
+	//   B00000,
+	//     B00000,
+	//     B00000,
+	//     B01110,
+	//     B01110,
+	//     B01110,
+	//     B00000,
+	//     B00000
+	//	 //4 ball pos 1
+	//	 B01110,
+	//	   B01110,
+	//	   B01110,
+	//	   B00100,
+	//	   B01110,
+	//	   B00100,
+	//	   B01011,
+	//	   B10001
+	//	 //5 ball pos 2
+    // 	   B01110,
+	//	   B01110,
+	//	   B01110,
+	//	   B00100,
+	//	   B01111,
+	//   	   B00100,
+	//	   B01010,
+	//	   B10001
+	//		//6 ball pos 3
+	//			 B01110,
+	//			   B01110,
+	//			   B01111,
+	//			   B00100,
+	//			   B01110,
+	//			   B00100,
+	//			   B01010,
+	//			   B10001
+
+	  CLCD_voidWriteCmd(0b10000000);
+	  CLCD_voidWriteData(0);
+
+
+
+
+	  while(1)
+	{
+
+
+
+	}
+
+return 0;
 }
-
-#pragma GCC diagnostic pop
-
-// ----------------------------------------------------------------------------

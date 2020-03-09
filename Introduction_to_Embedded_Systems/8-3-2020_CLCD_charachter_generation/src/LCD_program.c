@@ -11,11 +11,11 @@
 
 #include"LCD_config.h"
 #include"LCD_interface.h"
-#include<util/delay.h>
+#include"Delay_interface.h"
 void CLCD_voidInitialize(void)
 {
 	/*	wait more than 30 us	*/
-	_delay_ms(40);
+	delay_ms(40);
 
 	/**/
 	//  setPinValue(CLCD_u8_E_PORT,CLCD_u8_E_PIN,0);
@@ -24,7 +24,7 @@ void CLCD_voidInitialize(void)
 	CLCD_voidWriteCmd(0b00001100);
 	CLCD_voidWriteCmd(0b00000001);
 
-	_delay_ms(2);
+	delay_ms(2);
 }
 
 /*Description : This API shall display data on LCD */
@@ -41,9 +41,9 @@ void CLCD_voidWriteData(u8 copy_u8Data)
   
   /* Enable Pulse */
   setPinValue(CLCD_u8_E_PORT,CLCD_u8_E_PIN,1);
-  _delay_ms(1);
+  delay_ms(1);
   setPinValue(CLCD_u8_E_PORT,CLCD_u8_E_PIN,0);
-  _delay_ms(1);
+  delay_ms(1);
   
 }
 
@@ -90,9 +90,9 @@ void CLCD_voidWriteCmd(u8 copy_u8Cmd)
   
   /* Enable Pulse */
   setPinValue(CLCD_u8_E_PORT,CLCD_u8_E_PIN,1);
-  _delay_ms(1);
+  delay_ms(1);
   setPinValue(CLCD_u8_E_PORT,CLCD_u8_E_PIN,0);
-  _delay_ms(1);
+  delay_ms(1);
 
 }
 
