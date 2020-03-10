@@ -895,3 +895,223 @@ arm-none-eabi-size --format=berkeley "SCHEDULER_Driver.elf"
    4407	    176	    424	   5007	   138f	SCHEDULER_Driver.elf
 'Finished building: SCHEDULER_Driver.siz'
 ' '
+23:09:26 **** Incremental Build of configuration Debug for project SCHEDULER_Driver ****
+make all 
+'Building file: ../src/SCHEDULER_config.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/SCHEDULER_config.d" -MT"src/SCHEDULER_config.o" -c -o "src/SCHEDULER_config.o" "../src/SCHEDULER_config.c"
+../src/SCHEDULER_config.c:9:8: error: unknown type name 'task_t'
+  const task_t*const appTask;
+        ^~~~~~
+../src/SCHEDULER_config.c:10:2: error: unknown type name 'u32'
+  u32 delayTicks;
+  ^~~
+../src/SCHEDULER_config.c:13:8: error: unknown type name 'task_t'
+ extern task_t app1;
+        ^~~~~~
+../src/SCHEDULER_config.c:14:8: error: unknown type name 'task_t'
+ extern task_t app2;
+        ^~~~~~
+../src/SCHEDULER_config.c:15:8: error: unknown type name 'task_t'
+ extern task_t LCDTask;
+        ^~~~~~
+../src/SCHEDULER_config.c:16:8: error: unknown type name 'task_t'
+ extern task_t SwitchTask;
+        ^~~~~~
+make: *** [src/SCHEDULER_config.o] Error 1
+src/subdir.mk:24: recipe for target 'src/SCHEDULER_config.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+23:10:15 **** Incremental Build of configuration Debug for project SCHEDULER_Driver ****
+make all 
+'Building file: ../src/SCHEDULER_config.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/SCHEDULER_config.d" -MT"src/SCHEDULER_config.o" -c -o "src/SCHEDULER_config.o" "../src/SCHEDULER_config.c"
+'Finished building: ../src/SCHEDULER_config.c'
+' '
+'Building file: ../src/SCHEDULER_program.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/SCHEDULER_program.d" -MT"src/SCHEDULER_program.o" -c -o "src/SCHEDULER_program.o" "../src/SCHEDULER_program.c"
+../src/SCHEDULER_program.c:15:8: error: unknown type name 'systask_t'
+ static systask_t sysTasks[MAX];
+        ^~~~~~~~~
+../src/SCHEDULER_program.c:27:2: error: unknown type name 'sysTa'
+  sysTa* appTask;
+  ^~~~~
+../src/SCHEDULER_program.c: In function 'Scheduler':
+../src/SCHEDULER_program.c:41:17: error: request for member 'RemainToExec' in something not a structure or union
+   if(sysTasks[i].RemainToExec == 0)
+                 ^
+../src/SCHEDULER_program.c:43:15: error: request for member 'appTask' in something not a structure or union
+    sysTasks[i].appTask->Runnable();
+               ^
+../src/SCHEDULER_program.c:45:15: error: request for member 'RemainToExec' in something not a structure or union
+    sysTasks[i].RemainToExec = sysTasks[i].PeriodTicks;
+               ^
+../src/SCHEDULER_program.c:45:42: error: request for member 'PeriodTicks' in something not a structure or union
+    sysTasks[i].RemainToExec = sysTasks[i].PeriodTicks;
+                                          ^
+../src/SCHEDULER_program.c:50:14: error: request for member 'RemainToExec' in something not a structure or union
+   sysTasks[i].RemainToExec--;
+              ^
+../src/SCHEDULER_program.c: In function 'sched_CreateTask':
+../src/SCHEDULER_program.c:85:30: error: request for member 'appTask' in something not a structure or union
+   sysTasks[appTask->Priority].appTask     = appTask;
+                              ^
+../src/SCHEDULER_program.c:86:30: error: request for member 'PeriodTicks' in something not a structure or union
+   sysTasks[appTask->Priority].PeriodTicks = ((appTask->PeriodicTime)/TICK_MS);
+                              ^
+src/subdir.mk:24: recipe for target 'src/SCHEDULER_program.o' failed
+make: *** [src/SCHEDULER_program.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+23:10:35 **** Incremental Build of configuration Debug for project SCHEDULER_Driver ****
+make all 
+'Building file: ../src/SCHEDULER_program.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/SCHEDULER_program.d" -MT"src/SCHEDULER_program.o" -c -o "src/SCHEDULER_program.o" "../src/SCHEDULER_program.c"
+../src/SCHEDULER_program.c:15:8: error: unknown type name 'systask_t'
+ static systask_t sysTasks[MAX];
+        ^~~~~~~~~
+../src/SCHEDULER_program.c:27:2: error: unknown type name 'sysTa'
+  sysTa* appTask;
+  ^~~~~
+../src/SCHEDULER_program.c: In function 'Scheduler':
+../src/SCHEDULER_program.c:41:17: error: request for member 'RemainToExec' in something not a structure or union
+   if(sysTasks[i].RemainToExec == 0)
+                 ^
+../src/SCHEDULER_program.c:43:15: error: request for member 'appTask' in something not a structure or union
+    sysTasks[i].appTask->Runnable();
+               ^
+../src/SCHEDULER_program.c:45:15: error: request for member 'RemainToExec' in something not a structure or union
+    sysTasks[i].RemainToExec = sysTasks[i].PeriodTicks;
+               ^
+../src/SCHEDULER_program.c:45:42: error: request for member 'PeriodTicks' in something not a structure or union
+    sysTasks[i].RemainToExec = sysTasks[i].PeriodTicks;
+                                          ^
+../src/SCHEDULER_program.c:50:14: error: request for member 'RemainToExec' in something not a structure or union
+   sysTasks[i].RemainToExec--;
+              ^
+../src/SCHEDULER_program.c: In function 'sched_CreateTask':
+../src/SCHEDULER_program.c:85:30: error: request for member 'appTask' in something not a structure or union
+   sysTasks[appTask->Priority].appTask     = appTask;
+                              ^
+../src/SCHEDULER_program.c:86:30: error: request for member 'PeriodTicks' in something not a structure or union
+   sysTasks[appTask->Priority].PeriodTicks = ((appTask->PeriodicTime)/TICK_MS);
+                              ^
+make: *** [src/SCHEDULER_program.o] Error 1
+src/subdir.mk:24: recipe for target 'src/SCHEDULER_program.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+23:15:13 **** Incremental Build of configuration Debug for project SCHEDULER_Driver ****
+make all 
+'Building file: ../src/SCHEDULER_program.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/SCHEDULER_program.d" -MT"src/SCHEDULER_program.o" -c -o "src/SCHEDULER_program.o" "../src/SCHEDULER_program.c"
+../src/SCHEDULER_program.c:23:2: error: expected specifier-qualifier-list before 'extern'
+  extern sys* appTask;
+  ^~~~~~
+../src/SCHEDULER_program.c: In function 'Scheduler':
+../src/SCHEDULER_program.c:42:17: error: 'systask_t' {aka 'struct <anonymous>'} has no member named 'RemainToExec'
+   if(sysTasks[i].RemainToExec == 0)
+                 ^
+../src/SCHEDULER_program.c:44:15: error: 'systask_t' {aka 'struct <anonymous>'} has no member named 'appTask'
+    sysTasks[i].appTask->Runnable();
+               ^
+../src/SCHEDULER_program.c:46:15: error: 'systask_t' {aka 'struct <anonymous>'} has no member named 'RemainToExec'
+    sysTasks[i].RemainToExec = sysTasks[i].PeriodTicks;
+               ^
+../src/SCHEDULER_program.c:46:42: error: 'systask_t' {aka 'struct <anonymous>'} has no member named 'PeriodTicks'
+    sysTasks[i].RemainToExec = sysTasks[i].PeriodTicks;
+                                          ^
+../src/SCHEDULER_program.c:51:14: error: 'systask_t' {aka 'struct <anonymous>'} has no member named 'RemainToExec'
+   sysTasks[i].RemainToExec--;
+              ^
+../src/SCHEDULER_program.c: In function 'sched_CreateTask':
+../src/SCHEDULER_program.c:86:30: error: 'systask_t' {aka 'struct <anonymous>'} has no member named 'appTask'
+   sysTasks[appTask->Priority].appTask     = appTask;
+                              ^
+../src/SCHEDULER_program.c:87:30: error: 'systask_t' {aka 'struct <anonymous>'} has no member named 'PeriodTicks'
+   sysTasks[appTask->Priority].PeriodTicks = ((appTask->PeriodicTime)/TICK_MS);
+                              ^
+make: *** [src/SCHEDULER_program.o] Error 1
+src/subdir.mk:24: recipe for target 'src/SCHEDULER_program.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+23:16:11 **** Incremental Build of configuration Debug for project SCHEDULER_Driver ****
+make all 
+'Building file: ../src/SCHEDULER_config.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/SCHEDULER_config.d" -MT"src/SCHEDULER_config.o" -c -o "src/SCHEDULER_config.o" "../src/SCHEDULER_config.c"
+../src/SCHEDULER_config.c:16:1: error: multiple storage classes in declaration specifiers
+ extern typedef struct{
+ ^~~~~~
+../src/SCHEDULER_config.c:26:21: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'stsTaskInfo'
+ const sysTaskInfo_t stsTaskInfo[]={
+                     ^~~~~~~~~~~
+src/subdir.mk:24: recipe for target 'src/SCHEDULER_config.o' failed
+make: *** [src/SCHEDULER_config.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+23:16:21 **** Incremental Build of configuration Debug for project SCHEDULER_Driver ****
+make all 
+'Building file: ../src/SCHEDULER_config.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/SCHEDULER_config.d" -MT"src/SCHEDULER_config.o" -c -o "src/SCHEDULER_config.o" "../src/SCHEDULER_config.c"
+'Finished building: ../src/SCHEDULER_config.c'
+' '
+'Building file: ../src/SCHEDULER_program.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/SCHEDULER_program.d" -MT"src/SCHEDULER_program.o" -c -o "src/SCHEDULER_program.o" "../src/SCHEDULER_program.c"
+../src/SCHEDULER_program.c:23:2: error: expected specifier-qualifier-list before 'extern'
+  extern * appTask;
+  ^~~~~~
+../src/SCHEDULER_program.c: In function 'Scheduler':
+../src/SCHEDULER_program.c:43:17: error: 'systask_t' {aka 'struct <anonymous>'} has no member named 'RemainToExec'
+   if(sysTasks[i].RemainToExec == 0)
+                 ^
+../src/SCHEDULER_program.c:45:15: error: 'systask_t' {aka 'struct <anonymous>'} has no member named 'appTask'
+    sysTasks[i].appTask->Runnable();
+               ^
+../src/SCHEDULER_program.c:47:15: error: 'systask_t' {aka 'struct <anonymous>'} has no member named 'RemainToExec'
+    sysTasks[i].RemainToExec = sysTasks[i].PeriodTicks;
+               ^
+../src/SCHEDULER_program.c:47:42: error: 'systask_t' {aka 'struct <anonymous>'} has no member named 'PeriodTicks'
+    sysTasks[i].RemainToExec = sysTasks[i].PeriodTicks;
+                                          ^
+../src/SCHEDULER_program.c:52:14: error: 'systask_t' {aka 'struct <anonymous>'} has no member named 'RemainToExec'
+   sysTasks[i].RemainToExec--;
+              ^
+../src/SCHEDULER_program.c: In function 'sched_CreateTask':
+../src/SCHEDULER_program.c:87:30: error: 'systask_t' {aka 'struct <anonymous>'} has no member named 'appTask'
+   sysTasks[appTask->Priority].appTask     = appTask;
+                              ^
+../src/SCHEDULER_program.c:88:30: error: 'systask_t' {aka 'struct <anonymous>'} has no member named 'PeriodTicks'
+   sysTasks[appTask->Priority].PeriodTicks = ((appTask->PeriodicTime)/TICK_MS);
+                              ^
+make: *** [src/SCHEDULER_program.o] Error 1
+src/subdir.mk:24: recipe for target 'src/SCHEDULER_program.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+23:16:28 **** Incremental Build of configuration Debug for project SCHEDULER_Driver ****
+make all 
+'Building file: ../src/SCHEDULER_config.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/SCHEDULER_config.d" -MT"src/SCHEDULER_config.o" -c -o "src/SCHEDULER_config.o" "../src/SCHEDULER_config.c"
+../src/SCHEDULER_config.c:16:1: error: multiple storage classes in declaration specifiers
+ extern typedef struct{
+ ^~~~~~
+../src/SCHEDULER_config.c:26:21: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'stsTaskInfo'
+ const sysTaskInfo_t stsTaskInfo[]={
+                     ^~~~~~~~~~~
+src/subdir.mk:24: recipe for target 'src/SCHEDULER_config.o' failed
+make: *** [src/SCHEDULER_config.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+23:30:05 **** Incremental Build of configuration Debug for project SCHEDULER_Driver ****
+make all 
+'Building file: ../src/SCHEDULER_config.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/SCHEDULER_config.d" -MT"src/SCHEDULER_config.o" -c -o "src/SCHEDULER_config.o" "../src/SCHEDULER_config.c"
+../src/SCHEDULER_config.c:16:1: error: multiple storage classes in declaration specifiers
+ extern typedef struct{
+ ^~~~~~
+../src/SCHEDULER_config.c:26:21: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'sysTaskInfo'
+ const sysTaskInfo_t sysTaskInfo[]={
+                     ^~~~~~~~~~~
+make: *** [src/SCHEDULER_config.o] Error 1
+src/subdir.mk:24: recipe for target 'src/SCHEDULER_config.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.

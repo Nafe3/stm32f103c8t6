@@ -2,7 +2,7 @@
  * SCHEDULER_program.c
  *
  *  Created on: Mar 10, 2020
- *      Author: moham
+ *      Author: Mohamed Nafea
  */
 
 #include "STD_TYPES.h"
@@ -11,9 +11,27 @@
 #include "SCHEDULER_private.h"
 
 
+/*typedef struct{
+	task_t* appTask;
+	u32		RemainToExec;
+	u32 	PeriodTicks;
+	u32		FirstTickDelay;
+}systask_t;*/
+
+
+typedef struct{
+	 * appTask;
+	u32		RemainToExec;
+	u32 	PeriodTicks;
+	u32		FirstTickDelay;
+}systask_t;
+
 //static task_t sysTasks[MAX];
 static systask_t sysTasks[MAX];
 static u8 OSFlag =0;
+
+
+
 ///////////////////////////////////////////////////////////
 static void Scheduler(void)
 {
@@ -42,6 +60,9 @@ void sched_init(void)
 	//configure timer
 	//set callback(scheduler) :: call this function -> SetOSflag
 	//start timer
+	systask.task=&systaskInfo[i].apptask;
+	systask[i]].Remain=task->delaytick;
+	systaskPeriodtick=task->;
 }
 /////////////////////////////////////////////////////////
 void setOSFlag(void)
