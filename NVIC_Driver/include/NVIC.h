@@ -37,10 +37,10 @@ typedef  long double             f96;
 #define  STD_TYPES_ERROR_OK     (STD_ERR)1U
 #define  STD_TYPES_ERROR_NOK    (STD_ERR)2U
 
-#define  STD_NULL 				((void(*)(void))0)
+#define  STD_NULL 				((void*)0)
 
 /*User options to use as functions' arguments*/
-/*inum can be any positive number from 0 to 240*/
+/*inum can be any positive number from 0 to 239*/
 
 /*GROUPING OPTIONS:
  *Argument: PRIGROUP_MASK*/
@@ -109,17 +109,18 @@ typedef  long double             f96;
  * |____________________________________________________________________________________________|_______________________|
  * */
 
-STD_ERR u8EnableEXTI 		(u8 inum)			;
-STD_ERR u8DisableEXTI		(u8 inum)			;
-STD_ERR u8SetPendFlag		(u8 inum)			;
-STD_ERR u8ClrPendFlag		(u8 inum)			;
-STD_ERR u8IsActive   		(u8 inum,u8* state)	;
-STD_ERR u8SetPriority		()					;
-STD_ERR u8GetPriority		()					;
-STD_ERR u8SetGrpBits 		(u8 PRIGROUP_MASK)	;
-STD_ERR u8EnableAllEXTI		(void)				;
-STD_ERR u8DisableAllEXTI 	(void)				;
-STD_ERR u8EnableAllFaults	(void)				;
-STD_ERR u8DisableAllFaults	(void)				;
-STD_ERR u8DisableEXTI_From	()					;
-STD_ERR u8GenerateSWI		(u8 inum)			;
+STD_ERR u8EnableEXTI 			(u8 inum)				;
+STD_ERR u8DisableEXTI			(u8 inum)				;
+STD_ERR u8SetPendFlag			(u8 inum)				;
+STD_ERR u8ClrPendFlag			(u8 inum)				;
+STD_ERR u8IsActive   			(u8 inum,u8* state)		;
+STD_ERR u8SetPriority			(u8 inum, u8  priority)	;
+u8      u8GetPriority			(u8 inum)				;
+STD_ERR u8SetGrpBits 			(u32 PRIGROUP_MASK)		;
+void	voidEnableAllEXTI		(void)					;
+void    voidDisableAllEXTI 		(void)					;
+void    voidEnableAllFaults		(void)					;
+void    voidDisableAllFaults	(void)					;
+void    voidFilterEXTI_lowerThan(u8 cancelStart_inum)	;
+void    voidCancelFilterEXTI    (void)					;
+STD_ERR u8GenerateSWI			(u8 inum)				;

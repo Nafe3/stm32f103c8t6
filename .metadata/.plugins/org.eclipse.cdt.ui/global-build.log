@@ -2149,3 +2149,980 @@ arm-none-eabi-size --format=berkeley "NVIC_Driver.elf"
    4523	    176	    424	   5123	   1403	NVIC_Driver.elf
 'Finished building: NVIC_Driver.siz'
 ' '
+19:31:21 **** Incremental Build of configuration Debug for project NVIC_Driver ****
+make all 
+'Building file: ../src/NVIC.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/NVIC.d" -MT"src/NVIC.o" -c -o "src/NVIC.o" "../src/NVIC.c"
+../src/NVIC.c: In function 'u8SetPriority':
+../src/NVIC.c:124:13: warning: unused variable 'ptr' [-Wunused-variable]
+  NVIC_Type* ptr = (NVIC_Type*)NVIC_PTR;
+             ^~~
+../src/NVIC.c: In function 'u8GetPriority':
+../src/NVIC.c:135:13: warning: unused variable 'ptr' [-Wunused-variable]
+  NVIC_Type* ptr = (NVIC_Type*)NVIC_PTR;
+             ^~~
+../src/NVIC.c: In function 'u8SetGrpBits':
+../src/NVIC.c:142:28: warning: unused parameter 'PRIGROUP_MASK' [-Wunused-parameter]
+ STD_ERR u8SetGrpBits   (u8 PRIGROUP_MASK)
+                         ~~~^~~~~~~~~~~~~
+../src/NVIC.c: In function 'u8EnableAllEXTI':
+../src/NVIC.c:155:13: warning: unused variable 'ptr' [-Wunused-variable]
+  NVIC_Type* ptr = (NVIC_Type*)NVIC_PTR;
+             ^~~
+../src/NVIC.c: In function 'u8DisableAllEXTI':
+../src/NVIC.c:165:13: warning: unused variable 'ptr' [-Wunused-variable]
+  NVIC_Type* ptr = (NVIC_Type*)NVIC_PTR;
+             ^~~
+../src/NVIC.c: In function 'u8EnableAllFaults':
+../src/NVIC.c:175:13: warning: unused variable 'ptr' [-Wunused-variable]
+  NVIC_Type* ptr = (NVIC_Type*)NVIC_PTR;
+             ^~~
+../src/NVIC.c: In function 'u8DisableAllFaults':
+../src/NVIC.c:185:13: warning: unused variable 'ptr' [-Wunused-variable]
+  NVIC_Type* ptr = (NVIC_Type*)NVIC_PTR;
+             ^~~
+../src/NVIC.c: In function 'u8DisableEXTI_From':
+../src/NVIC.c:195:13: warning: unused variable 'ptr' [-Wunused-variable]
+  NVIC_Type* ptr = (NVIC_Type*)NVIC_PTR;
+             ^~~
+../src/NVIC.c: In function 'u8GenerateSWI':
+../src/NVIC.c:205:13: warning: unused variable 'ptr' [-Wunused-variable]
+  NVIC_Type* ptr = (NVIC_Type*)NVIC_PTR;
+             ^~~
+../src/NVIC.c:202:28: warning: unused parameter 'inum' [-Wunused-parameter]
+ STD_ERR u8GenerateSWI  (u8 inum)
+                         ~~~^~~~
+'Finished building: ../src/NVIC.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: NVIC_Driver.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"NVIC_Driver.map" --specs=nano.specs -o "NVIC_Driver.elf"  ./system/src/stm32f1-stdperiph/misc.o ./system/src/stm32f1-stdperiph/stm32f10x_gpio.o ./system/src/stm32f1-stdperiph/stm32f10x_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f10x.o ./system/src/cmsis/vectors_stm32f10x.o  ./src/NVIC.o ./src/main.o   
+'Finished building target: NVIC_Driver.elf'
+' '
+'Invoking: GNU ARM Cross Create Flash Image'
+arm-none-eabi-objcopy -O ihex "NVIC_Driver.elf"  "NVIC_Driver.hex"
+'Finished building: NVIC_Driver.hex'
+' '
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "NVIC_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4523	    176	    424	   5123	   1403	NVIC_Driver.elf
+'Finished building: NVIC_Driver.siz'
+' '
+19:33:27 **** Incremental Build of configuration Debug for project NVIC_Driver ****
+make all 
+'Building file: ../src/NVIC.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/NVIC.d" -MT"src/NVIC.o" -c -o "src/NVIC.o" "../src/NVIC.c"
+../src/NVIC.c: In function 'u8SetPriority':
+../src/NVIC.c:124:13: warning: unused variable 'ptr' [-Wunused-variable]
+  NVIC_Type* ptr = (NVIC_Type*)NVIC_PTR;
+             ^~~
+../src/NVIC.c: In function 'u8GetPriority':
+../src/NVIC.c:135:13: warning: unused variable 'ptr' [-Wunused-variable]
+  NVIC_Type* ptr = (NVIC_Type*)NVIC_PTR;
+             ^~~
+../src/NVIC.c: In function 'u8EnableAllEXTI':
+../src/NVIC.c:156:13: warning: unused variable 'ptr' [-Wunused-variable]
+  NVIC_Type* ptr = (NVIC_Type*)NVIC_PTR;
+             ^~~
+../src/NVIC.c: In function 'u8DisableAllEXTI':
+../src/NVIC.c:166:13: warning: unused variable 'ptr' [-Wunused-variable]
+  NVIC_Type* ptr = (NVIC_Type*)NVIC_PTR;
+             ^~~
+../src/NVIC.c: In function 'u8EnableAllFaults':
+../src/NVIC.c:176:13: warning: unused variable 'ptr' [-Wunused-variable]
+  NVIC_Type* ptr = (NVIC_Type*)NVIC_PTR;
+             ^~~
+../src/NVIC.c: In function 'u8DisableAllFaults':
+../src/NVIC.c:186:13: warning: unused variable 'ptr' [-Wunused-variable]
+  NVIC_Type* ptr = (NVIC_Type*)NVIC_PTR;
+             ^~~
+../src/NVIC.c: In function 'u8DisableEXTI_From':
+../src/NVIC.c:196:13: warning: unused variable 'ptr' [-Wunused-variable]
+  NVIC_Type* ptr = (NVIC_Type*)NVIC_PTR;
+             ^~~
+../src/NVIC.c: In function 'u8GenerateSWI':
+../src/NVIC.c:206:13: warning: unused variable 'ptr' [-Wunused-variable]
+  NVIC_Type* ptr = (NVIC_Type*)NVIC_PTR;
+             ^~~
+../src/NVIC.c:203:28: warning: unused parameter 'inum' [-Wunused-parameter]
+ STD_ERR u8GenerateSWI  (u8 inum)
+                         ~~~^~~~
+'Finished building: ../src/NVIC.c'
+' '
+'Building target: NVIC_Driver.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"NVIC_Driver.map" --specs=nano.specs -o "NVIC_Driver.elf"  ./system/src/stm32f1-stdperiph/misc.o ./system/src/stm32f1-stdperiph/stm32f10x_gpio.o ./system/src/stm32f1-stdperiph/stm32f10x_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f10x.o ./system/src/cmsis/vectors_stm32f10x.o  ./src/NVIC.o ./src/main.o   
+'Finished building target: NVIC_Driver.elf'
+' '
+'Invoking: GNU ARM Cross Create Flash Image'
+arm-none-eabi-objcopy -O ihex "NVIC_Driver.elf"  "NVIC_Driver.hex"
+'Finished building: NVIC_Driver.hex'
+' '
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "NVIC_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4523	    176	    424	   5123	   1403	NVIC_Driver.elf
+'Finished building: NVIC_Driver.siz'
+' '
+20:46:06 **** Incremental Build of configuration Debug for project NVIC_Driver ****
+make all 
+'Building file: ../src/NVIC.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/NVIC.d" -MT"src/NVIC.o" -c -o "src/NVIC.o" "../src/NVIC.c"
+../src/NVIC.c:13:34: warning: "/*" within comment [-Wcomment]
+ /*#define NVIC_CCR    0xE000ED14 /*Used to enable writing to STIR, FROM M3 Guide but different address
+                                   
+../src/NVIC.c: In function 'u8SetPriority':
+../src/NVIC.c:128:13: warning: unused variable 'ptr' [-Wunused-variable]
+  NVIC_Type* ptr = (NVIC_Type*)NVIC_PTR;
+             ^~~
+../src/NVIC.c: In function 'u8GetPriority':
+../src/NVIC.c:139:13: warning: unused variable 'ptr' [-Wunused-variable]
+  NVIC_Type* ptr = (NVIC_Type*)NVIC_PTR;
+             ^~~
+../src/NVIC.c: In function 'u8EnableAllEXTI':
+../src/NVIC.c:160:13: warning: unused variable 'ptr' [-Wunused-variable]
+  NVIC_Type* ptr = (NVIC_Type*)NVIC_PTR;
+             ^~~
+../src/NVIC.c: In function 'u8DisableAllEXTI':
+../src/NVIC.c:170:13: warning: unused variable 'ptr' [-Wunused-variable]
+  NVIC_Type* ptr = (NVIC_Type*)NVIC_PTR;
+             ^~~
+../src/NVIC.c: In function 'u8EnableAllFaults':
+../src/NVIC.c:180:13: warning: unused variable 'ptr' [-Wunused-variable]
+  NVIC_Type* ptr = (NVIC_Type*)NVIC_PTR;
+             ^~~
+../src/NVIC.c: In function 'u8DisableAllFaults':
+../src/NVIC.c:190:13: warning: unused variable 'ptr' [-Wunused-variable]
+  NVIC_Type* ptr = (NVIC_Type*)NVIC_PTR;
+             ^~~
+../src/NVIC.c: In function 'u8DisableEXTI_From':
+../src/NVIC.c:200:13: warning: unused variable 'ptr' [-Wunused-variable]
+  NVIC_Type* ptr = (NVIC_Type*)NVIC_PTR;
+             ^~~
+../src/NVIC.c: In function 'u8GenerateSWI':
+../src/NVIC.c:214:10: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+  if(inum > 2239)
+          ^
+'Finished building: ../src/NVIC.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: NVIC_Driver.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"NVIC_Driver.map" --specs=nano.specs -o "NVIC_Driver.elf"  ./system/src/stm32f1-stdperiph/misc.o ./system/src/stm32f1-stdperiph/stm32f10x_gpio.o ./system/src/stm32f1-stdperiph/stm32f10x_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f10x.o ./system/src/cmsis/vectors_stm32f10x.o  ./src/NVIC.o ./src/main.o   
+'Finished building target: NVIC_Driver.elf'
+' '
+'Invoking: GNU ARM Cross Create Flash Image'
+arm-none-eabi-objcopy -O ihex "NVIC_Driver.elf"  "NVIC_Driver.hex"
+'Finished building: NVIC_Driver.hex'
+' '
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "NVIC_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4523	    176	    424	   5123	   1403	NVIC_Driver.elf
+'Finished building: NVIC_Driver.siz'
+' '
+20:46:13 **** Incremental Build of configuration Debug for project NVIC_Driver ****
+make all 
+'Building file: ../src/NVIC.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/NVIC.d" -MT"src/NVIC.o" -c -o "src/NVIC.o" "../src/NVIC.c"
+../src/NVIC.c:13:34: warning: "/*" within comment [-Wcomment]
+ /*#define NVIC_CCR    0xE000ED14 /*Used to enable writing to STIR, FROM M3 Guide but different address
+                                   
+../src/NVIC.c: In function 'u8SetPriority':
+../src/NVIC.c:128:13: warning: unused variable 'ptr' [-Wunused-variable]
+  NVIC_Type* ptr = (NVIC_Type*)NVIC_PTR;
+             ^~~
+../src/NVIC.c: In function 'u8GetPriority':
+../src/NVIC.c:139:13: warning: unused variable 'ptr' [-Wunused-variable]
+  NVIC_Type* ptr = (NVIC_Type*)NVIC_PTR;
+             ^~~
+../src/NVIC.c: In function 'u8EnableAllEXTI':
+../src/NVIC.c:160:13: warning: unused variable 'ptr' [-Wunused-variable]
+  NVIC_Type* ptr = (NVIC_Type*)NVIC_PTR;
+             ^~~
+../src/NVIC.c: In function 'u8DisableAllEXTI':
+../src/NVIC.c:170:13: warning: unused variable 'ptr' [-Wunused-variable]
+  NVIC_Type* ptr = (NVIC_Type*)NVIC_PTR;
+             ^~~
+../src/NVIC.c: In function 'u8EnableAllFaults':
+../src/NVIC.c:180:13: warning: unused variable 'ptr' [-Wunused-variable]
+  NVIC_Type* ptr = (NVIC_Type*)NVIC_PTR;
+             ^~~
+../src/NVIC.c: In function 'u8DisableAllFaults':
+../src/NVIC.c:190:13: warning: unused variable 'ptr' [-Wunused-variable]
+  NVIC_Type* ptr = (NVIC_Type*)NVIC_PTR;
+             ^~~
+../src/NVIC.c: In function 'u8DisableEXTI_From':
+../src/NVIC.c:200:13: warning: unused variable 'ptr' [-Wunused-variable]
+  NVIC_Type* ptr = (NVIC_Type*)NVIC_PTR;
+             ^~~
+'Finished building: ../src/NVIC.c'
+' '
+'Building target: NVIC_Driver.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"NVIC_Driver.map" --specs=nano.specs -o "NVIC_Driver.elf"  ./system/src/stm32f1-stdperiph/misc.o ./system/src/stm32f1-stdperiph/stm32f10x_gpio.o ./system/src/stm32f1-stdperiph/stm32f10x_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f10x.o ./system/src/cmsis/vectors_stm32f10x.o  ./src/NVIC.o ./src/main.o   
+'Finished building target: NVIC_Driver.elf'
+' '
+'Invoking: GNU ARM Cross Create Flash Image'
+arm-none-eabi-objcopy -O ihex "NVIC_Driver.elf"  "NVIC_Driver.hex"
+'Finished building: NVIC_Driver.hex'
+' '
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "NVIC_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4523	    176	    424	   5123	   1403	NVIC_Driver.elf
+'Finished building: NVIC_Driver.siz'
+' '
+21:17:36 **** Incremental Build of configuration Debug for project NVIC_Driver ****
+make all 
+'Building file: ../src/NVIC.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/NVIC.d" -MT"src/NVIC.o" -c -o "src/NVIC.o" "../src/NVIC.c"
+../src/NVIC.c:13:34: warning: "/*" within comment [-Wcomment]
+ /*#define NVIC_CCR    0xE000ED14 /*Used to enable writing to STIR, FROM M3 Guide but different address
+                                   
+../src/NVIC.c: In function 'u8SetPriority':
+../src/NVIC.c:135:13: error: 'NVIC_Type' {aka 'struct <anonymous>'} has no member named 'IP'; did you mean 'IPR'?
+   else ptr->IP
+             ^~
+             IPR
+../src/NVIC.c:135:15: error: expected ';' before '}' token
+   else ptr->IP
+               ^
+               ;
+  }
+  ~             
+../src/NVIC.c: In function 'u8GetPriority':
+../src/NVIC.c:164:13: warning: unused variable 'ptr' [-Wunused-variable]
+  NVIC_Type* ptr = (NVIC_Type*)NVIC_PTR;
+             ^~~
+../src/NVIC.c: In function 'u8EnableAllEXTI':
+../src/NVIC.c:185:13: warning: unused variable 'ptr' [-Wunused-variable]
+  NVIC_Type* ptr = (NVIC_Type*)NVIC_PTR;
+             ^~~
+../src/NVIC.c: In function 'u8DisableAllEXTI':
+../src/NVIC.c:195:13: warning: unused variable 'ptr' [-Wunused-variable]
+  NVIC_Type* ptr = (NVIC_Type*)NVIC_PTR;
+             ^~~
+../src/NVIC.c: In function 'u8EnableAllFaults':
+../src/NVIC.c:205:13: warning: unused variable 'ptr' [-Wunused-variable]
+  NVIC_Type* ptr = (NVIC_Type*)NVIC_PTR;
+             ^~~
+../src/NVIC.c: In function 'u8DisableAllFaults':
+../src/NVIC.c:215:13: warning: unused variable 'ptr' [-Wunused-variable]
+  NVIC_Type* ptr = (NVIC_Type*)NVIC_PTR;
+             ^~~
+../src/NVIC.c: In function 'u8DisableEXTI_From':
+../src/NVIC.c:225:13: warning: unused variable 'ptr' [-Wunused-variable]
+  NVIC_Type* ptr = (NVIC_Type*)NVIC_PTR;
+             ^~~
+src/subdir.mk:21: recipe for target 'src/NVIC.o' failed
+make: *** [src/NVIC.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:29:48 **** Incremental Build of configuration Debug for project NVIC_Driver ****
+make all 
+'Building file: ../src/NVIC.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/NVIC.d" -MT"src/NVIC.o" -c -o "src/NVIC.o" "../src/NVIC.c"
+../src/NVIC.c:13:34: warning: "/*" within comment [-Wcomment]
+ /*#define NVIC_CCR    0xE000ED14 /*Used to enable writing to STIR, FROM M3 Guide but different address
+                                   
+../src/NVIC.c: In function 'u8GetPriority':
+../src/NVIC.c:165:13: warning: unused variable 'ptr' [-Wunused-variable]
+  NVIC_Type* ptr = (NVIC_Type*)NVIC_PTR;
+             ^~~
+../src/NVIC.c:162:28: warning: unused parameter 'inum' [-Wunused-parameter]
+ STD_ERR u8GetPriority  (u8 inum, u8* priority)
+                         ~~~^~~~
+../src/NVIC.c:162:38: warning: unused parameter 'priority' [-Wunused-parameter]
+ STD_ERR u8GetPriority  (u8 inum, u8* priority)
+                                  ~~~~^~~~~~~~
+../src/NVIC.c: In function 'u8EnableAllEXTI':
+../src/NVIC.c:186:13: warning: unused variable 'ptr' [-Wunused-variable]
+  NVIC_Type* ptr = (NVIC_Type*)NVIC_PTR;
+             ^~~
+../src/NVIC.c: In function 'u8DisableAllEXTI':
+../src/NVIC.c:196:13: warning: unused variable 'ptr' [-Wunused-variable]
+  NVIC_Type* ptr = (NVIC_Type*)NVIC_PTR;
+             ^~~
+../src/NVIC.c: In function 'u8EnableAllFaults':
+../src/NVIC.c:206:13: warning: unused variable 'ptr' [-Wunused-variable]
+  NVIC_Type* ptr = (NVIC_Type*)NVIC_PTR;
+             ^~~
+../src/NVIC.c: In function 'u8DisableAllFaults':
+../src/NVIC.c:216:13: warning: unused variable 'ptr' [-Wunused-variable]
+  NVIC_Type* ptr = (NVIC_Type*)NVIC_PTR;
+             ^~~
+../src/NVIC.c: In function 'u8DisableEXTI_From':
+../src/NVIC.c:226:13: warning: unused variable 'ptr' [-Wunused-variable]
+  NVIC_Type* ptr = (NVIC_Type*)NVIC_PTR;
+             ^~~
+'Finished building: ../src/NVIC.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: NVIC_Driver.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"NVIC_Driver.map" --specs=nano.specs -o "NVIC_Driver.elf"  ./system/src/stm32f1-stdperiph/misc.o ./system/src/stm32f1-stdperiph/stm32f10x_gpio.o ./system/src/stm32f1-stdperiph/stm32f10x_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f10x.o ./system/src/cmsis/vectors_stm32f10x.o  ./src/NVIC.o ./src/main.o   
+'Finished building target: NVIC_Driver.elf'
+' '
+'Invoking: GNU ARM Cross Create Flash Image'
+arm-none-eabi-objcopy -O ihex "NVIC_Driver.elf"  "NVIC_Driver.hex"
+'Finished building: NVIC_Driver.hex'
+' '
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "NVIC_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4535	    176	    424	   5135	   140f	NVIC_Driver.elf
+'Finished building: NVIC_Driver.siz'
+' '
+21:29:55 **** Incremental Build of configuration Debug for project NVIC_Driver ****
+make all 
+'Building file: ../src/NVIC.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/NVIC.d" -MT"src/NVIC.o" -c -o "src/NVIC.o" "../src/NVIC.c"
+../src/NVIC.c:13:34: warning: "/*" within comment [-Wcomment]
+ /*#define NVIC_CCR    0xE000ED14 /*Used to enable writing to STIR, FROM M3 Guide but different address
+                                   
+../src/NVIC.c: In function 'u8GetPriority':
+../src/NVIC.c:164:13: warning: unused variable 'ptr' [-Wunused-variable]
+  NVIC_Type* ptr = (NVIC_Type*)NVIC_PTR;
+             ^~~
+../src/NVIC.c:161:28: warning: unused parameter 'inum' [-Wunused-parameter]
+ STD_ERR u8GetPriority  (u8 inum, u8* priority)
+                         ~~~^~~~
+../src/NVIC.c:161:38: warning: unused parameter 'priority' [-Wunused-parameter]
+ STD_ERR u8GetPriority  (u8 inum, u8* priority)
+                                  ~~~~^~~~~~~~
+../src/NVIC.c: In function 'u8EnableAllEXTI':
+../src/NVIC.c:185:13: warning: unused variable 'ptr' [-Wunused-variable]
+  NVIC_Type* ptr = (NVIC_Type*)NVIC_PTR;
+             ^~~
+../src/NVIC.c: In function 'u8DisableAllEXTI':
+../src/NVIC.c:195:13: warning: unused variable 'ptr' [-Wunused-variable]
+  NVIC_Type* ptr = (NVIC_Type*)NVIC_PTR;
+             ^~~
+../src/NVIC.c: In function 'u8EnableAllFaults':
+../src/NVIC.c:205:13: warning: unused variable 'ptr' [-Wunused-variable]
+  NVIC_Type* ptr = (NVIC_Type*)NVIC_PTR;
+             ^~~
+../src/NVIC.c: In function 'u8DisableAllFaults':
+../src/NVIC.c:215:13: warning: unused variable 'ptr' [-Wunused-variable]
+  NVIC_Type* ptr = (NVIC_Type*)NVIC_PTR;
+             ^~~
+../src/NVIC.c: In function 'u8DisableEXTI_From':
+../src/NVIC.c:225:13: warning: unused variable 'ptr' [-Wunused-variable]
+  NVIC_Type* ptr = (NVIC_Type*)NVIC_PTR;
+             ^~~
+'Finished building: ../src/NVIC.c'
+' '
+'Building target: NVIC_Driver.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"NVIC_Driver.map" --specs=nano.specs -o "NVIC_Driver.elf"  ./system/src/stm32f1-stdperiph/misc.o ./system/src/stm32f1-stdperiph/stm32f10x_gpio.o ./system/src/stm32f1-stdperiph/stm32f10x_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f10x.o ./system/src/cmsis/vectors_stm32f10x.o  ./src/NVIC.o ./src/main.o   
+'Finished building target: NVIC_Driver.elf'
+' '
+'Invoking: GNU ARM Cross Create Flash Image'
+arm-none-eabi-objcopy -O ihex "NVIC_Driver.elf"  "NVIC_Driver.hex"
+'Finished building: NVIC_Driver.hex'
+' '
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "NVIC_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4535	    176	    424	   5135	   140f	NVIC_Driver.elf
+'Finished building: NVIC_Driver.siz'
+' '
+21:39:15 **** Incremental Build of configuration Debug for project NVIC_Driver ****
+make all 
+'Building file: ../src/NVIC.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/NVIC.d" -MT"src/NVIC.o" -c -o "src/NVIC.o" "../src/NVIC.c"
+../src/NVIC.c:13:34: warning: "/*" within comment [-Wcomment]
+ /*#define NVIC_CCR    0xE000ED14 /*Used to enable writing to STIR, FROM M3 Guide but different address
+                                   
+../src/NVIC.c:164:4: error: conflicting types for 'u8GetPriority'
+ u8 u8GetPriority  (u8 inum)
+    ^~~~~~~~~~~~~
+In file included from ../src/NVIC.c:2:
+../include/NVIC.h:118:9: note: previous declaration of 'u8GetPriority' was here
+ STD_ERR u8GetPriority  (u8 inum, u8* priority) ;
+         ^~~~~~~~~~~~~
+../src/NVIC.c: In function 'u8EnableAllEXTI':
+../src/NVIC.c:185:13: warning: unused variable 'ptr' [-Wunused-variable]
+  NVIC_Type* ptr = (NVIC_Type*)NVIC_PTR;
+             ^~~
+../src/NVIC.c: In function 'u8DisableAllEXTI':
+../src/NVIC.c:195:13: warning: unused variable 'ptr' [-Wunused-variable]
+  NVIC_Type* ptr = (NVIC_Type*)NVIC_PTR;
+             ^~~
+../src/NVIC.c: In function 'u8EnableAllFaults':
+../src/NVIC.c:205:13: warning: unused variable 'ptr' [-Wunused-variable]
+  NVIC_Type* ptr = (NVIC_Type*)NVIC_PTR;
+             ^~~
+../src/NVIC.c: In function 'u8DisableAllFaults':
+../src/NVIC.c:215:13: warning: unused variable 'ptr' [-Wunused-variable]
+  NVIC_Type* ptr = (NVIC_Type*)NVIC_PTR;
+             ^~~
+../src/NVIC.c: In function 'u8DisableEXTI_From':
+../src/NVIC.c:225:13: warning: unused variable 'ptr' [-Wunused-variable]
+  NVIC_Type* ptr = (NVIC_Type*)NVIC_PTR;
+             ^~~
+make: *** [src/NVIC.o] Error 1
+src/subdir.mk:21: recipe for target 'src/NVIC.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+21:39:56 **** Incremental Build of configuration Debug for project NVIC_Driver ****
+make all 
+'Building file: ../src/NVIC.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/NVIC.d" -MT"src/NVIC.o" -c -o "src/NVIC.o" "../src/NVIC.c"
+../src/NVIC.c:13:34: warning: "/*" within comment [-Wcomment]
+ /*#define NVIC_CCR    0xE000ED14 /*Used to enable writing to STIR, FROM M3 Guide but different address
+                                   
+../src/NVIC.c: In function 'u8EnableAllEXTI':
+../src/NVIC.c:185:13: warning: unused variable 'ptr' [-Wunused-variable]
+  NVIC_Type* ptr = (NVIC_Type*)NVIC_PTR;
+             ^~~
+../src/NVIC.c: In function 'u8DisableAllEXTI':
+../src/NVIC.c:195:13: warning: unused variable 'ptr' [-Wunused-variable]
+  NVIC_Type* ptr = (NVIC_Type*)NVIC_PTR;
+             ^~~
+../src/NVIC.c: In function 'u8EnableAllFaults':
+../src/NVIC.c:205:13: warning: unused variable 'ptr' [-Wunused-variable]
+  NVIC_Type* ptr = (NVIC_Type*)NVIC_PTR;
+             ^~~
+../src/NVIC.c: In function 'u8DisableAllFaults':
+../src/NVIC.c:215:13: warning: unused variable 'ptr' [-Wunused-variable]
+  NVIC_Type* ptr = (NVIC_Type*)NVIC_PTR;
+             ^~~
+../src/NVIC.c: In function 'u8DisableEXTI_From':
+../src/NVIC.c:225:13: warning: unused variable 'ptr' [-Wunused-variable]
+  NVIC_Type* ptr = (NVIC_Type*)NVIC_PTR;
+             ^~~
+'Finished building: ../src/NVIC.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: NVIC_Driver.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"NVIC_Driver.map" --specs=nano.specs -o "NVIC_Driver.elf"  ./system/src/stm32f1-stdperiph/misc.o ./system/src/stm32f1-stdperiph/stm32f10x_gpio.o ./system/src/stm32f1-stdperiph/stm32f10x_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f10x.o ./system/src/cmsis/vectors_stm32f10x.o  ./src/NVIC.o ./src/main.o   
+'Finished building target: NVIC_Driver.elf'
+' '
+'Invoking: GNU ARM Cross Create Flash Image'
+arm-none-eabi-objcopy -O ihex "NVIC_Driver.elf"  "NVIC_Driver.hex"
+'Finished building: NVIC_Driver.hex'
+' '
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "NVIC_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4535	    176	    424	   5135	   140f	NVIC_Driver.elf
+'Finished building: NVIC_Driver.siz'
+' '
+22:30:37 **** Incremental Build of configuration Debug for project NVIC_Driver ****
+make all 
+'Building file: ../src/NVIC.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/NVIC.d" -MT"src/NVIC.o" -c -o "src/NVIC.o" "../src/NVIC.c"
+../src/NVIC.c:13:34: warning: "/*" within comment [-Wcomment]
+ /*#define NVIC_CCR    0xE000ED14 /*Used to enable writing to STIR, FROM M3 Guide but different address
+                                   
+../src/NVIC.c: In function 'voidFilterEXTI_lowerThan':
+../src/NVIC.c:206:37: warning: unused parameter 'cancelStart_inum' [-Wunused-parameter]
+ void    voidFilterEXTI_lowerThan(u8 cancelStart_inum)
+                                  ~~~^~~~~~~~~~~~~~~~
+'Finished building: ../src/NVIC.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: NVIC_Driver.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"NVIC_Driver.map" --specs=nano.specs -o "NVIC_Driver.elf"  ./system/src/stm32f1-stdperiph/misc.o ./system/src/stm32f1-stdperiph/stm32f10x_gpio.o ./system/src/stm32f1-stdperiph/stm32f10x_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f10x.o ./system/src/cmsis/vectors_stm32f10x.o  ./src/NVIC.o ./src/main.o   
+'Finished building target: NVIC_Driver.elf'
+' '
+'Invoking: GNU ARM Cross Create Flash Image'
+arm-none-eabi-objcopy -O ihex "NVIC_Driver.elf"  "NVIC_Driver.hex"
+'Finished building: NVIC_Driver.hex'
+' '
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "NVIC_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4535	    176	    424	   5135	   140f	NVIC_Driver.elf
+'Finished building: NVIC_Driver.siz'
+' '
+22:36:54 **** Incremental Build of configuration Debug for project NVIC_Driver ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: NVIC_Driver.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"NVIC_Driver.map" --specs=nano.specs -o "NVIC_Driver.elf"  ./system/src/stm32f1-stdperiph/misc.o ./system/src/stm32f1-stdperiph/stm32f10x_gpio.o ./system/src/stm32f1-stdperiph/stm32f10x_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f10x.o ./system/src/cmsis/vectors_stm32f10x.o  ./src/NVIC.o ./src/main.o   
+c:/program files (x86)/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./src/main.o: in function `main':
+D:\ITI\Subjects\Embedded_Computer_Architecture_Eng.Tourky\Nafe3_Workspace-v2019\NVIC_Driver\Debug/../src/main.c:8: undefined reference to `voidEnableAllEXTI'
+collect2.exe: error: ld returned 1 exit status
+makefile:62: recipe for target 'NVIC_Driver.elf' failed
+make: *** [NVIC_Driver.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+22:37:50 **** Incremental Build of configuration Debug for project NVIC_Driver ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: NVIC_Driver.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"NVIC_Driver.map" --specs=nano.specs -o "NVIC_Driver.elf"  ./system/src/stm32f1-stdperiph/misc.o ./system/src/stm32f1-stdperiph/stm32f10x_gpio.o ./system/src/stm32f1-stdperiph/stm32f10x_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f10x.o ./system/src/cmsis/vectors_stm32f10x.o  ./src/NVIC.o ./src/main.o   
+c:/program files (x86)/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./src/main.o: in function `main':
+D:\ITI\Subjects\Embedded_Computer_Architecture_Eng.Tourky\Nafe3_Workspace-v2019\NVIC_Driver\Debug/../src/main.c:8: undefined reference to `voidEnableAllEXTI'
+collect2.exe: error: ld returned 1 exit status
+make: *** [NVIC_Driver.elf] Error 1
+makefile:62: recipe for target 'NVIC_Driver.elf' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+22:37:56 **** Incremental Build of configuration Debug for project NVIC_Driver ****
+make all 
+'Building target: NVIC_Driver.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"NVIC_Driver.map" --specs=nano.specs -o "NVIC_Driver.elf"  ./system/src/stm32f1-stdperiph/misc.o ./system/src/stm32f1-stdperiph/stm32f10x_gpio.o ./system/src/stm32f1-stdperiph/stm32f10x_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f10x.o ./system/src/cmsis/vectors_stm32f10x.o  ./src/NVIC.o ./src/main.o   
+c:/program files (x86)/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./src/main.o: in function `main':
+D:\ITI\Subjects\Embedded_Computer_Architecture_Eng.Tourky\Nafe3_Workspace-v2019\NVIC_Driver\Debug/../src/main.c:8: undefined reference to `voidEnableAllEXTI'
+collect2.exe: error: ld returned 1 exit status
+make: *** [NVIC_Driver.elf] Error 1
+makefile:62: recipe for target 'NVIC_Driver.elf' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+22:37:59 **** Incremental Build of configuration Debug for project NVIC_Driver ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:8:20: error: expected expression before 'void'
+  voidEnableAllEXTI(void);
+                    ^~~~
+../src/main.c:8:2: error: too many arguments to function 'voidEnableAllEXTI'
+  voidEnableAllEXTI(void);
+  ^~~~~~~~~~~~~~~~~
+In file included from ../src/main.c:1:
+../include/NVIC.h:120:6: note: declared here
+ void voidEnableAllEXTI  (void)     ;
+      ^~~~~~~~~~~~~~~~~
+make: *** [src/main.o] Error 1
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+22:38:19 **** Incremental Build of configuration Debug for project NVIC_Driver ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: NVIC_Driver.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"NVIC_Driver.map" --specs=nano.specs -o "NVIC_Driver.elf"  ./system/src/stm32f1-stdperiph/misc.o ./system/src/stm32f1-stdperiph/stm32f10x_gpio.o ./system/src/stm32f1-stdperiph/stm32f10x_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f10x.o ./system/src/cmsis/vectors_stm32f10x.o  ./src/NVIC.o ./src/main.o   
+c:/program files (x86)/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./src/main.o: in function `main':
+D:\ITI\Subjects\Embedded_Computer_Architecture_Eng.Tourky\Nafe3_Workspace-v2019\NVIC_Driver\Debug/../src/main.c:8: undefined reference to `voidEnableAllEXTI'
+collect2.exe: error: ld returned 1 exit status
+make: *** [NVIC_Driver.elf] Error 1
+makefile:62: recipe for target 'NVIC_Driver.elf' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+22:39:06 **** Incremental Build of configuration Debug for project NVIC_Driver ****
+make all 
+'Building file: ../src/NVIC.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/NVIC.d" -MT"src/NVIC.o" -c -o "src/NVIC.o" "../src/NVIC.c"
+../src/NVIC.c:13:34: warning: "/*" within comment [-Wcomment]
+ /*#define NVIC_CCR    0xE000ED14 /*Used to enable writing to STIR, FROM M3 Guide but different address
+                                   
+../src/NVIC.c: In function 'voidFilterEXTI_lowerThan':
+../src/NVIC.c:206:37: warning: unused parameter 'cancelStart_inum' [-Wunused-parameter]
+ void    voidFilterEXTI_lowerThan(u8 cancelStart_inum)
+                                  ~~~^~~~~~~~~~~~~~~~
+'Finished building: ../src/NVIC.c'
+' '
+'Building target: NVIC_Driver.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"NVIC_Driver.map" --specs=nano.specs -o "NVIC_Driver.elf"  ./system/src/stm32f1-stdperiph/misc.o ./system/src/stm32f1-stdperiph/stm32f10x_gpio.o ./system/src/stm32f1-stdperiph/stm32f10x_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f10x.o ./system/src/cmsis/vectors_stm32f10x.o  ./src/NVIC.o ./src/main.o   
+'Finished building target: NVIC_Driver.elf'
+' '
+'Invoking: GNU ARM Cross Create Flash Image'
+arm-none-eabi-objcopy -O ihex "NVIC_Driver.elf"  "NVIC_Driver.hex"
+'Finished building: NVIC_Driver.hex'
+' '
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "NVIC_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4427	    176	    424	   5027	   13a3	NVIC_Driver.elf
+'Finished building: NVIC_Driver.siz'
+' '
+22:56:07 **** Incremental Build of configuration Debug for project NVIC_Driver ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "NVIC_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4427	    176	    424	   5027	   13a3	NVIC_Driver.elf
+'Finished building: NVIC_Driver.siz'
+' '
+22:56:20 **** Incremental Build of configuration Debug for project NVIC_Driver ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "NVIC_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4427	    176	    424	   5027	   13a3	NVIC_Driver.elf
+'Finished building: NVIC_Driver.siz'
+' '
+23:01:21 **** Incremental Build of configuration Debug for project NVIC_Driver ****
+make all 
+'Building file: ../src/NVIC.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/NVIC.d" -MT"src/NVIC.o" -c -o "src/NVIC.o" "../src/NVIC.c"
+../src/NVIC.c:13:34: warning: "/*" within comment [-Wcomment]
+ /*#define NVIC_CCR    0xE000ED14 /*Used to enable writing to STIR, FROM M3 Guide but different address
+                                   
+../src/NVIC.c: In function 'voidFilterEXTI_lowerThan':
+../src/NVIC.c:206:37: warning: unused parameter 'cancelStart_inum' [-Wunused-parameter]
+ void    voidFilterEXTI_lowerThan(u8 cancelStart_inum)
+                                  ~~~^~~~~~~~~~~~~~~~
+'Finished building: ../src/NVIC.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: NVIC_Driver.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"NVIC_Driver.map" --specs=nano.specs -o "NVIC_Driver.elf"  ./system/src/stm32f1-stdperiph/misc.o ./system/src/stm32f1-stdperiph/stm32f10x_gpio.o ./system/src/stm32f1-stdperiph/stm32f10x_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f10x.o ./system/src/cmsis/vectors_stm32f10x.o  ./src/NVIC.o ./src/main.o   
+'Finished building target: NVIC_Driver.elf'
+' '
+'Invoking: GNU ARM Cross Create Flash Image'
+arm-none-eabi-objcopy -O ihex "NVIC_Driver.elf"  "NVIC_Driver.hex"
+'Finished building: NVIC_Driver.hex'
+' '
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "NVIC_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4427	    176	    424	   5027	   13a3	NVIC_Driver.elf
+'Finished building: NVIC_Driver.siz'
+' '
+23:01:25 **** Incremental Build of configuration Debug for project NVIC_Driver ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "NVIC_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4427	    176	    424	   5027	   13a3	NVIC_Driver.elf
+'Finished building: NVIC_Driver.siz'
+' '
+23:01:36 **** Incremental Build of configuration Debug for project NVIC_Driver ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "NVIC_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4427	    176	    424	   5027	   13a3	NVIC_Driver.elf
+'Finished building: NVIC_Driver.siz'
+' '
+23:04:11 **** Incremental Build of configuration Debug for project NVIC_Driver ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: NVIC_Driver.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"NVIC_Driver.map" --specs=nano.specs -o "NVIC_Driver.elf"  ./system/src/stm32f1-stdperiph/misc.o ./system/src/stm32f1-stdperiph/stm32f10x_gpio.o ./system/src/stm32f1-stdperiph/stm32f10x_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f10x.o ./system/src/cmsis/vectors_stm32f10x.o  ./src/NVIC.o ./src/main.o   
+'Finished building target: NVIC_Driver.elf'
+' '
+'Invoking: GNU ARM Cross Create Flash Image'
+arm-none-eabi-objcopy -O ihex "NVIC_Driver.elf"  "NVIC_Driver.hex"
+'Finished building: NVIC_Driver.hex'
+' '
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "NVIC_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4427	    176	    424	   5027	   13a3	NVIC_Driver.elf
+'Finished building: NVIC_Driver.siz'
+' '
+23:04:15 **** Incremental Build of configuration Debug for project NVIC_Driver ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "NVIC_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4427	    176	    424	   5027	   13a3	NVIC_Driver.elf
+'Finished building: NVIC_Driver.siz'
+' '
+23:04:20 **** Incremental Build of configuration Debug for project NVIC_Driver ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "NVIC_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4427	    176	    424	   5027	   13a3	NVIC_Driver.elf
+'Finished building: NVIC_Driver.siz'
+' '
+23:04:24 **** Incremental Build of configuration Debug for project NVIC_Driver ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "NVIC_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4427	    176	    424	   5027	   13a3	NVIC_Driver.elf
+'Finished building: NVIC_Driver.siz'
+' '
+23:05:38 **** Incremental Build of configuration Debug for project NVIC_Driver ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: NVIC_Driver.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"NVIC_Driver.map" --specs=nano.specs -o "NVIC_Driver.elf"  ./system/src/stm32f1-stdperiph/misc.o ./system/src/stm32f1-stdperiph/stm32f10x_gpio.o ./system/src/stm32f1-stdperiph/stm32f10x_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f10x.o ./system/src/cmsis/vectors_stm32f10x.o  ./src/NVIC.o ./src/main.o   
+'Finished building target: NVIC_Driver.elf'
+' '
+'Invoking: GNU ARM Cross Create Flash Image'
+arm-none-eabi-objcopy -O ihex "NVIC_Driver.elf"  "NVIC_Driver.hex"
+'Finished building: NVIC_Driver.hex'
+' '
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "NVIC_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4427	    176	    424	   5027	   13a3	NVIC_Driver.elf
+'Finished building: NVIC_Driver.siz'
+' '
+23:05:46 **** Incremental Build of configuration Debug for project NVIC_Driver ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "NVIC_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4427	    176	    424	   5027	   13a3	NVIC_Driver.elf
+'Finished building: NVIC_Driver.siz'
+' '
+23:13:52 **** Incremental Build of configuration Debug for project NVIC_Driver ****
+make all 
+'Building file: ../src/NVIC.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/NVIC.d" -MT"src/NVIC.o" -c -o "src/NVIC.o" "../src/NVIC.c"
+../src/NVIC.c:13:34: warning: "/*" within comment [-Wcomment]
+ /*#define NVIC_CCR    0xE000ED14 /*Used to enable writing to STIR, FROM M3 Guide but different address
+                                   
+../src/NVIC.c: In function 'voidFilterEXTI_lowerThan':
+../src/NVIC.c:206:37: warning: unused parameter 'cancelStart_inum' [-Wunused-parameter]
+ void    voidFilterEXTI_lowerThan(u8 cancelStart_inum)
+                                  ~~~^~~~~~~~~~~~~~~~
+'Finished building: ../src/NVIC.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: NVIC_Driver.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"NVIC_Driver.map" --specs=nano.specs -o "NVIC_Driver.elf"  ./system/src/stm32f1-stdperiph/misc.o ./system/src/stm32f1-stdperiph/stm32f10x_gpio.o ./system/src/stm32f1-stdperiph/stm32f10x_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f10x.o ./system/src/cmsis/vectors_stm32f10x.o  ./src/NVIC.o ./src/main.o   
+'Finished building target: NVIC_Driver.elf'
+' '
+'Invoking: GNU ARM Cross Create Flash Image'
+arm-none-eabi-objcopy -O ihex "NVIC_Driver.elf"  "NVIC_Driver.hex"
+'Finished building: NVIC_Driver.hex'
+' '
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "NVIC_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4427	    176	    424	   5027	   13a3	NVIC_Driver.elf
+'Finished building: NVIC_Driver.siz'
+' '
+23:13:56 **** Incremental Build of configuration Debug for project NVIC_Driver ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "NVIC_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4427	    176	    424	   5027	   13a3	NVIC_Driver.elf
+'Finished building: NVIC_Driver.siz'
+' '
+23:14:50 **** Incremental Build of configuration Debug for project NVIC_Driver ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: NVIC_Driver.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"NVIC_Driver.map" --specs=nano.specs -o "NVIC_Driver.elf"  ./system/src/stm32f1-stdperiph/misc.o ./system/src/stm32f1-stdperiph/stm32f10x_gpio.o ./system/src/stm32f1-stdperiph/stm32f10x_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f10x.o ./system/src/cmsis/vectors_stm32f10x.o  ./src/NVIC.o ./src/main.o   
+'Finished building target: NVIC_Driver.elf'
+' '
+'Invoking: GNU ARM Cross Create Flash Image'
+arm-none-eabi-objcopy -O ihex "NVIC_Driver.elf"  "NVIC_Driver.hex"
+'Finished building: NVIC_Driver.hex'
+' '
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "NVIC_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4427	    176	    424	   5027	   13a3	NVIC_Driver.elf
+'Finished building: NVIC_Driver.siz'
+' '
+23:14:55 **** Incremental Build of configuration Debug for project NVIC_Driver ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "NVIC_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4427	    176	    424	   5027	   13a3	NVIC_Driver.elf
+'Finished building: NVIC_Driver.siz'
+' '
+23:15:43 **** Incremental Build of configuration Debug for project NVIC_Driver ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: NVIC_Driver.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"NVIC_Driver.map" --specs=nano.specs -o "NVIC_Driver.elf"  ./system/src/stm32f1-stdperiph/misc.o ./system/src/stm32f1-stdperiph/stm32f10x_gpio.o ./system/src/stm32f1-stdperiph/stm32f10x_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f10x.o ./system/src/cmsis/vectors_stm32f10x.o  ./src/NVIC.o ./src/main.o   
+'Finished building target: NVIC_Driver.elf'
+' '
+'Invoking: GNU ARM Cross Create Flash Image'
+arm-none-eabi-objcopy -O ihex "NVIC_Driver.elf"  "NVIC_Driver.hex"
+'Finished building: NVIC_Driver.hex'
+' '
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "NVIC_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4427	    176	    424	   5027	   13a3	NVIC_Driver.elf
+'Finished building: NVIC_Driver.siz'
+' '
+23:16:07 **** Incremental Build of configuration Debug for project NVIC_Driver ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "NVIC_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4427	    176	    424	   5027	   13a3	NVIC_Driver.elf
+'Finished building: NVIC_Driver.siz'
+' '
+23:17:19 **** Incremental Build of configuration Debug for project NVIC_Driver ****
+make all 
+'Building file: ../src/NVIC.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/NVIC.d" -MT"src/NVIC.o" -c -o "src/NVIC.o" "../src/NVIC.c"
+../src/NVIC.c:13:34: warning: "/*" within comment [-Wcomment]
+ /*#define NVIC_CCR    0xE000ED14 /*Used to enable writing to STIR, FROM M3 Guide but different address
+                                   
+../src/NVIC.c: In function 'voidFilterEXTI_lowerThan':
+../src/NVIC.c:206:37: warning: unused parameter 'cancelStart_inum' [-Wunused-parameter]
+ void    voidFilterEXTI_lowerThan(u8 cancelStart_inum)
+                                  ~~~^~~~~~~~~~~~~~~~
+'Finished building: ../src/NVIC.c'
+' '
+'Building target: NVIC_Driver.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"NVIC_Driver.map" --specs=nano.specs -o "NVIC_Driver.elf"  ./system/src/stm32f1-stdperiph/misc.o ./system/src/stm32f1-stdperiph/stm32f10x_gpio.o ./system/src/stm32f1-stdperiph/stm32f10x_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f10x.o ./system/src/cmsis/vectors_stm32f10x.o  ./src/NVIC.o ./src/main.o   
+'Finished building target: NVIC_Driver.elf'
+' '
+'Invoking: GNU ARM Cross Create Flash Image'
+arm-none-eabi-objcopy -O ihex "NVIC_Driver.elf"  "NVIC_Driver.hex"
+'Finished building: NVIC_Driver.hex'
+' '
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "NVIC_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4431	    176	    424	   5031	   13a7	NVIC_Driver.elf
+'Finished building: NVIC_Driver.siz'
+' '
+23:17:42 **** Incremental Build of configuration Debug for project NVIC_Driver ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "NVIC_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4431	    176	    424	   5031	   13a7	NVIC_Driver.elf
+'Finished building: NVIC_Driver.siz'
+' '
+23:18:13 **** Incremental Build of configuration Debug for project NVIC_Driver ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: NVIC_Driver.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"NVIC_Driver.map" --specs=nano.specs -o "NVIC_Driver.elf"  ./system/src/stm32f1-stdperiph/misc.o ./system/src/stm32f1-stdperiph/stm32f10x_gpio.o ./system/src/stm32f1-stdperiph/stm32f10x_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f10x.o ./system/src/cmsis/vectors_stm32f10x.o  ./src/NVIC.o ./src/main.o   
+'Finished building target: NVIC_Driver.elf'
+' '
+'Invoking: GNU ARM Cross Create Flash Image'
+arm-none-eabi-objcopy -O ihex "NVIC_Driver.elf"  "NVIC_Driver.hex"
+'Finished building: NVIC_Driver.hex'
+' '
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "NVIC_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4431	    176	    424	   5031	   13a7	NVIC_Driver.elf
+'Finished building: NVIC_Driver.siz'
+' '
+23:18:16 **** Incremental Build of configuration Debug for project NVIC_Driver ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "NVIC_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4431	    176	    424	   5031	   13a7	NVIC_Driver.elf
+'Finished building: NVIC_Driver.siz'
+' '
+23:19:15 **** Incremental Build of configuration Debug for project NVIC_Driver ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: NVIC_Driver.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"NVIC_Driver.map" --specs=nano.specs -o "NVIC_Driver.elf"  ./system/src/stm32f1-stdperiph/misc.o ./system/src/stm32f1-stdperiph/stm32f10x_gpio.o ./system/src/stm32f1-stdperiph/stm32f10x_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f10x.o ./system/src/cmsis/vectors_stm32f10x.o  ./src/NVIC.o ./src/main.o   
+'Finished building target: NVIC_Driver.elf'
+' '
+'Invoking: GNU ARM Cross Create Flash Image'
+arm-none-eabi-objcopy -O ihex "NVIC_Driver.elf"  "NVIC_Driver.hex"
+'Finished building: NVIC_Driver.hex'
+' '
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "NVIC_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4471	    176	    424	   5071	   13cf	NVIC_Driver.elf
+'Finished building: NVIC_Driver.siz'
+' '
+23:19:19 **** Incremental Build of configuration Debug for project NVIC_Driver ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "NVIC_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4471	    176	    424	   5071	   13cf	NVIC_Driver.elf
+'Finished building: NVIC_Driver.siz'
+' '
+23:19:22 **** Incremental Build of configuration Debug for project NVIC_Driver ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "NVIC_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4471	    176	    424	   5071	   13cf	NVIC_Driver.elf
+'Finished building: NVIC_Driver.siz'
+' '

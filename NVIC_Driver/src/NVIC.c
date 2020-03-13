@@ -6,12 +6,16 @@
 
 #define  SCB_BASE_ADDRESS       0xE000E008
 #define  SCB_AIRCR              *((volatile u32*)(SCB_BASE_ADDRESS+0x0C))
-#define SCB_AIRCR_VECTKEY		0x05FA0000	/*SCB_AIRCR Password*/
+#define  SCB_AIRCR_VECTKEY		0x05FA0000	/*SCB_AIRCR Password*/
+#define  SCB_CCR				*((volatile u32*)(SCB_BASE_ADDRESS+0x14))
+#define  SCB_CCR_USERSETMPEND   0x2
+
+/*#define NVIC_CCR				0xE000ED14 /*Used to enable writing to STIR, FROM M3 Guide but different address
+ 	 	 	 	 	 	 	 	 	 	 	 but with different address	in STM-programming manual 	 */
+											/*I think St added SCB as a logical core peripheral, since M3 Guide
+											 * never mention SCB*/
 
 
-/*Used to enable writing to STIR*/
-#define NVIC_CCR				0xE000ED14
-#define USERSETMPEND            0x2
 
 
 typedef struct
@@ -26,7 +30,7 @@ typedef struct
            u32 RESERVED3[24U];
   volatile u32 IABR[8U];               /*!< Offset: 0x200 (R/W)  Interrupt Active bit Register */
            u32 RESERVED4[56U];
-  volatile u8  IP[240U];               /*!< Offset: 0x300 (R/W)  Interrupt Priority Register (8Bit wide) */
+  volatile u8  IPR[240U];               /*!< Offset: 0x300 (R/W)  Interrupt Priority Register (8Bit wide) */
   	  	   u32 RESERVED5[644U];
   volatile u32 STIR;                   /*!< Offset: 0xE00 ( /W)  Software Trigger Interrupt Register */
 }NVIC_Type;
@@ -38,13 +42,14 @@ STD_ERR u8EnableEXTI(u8 inum)
 {
 	STD_ERR err_status = STD_TYPES_ERROR_OK;
 	NVIC_Type* ptr = (NVIC_Type*)NVIC_PTR;
-	if(inum > 240)
+	if(inum > 239)
 	{
 		err_status = STD_TYPES_ERROR_NOK;
 	}
 	else
 	{
-		ptr->ISER[inum>>5U]=( 1 << (inum & 0b11111) );
+		ptr->ICPR[inum>>5U]=( 1 << (inum & 0b11111) );/*Clear pending flag*/
+		ptr->ISER[inum>>5U]=( 1 << (inum & 0b11111) );/*Enable Interrupt*/
 	}
 	return err_status;
 }
@@ -55,7 +60,7 @@ STD_ERR u8DisableEXTI(u8 inum)
 {
 		STD_ERR err_status = STD_TYPES_ERROR_OK;
 		NVIC_Type* ptr = (NVIC_Type*)NVIC_PTR;
-		if(inum > 240)
+		if(inum > 239)
 		{
 			err_status = STD_TYPES_ERROR_NOK;
 		}
@@ -71,7 +76,7 @@ STD_ERR u8SetPendFlag(u8 inum)
 {
 		STD_ERR err_status = STD_TYPES_ERROR_OK;
 		NVIC_Type* ptr = (NVIC_Type*)NVIC_PTR;
-		if(inum > 240)
+		if(inum > 239)
 		{
 			err_status = STD_TYPES_ERROR_NOK;
 		}
@@ -87,7 +92,7 @@ STD_ERR u8ClrPendFlag(u8 inum)
 {
 		STD_ERR err_status = STD_TYPES_ERROR_OK;
 		NVIC_Type* ptr = (NVIC_Type*)NVIC_PTR;
-		if(inum > 240)
+		if(inum > 239)
 		{
 			err_status = STD_TYPES_ERROR_NOK;
 		}
@@ -103,7 +108,7 @@ STD_ERR u8IsActive(u8 inum,u8* state)
 {
 		STD_ERR err_status = STD_TYPES_ERROR_OK;
 		NVIC_Type* ptr = (NVIC_Type*)NVIC_PTR;
-		if(inum > 240)
+		if(inum > 239)
 		{
 			err_status = STD_TYPES_ERROR_NOK;
 		}
@@ -118,84 +123,97 @@ STD_ERR u8IsActive(u8 inum,u8* state)
 }
 
 //////////////////////////////////////////////////////////////////
-STD_ERR u8SetPriority		()
+STD_ERR u8SetPriority(u8 inum, u8 priority)
 {
 	STD_ERR err_status = STD_TYPES_ERROR_OK;
 	NVIC_Type* ptr = (NVIC_Type*)NVIC_PTR;
+	u8 u8getGroup    = ((SCB_AIRCR>>8) & 0b111);//Checking which group bits are chosen
 
+	if(u8getGroup  == GROUP_MASK_16)
+	{
+		if(priority >15) 	return STD_TYPES_ERROR_NOK;
+		else 				ptr->IPR[ inum >> 3U ] = priority;
+	}
+	else if(u8getGroup  == GROUP_MASK_8)
+	{
+		if(priority >7) 	return STD_TYPES_ERROR_NOK;
+		else 				ptr->IPR[ inum >> 3U ] = priority;
+	}
+	else if(u8getGroup  == GROUP_MASK_4)
+	{
+		if(priority >3) 	return STD_TYPES_ERROR_NOK;
+		else 				ptr->IPR[ inum >> 3U ] = priority;
+	}
+	else if(u8getGroup  == GROUP_MASK_2)
+	{
+		if(priority >1) 	return STD_TYPES_ERROR_NOK;
+		else 				ptr->IPR[ inum >> 3U ] = priority;
+	}
+	else if(u8getGroup  == GROUP_MASK_0)
+	{
+		ptr->IPR[ inum >> 3U ] = priority;
+	}
+	else
+	{
+		err_status = STD_TYPES_ERROR_NOK ;
+	}
+	return err_status;
+}
 
+///////////////////////////////////////////////////////////////////
+u8 u8GetPriority(u8 inum)
+{
+	NVIC_Type* ptr = (NVIC_Type*)NVIC_PTR;
+	return ptr->IPR[inum>>3U] & 0xFF;
+}
+
+///////////////////////////////////////////////////////////////////
+STD_ERR u8SetGrpBits 		(u32 PRIGROUP_MASK)
+{
+	STD_ERR err_status = STD_TYPES_ERROR_OK;
+	SCB_AIRCR = SCB_AIRCR_VECTKEY; /*Writing the password to enable writing PRIGROUP configurations*/
+
+	SCB_AIRCR = (8 << PRIGROUP_MASK);
 
 	return err_status;
 }
 
 ///////////////////////////////////////////////////////////////////
-STD_ERR u8GetPriority		()
+void voidEnableAllEXTI(void)
 {
-	STD_ERR err_status = STD_TYPES_ERROR_OK;
-	NVIC_Type* ptr = (NVIC_Type*)NVIC_PTR;
-
-
-	return err_status;
+	asm ("CPSIE I");
 }
 
 ///////////////////////////////////////////////////////////////////
-STD_ERR u8SetGrpBits 		(u8 PRIGROUP_MASK)
+void voidDisableAllEXTI(void)
 {
-	STD_ERR err_status = STD_TYPES_ERROR_OK;
-	NVIC_Type* ptr = (NVIC_Type*)NVIC_PTR;
-
-
-	return err_status;
+	asm ("CPSID I");
 }
 
 ///////////////////////////////////////////////////////////////////
-STD_ERR u8EnableAllEXTI		(void)
+void voidEnableAllFaults(void)
 {
-	STD_ERR err_status = STD_TYPES_ERROR_OK;
-	NVIC_Type* ptr = (NVIC_Type*)NVIC_PTR;
-
-
-	return err_status;
+	asm ("CPSIE F");
 }
 
 ///////////////////////////////////////////////////////////////////
-STD_ERR u8DisableAllEXTI 	(void)
+void voidDisableAllFaults(void)
 {
-	STD_ERR err_status = STD_TYPES_ERROR_OK;
-	NVIC_Type* ptr = (NVIC_Type*)NVIC_PTR;
-
-
-	return err_status;
+	asm ("CPSID I");
 }
 
 ///////////////////////////////////////////////////////////////////
-STD_ERR u8EnableAllFaults	(void)
+void    voidFilterEXTI_lowerThan(u8 cancelStart_inum)
 {
-	STD_ERR err_status = STD_TYPES_ERROR_OK;
-	NVIC_Type* ptr = (NVIC_Type*)NVIC_PTR;
-
-
-	return err_status;
+	//asm("MOV R0, #0x60");
+	asm("LSLS R0, R0, #4");
+	asm("MSR BASEPRI, R0");
 }
-
 ///////////////////////////////////////////////////////////////////
-STD_ERR u8DisableAllFaults	(void)
+void    voidCancelFilterEXTI    (void)
 {
-	STD_ERR err_status = STD_TYPES_ERROR_OK;
-	NVIC_Type* ptr = (NVIC_Type*)NVIC_PTR;
-
-
-	return err_status;
-}
-
-///////////////////////////////////////////////////////////////////
-STD_ERR u8DisableEXTI_From	()
-{
-	STD_ERR err_status = STD_TYPES_ERROR_OK;
-	NVIC_Type* ptr = (NVIC_Type*)NVIC_PTR;
-
-
-	return err_status;
+	asm ("MOV R0, #0x0")    ;
+	asm ("MSR BASEPRI, R0") ; /*Turn off BASEPRI masking*/
 }
 
 ///////////////////////////////////////////////////////////////////
@@ -204,6 +222,16 @@ STD_ERR u8GenerateSWI		(u8 inum)
 	STD_ERR err_status = STD_TYPES_ERROR_OK;
 	NVIC_Type* ptr = (NVIC_Type*)NVIC_PTR;
 
+	SCB_CCR = SCB_CCR_USERSETMPEND ;/*Enabling Software Interrupt Generation*/
+
+	if(inum > 239)
+	{
+		err_status = STD_TYPES_ERROR_NOK;
+	}
+	else
+	{
+		ptr->STIR = inum;
+	}
 
 	return err_status;
 }

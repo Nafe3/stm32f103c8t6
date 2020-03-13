@@ -6020,3 +6020,69 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY ilg.gnumcueclipse.packs.core 4 1 2020-03-13 14:53:47.881
 !MESSAGE arm-none-eabi-gdb --interpreter=mi2 --nx
+
+!ENTRY ilg.gnumcueclipse.packs.core 4 1 2020-03-13 22:56:21.054
+!MESSAGE C:\Program Files\GNU ARM Eclipse\OpenOCD\0.10.0-201601101000-dev\bin\openocd.exe -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -f st/stm32f103c8tx.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY ilg.gnumcueclipse.packs.core 4 1 2020-03-13 22:56:21.565
+!MESSAGE arm-none-eabi-gdb --interpreter=mi2 --nx
+
+!ENTRY ilg.gnumcueclipse.packs.core 4 1 2020-03-13 23:01:36.758
+!MESSAGE C:\Program Files\GNU ARM Eclipse\OpenOCD\0.10.0-201601101000-dev\bin\openocd.exe -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -f st/stm32f103c8tx.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY ilg.gnumcueclipse.packs.core 4 1 2020-03-13 23:01:36.862
+!MESSAGE arm-none-eabi-gdb --interpreter=mi2 --nx
+
+!ENTRY ilg.gnumcueclipse.packs.core 4 1 2020-03-13 23:04:24.688
+!MESSAGE C:\Program Files\GNU ARM Eclipse\OpenOCD\0.10.0-201601101000-dev\bin\openocd.exe -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -f st/stm32f103c8tx.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY ilg.gnumcueclipse.packs.core 4 1 2020-03-13 23:04:24.795
+!MESSAGE arm-none-eabi-gdb --interpreter=mi2 --nx
+
+!ENTRY ilg.gnumcueclipse.debug.gdbjtag 4 0 2020-03-13 23:05:42.032
+!MESSAGE Debug session 'NVIC_Driver Debug' already started. Terminate the first one before restarting.
+
+!ENTRY ilg.gnumcueclipse.packs.core 4 1 2020-03-13 23:05:47.356
+!MESSAGE C:\Program Files\GNU ARM Eclipse\OpenOCD\0.10.0-201601101000-dev\bin\openocd.exe -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -f st/stm32f103c8tx.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY ilg.gnumcueclipse.packs.core 4 1 2020-03-13 23:05:47.455
+!MESSAGE arm-none-eabi-gdb --interpreter=mi2 --nx
+
+!ENTRY ilg.gnumcueclipse.packs.core 4 1 2020-03-13 23:13:56.748
+!MESSAGE C:\Program Files\GNU ARM Eclipse\OpenOCD\0.10.0-201601101000-dev\bin\openocd.exe -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -f st/stm32f103c8tx.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY ilg.gnumcueclipse.packs.core 4 1 2020-03-13 23:13:56.851
+!MESSAGE arm-none-eabi-gdb --interpreter=mi2 --nx
+
+!ENTRY ilg.gnumcueclipse.packs.core 4 1 2020-03-13 23:14:55.759
+!MESSAGE C:\Program Files\GNU ARM Eclipse\OpenOCD\0.10.0-201601101000-dev\bin\openocd.exe -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -f st/stm32f103c8tx.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY ilg.gnumcueclipse.packs.core 4 1 2020-03-13 23:14:55.858
+!MESSAGE arm-none-eabi-gdb --interpreter=mi2 --nx
+
+!ENTRY ilg.gnumcueclipse.debug.gdbjtag 4 0 2020-03-13 23:15:58.422
+!MESSAGE Debug session 'NVIC_Driver Debug' already started. Terminate the first one before restarting.
+
+!ENTRY ilg.gnumcueclipse.packs.core 4 1 2020-03-13 23:16:07.928
+!MESSAGE C:\Program Files\GNU ARM Eclipse\OpenOCD\0.10.0-201601101000-dev\bin\openocd.exe -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -f st/stm32f103c8tx.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY ilg.gnumcueclipse.packs.core 4 1 2020-03-13 23:16:08.029
+!MESSAGE arm-none-eabi-gdb --interpreter=mi2 --nx
+
+!ENTRY ilg.gnumcueclipse.packs.core 4 1 2020-03-13 23:17:42.814
+!MESSAGE C:\Program Files\GNU ARM Eclipse\OpenOCD\0.10.0-201601101000-dev\bin\openocd.exe -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -f st/stm32f103c8tx.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY ilg.gnumcueclipse.packs.core 4 1 2020-03-13 23:17:42.917
+!MESSAGE arm-none-eabi-gdb --interpreter=mi2 --nx
+
+!ENTRY ilg.gnumcueclipse.packs.core 4 1 2020-03-13 23:18:16.831
+!MESSAGE C:\Program Files\GNU ARM Eclipse\OpenOCD\0.10.0-201601101000-dev\bin\openocd.exe -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -f st/stm32f103c8tx.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY ilg.gnumcueclipse.packs.core 4 1 2020-03-13 23:18:16.936
+!MESSAGE arm-none-eabi-gdb --interpreter=mi2 --nx
+
+!ENTRY ilg.gnumcueclipse.packs.core 4 1 2020-03-13 23:19:22.881
+!MESSAGE C:\Program Files\GNU ARM Eclipse\OpenOCD\0.10.0-201601101000-dev\bin\openocd.exe -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -f st/stm32f103c8tx.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY ilg.gnumcueclipse.packs.core 4 1 2020-03-13 23:19:22.982
+!MESSAGE arm-none-eabi-gdb --interpreter=mi2 --nx
