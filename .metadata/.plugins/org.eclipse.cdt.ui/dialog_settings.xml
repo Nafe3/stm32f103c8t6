@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<item key="LastUsedSourceTemplate" value="Default C++ source template"/>
 	<item key="LexicalSortingAction.sort" value="true"/>
+	<item key="LastUsedHeaderTemplate" value="Default C++ header template"/>
 	<section name="completion_proposal_size">
 		<item key="size.x" value="552"/>
 		<item key="size.y" value="309"/>

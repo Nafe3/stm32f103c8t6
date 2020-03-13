@@ -30,15 +30,7 @@ typedef struct{
 
 
 //Port_Mask
-//Use this    ↓
-//#define 	PORTA 0x40010800UL check with this
-#define 	PORTA GPIOA
-#define 	PORTB GPIOB
-#define 	PORTC GPIOC
-#define 	PORTD GPIOD
-#define 	PORTE GPIOE
-#define 	PORTF GPIOF
-#define 	PORTG GPIOG
+
 
 /*PRIVATE*/
 #define GPIO_PORTA_BASE_ADDRESS  0x40010800
@@ -56,6 +48,16 @@ typedef struct{
 #define GPIOE				((void*)GPIO_PORTE_BASE_ADDRESS)
 #define GPIOF				((void*)GPIO_PORTF_BASE_ADDRESS)
 #define GPIOG				((void*)GPIO_PORTG_BASE_ADDRESS)
+
+//Use this    ↓
+//#define 	PORTA 0x40010800UL check with this
+#define 	PORTA GPIOA
+#define 	PORTB GPIOB
+#define 	PORTC GPIOC
+#define 	PORTD GPIOD
+#define 	PORTE GPIOE
+#define 	PORTF GPIOF
+#define 	PORTG GPIOG
 
 //Gpio_Pin_Num_Mask
 #define GPIO_PIN_0       ((u16)0x0001)
