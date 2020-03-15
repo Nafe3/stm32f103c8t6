@@ -1,11 +1,11 @@
-18:58:03 **** Build of configuration Debug for project hello ****
+17:49:43 **** Incremental Build of configuration Debug for project hello ****
 make all 
 'Invoking: GNU ARM Cross Print Size'
 arm-none-eabi-size --format=berkeley "hello.elf"
    text	   data	    bss	    dec	    hex	filename
-   4899	    176	    424	   5499	   157b	hello.elf
+   4927	    176	    424	   5527	   1597	hello.elf
 'Finished building: hello.siz'
 ' '
 
-18:58:04 Build Finished. 0 errors, 0 warnings. (took 993ms)
+17:49:44 Build Finished. 0 errors, 0 warnings. (took 553ms)
 

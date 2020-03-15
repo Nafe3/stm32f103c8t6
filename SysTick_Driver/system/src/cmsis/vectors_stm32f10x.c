@@ -260,7 +260,7 @@ pHandler __isr_vectors[] =
 #endif
       0, // Reserved
       PendSV_Handler, // The PendSV handler
-      SysTick_Handler, // The SysTick handler
+      SysT_Handler, // The SysTick handler
 
       // ----------------------------------------------------------------------
       // Chip Level - STM32F10x

@@ -19,8 +19,8 @@ void main(void)
 	while(1)
 	{
 		DIO_SetPinVal('C',13,0);
-	//	for(i=0;i<100000;i++);
+		for(i=0;i<200000;i++);
 		DIO_SetPinVal('C',13,1);
-	//	for(i=0;i<100000;i++);
+		for(i=0;i<100000;i++);
 	}
 }

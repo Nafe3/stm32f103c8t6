@@ -67,7 +67,7 @@ extern "C"
   extern void
   PendSV_Handler (void);
   extern void
-  SysTick_Handler (void);
+  SysT_Handler (void);
 
   // Exception Stack Frame of the Cortex-M3 or Cortex-M4 processor.
   typedef struct

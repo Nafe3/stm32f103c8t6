@@ -1,3 +1,4 @@
+#include "STD_TYPES.h"
 #include "RCC.h"
 /*RCC Registers Addresses*/
 #define RCC_BASE_ADDRESS 	 0x40021000
@@ -51,6 +52,7 @@ void RCC_voidSelectSysClk(u8 clk)
 				{
 					RCC_CR 	 |= RCC_CR_HSEON;//Setting HSEON bit
 					while((RCC_CR & RCC_CR_HSERDY) != RCC_CR_HSERDY);//wait until HSE is ready
+					RCC_CFGR &=~RCC_CFGR_SW;//clear
 					RCC_CFGR |= RCC_CFGR_SW_HSE;//switch system clock to HSE
 				}
 			break;

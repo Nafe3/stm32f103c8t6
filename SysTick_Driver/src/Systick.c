@@ -17,15 +17,17 @@
 
 
 
+
 static systickcbf_t APPcbf;			//global variable(pointer to function to save the user's ISR function address
 
 /*this is the second step after setting the callback function*/
-void SysTick_Handler(void)
+void SysT_Handler(void)
 {
 	/*checking if the user has set the callback function or not*/
 	if(APPcbf)
 	{
 		APPcbf();
+		//STK_VAL=0;
 	}
 }
 
@@ -45,7 +47,8 @@ extern void SYSTICK_Init		(void)
 {
 	/* enable systick interrupt - clock =AHB/8*/
 	/*stop systick*/
-	STK_CTRL=0x00000002;
+	STK_CTRL |= 0x00000006;
+
 }
 
 /////////////////////////////////////////////////////////////////
@@ -57,7 +60,7 @@ extern void SYSTICK_Start(u32 Copy_u32Value)
 	/*clear value register*/
 	STK_VAL=0;
 	/*start system timer*/
-	STK_CTRL = 0x1;
+	STK_CTRL |= 0x1;
 }
 
 /////////////////////////////////////////////////////////////////

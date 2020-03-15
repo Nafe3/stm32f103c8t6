@@ -3889,3 +3889,2172 @@ arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
    4967	    176	    436	   5579	   15cb	SysTick_Driver.elf
 'Finished building: SysTick_Driver.siz'
 ' '
+13:30:41 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4967	    176	    436	   5579	   15cb	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+13:37:11 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Building file: ../src/RCC.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/RCC.d" -MT"src/RCC.o" -c -o "src/RCC.o" "../src/RCC.c"
+'Finished building: ../src/RCC.c'
+' '
+'Building target: SysTick_Driver.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"SysTick_Driver.map" --specs=nano.specs -o "SysTick_Driver.elf"  ./system/src/stm32f1-stdperiph/misc.o ./system/src/stm32f1-stdperiph/stm32f10x_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f10x.o ./system/src/cmsis/vectors_stm32f10x.o  ./src/GPIO.o ./src/RCC.o ./src/Systick.o ./src/main.o   
+'Finished building target: SysTick_Driver.elf'
+' '
+'Invoking: GNU ARM Cross Create Flash Image'
+arm-none-eabi-objcopy -O ihex "SysTick_Driver.elf"  "SysTick_Driver.hex"
+'Finished building: SysTick_Driver.hex'
+' '
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4975	    176	    436	   5587	   15d3	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+13:37:31 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4975	    176	    436	   5587	   15d3	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+13:37:39 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4975	    176	    436	   5587	   15d3	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+13:37:43 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4975	    176	    436	   5587	   15d3	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+13:42:56 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:3:
+../include/RCC.h:12: warning: "s8" redefined
+ #define s8  signed char
+ 
+In file included from ../src/main.c:2:
+../include/GPIO.h:9: note: this is the location of the previous definition
+ #define s8 signed
+ 
+'Finished building: ../src/main.c'
+' '
+'Building target: SysTick_Driver.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"SysTick_Driver.map" --specs=nano.specs -o "SysTick_Driver.elf"  ./system/src/stm32f1-stdperiph/misc.o ./system/src/stm32f1-stdperiph/stm32f10x_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f10x.o ./system/src/cmsis/vectors_stm32f10x.o  ./src/GPIO.o ./src/RCC.o ./src/Systick.o ./src/main.o   
+'Finished building target: SysTick_Driver.elf'
+' '
+'Invoking: GNU ARM Cross Create Flash Image'
+arm-none-eabi-objcopy -O ihex "SysTick_Driver.elf"  "SysTick_Driver.hex"
+'Finished building: SysTick_Driver.hex'
+' '
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4975	    176	    436	   5587	   15d3	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+13:43:00 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4975	    176	    436	   5587	   15d3	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+13:43:05 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4975	    176	    436	   5587	   15d3	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+13:53:42 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Building file: ../src/GPIO.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/GPIO.d" -MT"src/GPIO.o" -c -o "src/GPIO.o" "../src/GPIO.c"
+'Finished building: ../src/GPIO.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:3:
+../include/RCC.h:12: warning: "s8" redefined
+ #define s8  signed char
+ 
+In file included from ../src/main.c:2:
+../include/GPIO.h:9: note: this is the location of the previous definition
+ #define s8 signed
+ 
+'Finished building: ../src/main.c'
+' '
+'Building target: SysTick_Driver.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"SysTick_Driver.map" --specs=nano.specs -o "SysTick_Driver.elf"  ./system/src/stm32f1-stdperiph/misc.o ./system/src/stm32f1-stdperiph/stm32f10x_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f10x.o ./system/src/cmsis/vectors_stm32f10x.o  ./src/GPIO.o ./src/RCC.o ./src/Systick.o ./src/main.o   
+'Finished building target: SysTick_Driver.elf'
+' '
+'Invoking: GNU ARM Cross Create Flash Image'
+arm-none-eabi-objcopy -O ihex "SysTick_Driver.elf"  "SysTick_Driver.hex"
+'Finished building: SysTick_Driver.hex'
+' '
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4971	    176	    436	   5583	   15cf	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+13:53:47 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4971	    176	    436	   5583	   15cf	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+14:32:28 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Building file: ../src/GPIO.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/GPIO.d" -MT"src/GPIO.o" -c -o "src/GPIO.o" "../src/GPIO.c"
+'Finished building: ../src/GPIO.c'
+' '
+'Building target: SysTick_Driver.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"SysTick_Driver.map" --specs=nano.specs -o "SysTick_Driver.elf"  ./system/src/stm32f1-stdperiph/misc.o ./system/src/stm32f1-stdperiph/stm32f10x_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f10x.o ./system/src/cmsis/vectors_stm32f10x.o  ./src/GPIO.o ./src/RCC.o ./src/Systick.o ./src/main.o   
+'Finished building target: SysTick_Driver.elf'
+' '
+'Invoking: GNU ARM Cross Create Flash Image'
+arm-none-eabi-objcopy -O ihex "SysTick_Driver.elf"  "SysTick_Driver.hex"
+'Finished building: SysTick_Driver.hex'
+' '
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4971	    176	    436	   5583	   15cf	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+14:32:32 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4971	    176	    436	   5583	   15cf	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+14:44:44 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Building file: ../src/GPIO.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/GPIO.d" -MT"src/GPIO.o" -c -o "src/GPIO.o" "../src/GPIO.c"
+'Finished building: ../src/GPIO.c'
+' '
+'Building target: SysTick_Driver.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"SysTick_Driver.map" --specs=nano.specs -o "SysTick_Driver.elf"  ./system/src/stm32f1-stdperiph/misc.o ./system/src/stm32f1-stdperiph/stm32f10x_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f10x.o ./system/src/cmsis/vectors_stm32f10x.o  ./src/GPIO.o ./src/RCC.o ./src/Systick.o ./src/main.o   
+'Finished building target: SysTick_Driver.elf'
+' '
+'Invoking: GNU ARM Cross Create Flash Image'
+arm-none-eabi-objcopy -O ihex "SysTick_Driver.elf"  "SysTick_Driver.hex"
+'Finished building: SysTick_Driver.hex'
+' '
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4975	    176	    436	   5587	   15d3	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+14:44:51 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4975	    176	    436	   5587	   15d3	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+14:44:54 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4975	    176	    436	   5587	   15d3	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+16:30:36 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Building file: ../src/GPIO.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/GPIO.d" -MT"src/GPIO.o" -c -o "src/GPIO.o" "../src/GPIO.c"
+'Finished building: ../src/GPIO.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:3:
+../include/RCC.h:12: warning: "s8" redefined
+ #define s8  signed char
+ 
+In file included from ../src/main.c:2:
+../include/GPIO.h:9: note: this is the location of the previous definition
+ #define s8 signed
+ 
+'Finished building: ../src/main.c'
+' '
+'Building target: SysTick_Driver.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"SysTick_Driver.map" --specs=nano.specs -o "SysTick_Driver.elf"  ./system/src/stm32f1-stdperiph/misc.o ./system/src/stm32f1-stdperiph/stm32f10x_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f10x.o ./system/src/cmsis/vectors_stm32f10x.o  ./src/GPIO.o ./src/RCC.o ./src/Systick.o ./src/main.o   
+'Finished building target: SysTick_Driver.elf'
+' '
+'Invoking: GNU ARM Cross Create Flash Image'
+arm-none-eabi-objcopy -O ihex "SysTick_Driver.elf"  "SysTick_Driver.hex"
+'Finished building: SysTick_Driver.hex'
+' '
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4975	    176	    436	   5587	   15d3	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+16:31:22 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Building file: ../src/RCC.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/RCC.d" -MT"src/RCC.o" -c -o "src/RCC.o" "../src/RCC.c"
+In file included from ../src/RCC.c:1:
+../include/RCC.h:327:31: error: unknown type name 'u8'
+ void RCC_voidEnablePeripheral(u8 bus,u32 peripheral,u8 state);
+                               ^~
+../include/RCC.h:327:38: error: unknown type name 'u32'
+ void RCC_voidEnablePeripheral(u8 bus,u32 peripheral,u8 state);
+                                      ^~~
+../include/RCC.h:327:53: error: unknown type name 'u8'
+ void RCC_voidEnablePeripheral(u8 bus,u32 peripheral,u8 state);
+                                                     ^~
+../include/RCC.h:329:27: error: unknown type name 'u8'
+ void RCC_voidSelectSysClk(u8 clk);
+                           ^~
+../include/RCC.h:331:27: error: unknown type name 'u8'
+ void RCC_voidClkControl  (u8 clk,u8 state);
+                           ^~
+../include/RCC.h:331:34: error: unknown type name 'u8'
+ void RCC_voidClkControl  (u8 clk,u8 state);
+                                  ^~
+../include/RCC.h:333:26: error: unknown type name 'u32'
+ void RCC_voidPLLConfig  (u32 PLLMULmask,u32 PPLXTPREmask,u32 PLLSRCmask);
+                          ^~~
+../include/RCC.h:333:41: error: unknown type name 'u32'
+ void RCC_voidPLLConfig  (u32 PLLMULmask,u32 PPLXTPREmask,u32 PLLSRCmask);
+                                         ^~~
+../include/RCC.h:333:58: error: unknown type name 'u32'
+ void RCC_voidPLLConfig  (u32 PLLMULmask,u32 PPLXTPREmask,u32 PLLSRCmask);
+                                                          ^~~
+../include/RCC.h:335:26: error: unknown type name 'u32'
+ void RCC_voidPreConfig  (u32 PREtype,u32 PREmask);
+                          ^~~
+../include/RCC.h:335:38: error: unknown type name 'u32'
+ void RCC_voidPreConfig  (u32 PREtype,u32 PREmask);
+                                      ^~~
+../include/RCC.h:337:26: error: unknown type name 'u32'
+ void RCC_voidMCOConfig  (u32 MCOmask);
+                          ^~~
+../src/RCC.c:16:31: error: unknown type name 'u8'
+ void RCC_voidEnablePeripheral(u8 bus,u32 peripheral,u8 state)
+                               ^~
+../src/RCC.c:16:38: error: unknown type name 'u32'
+ void RCC_voidEnablePeripheral(u8 bus,u32 peripheral,u8 state)
+                                      ^~~
+../src/RCC.c:16:53: error: unknown type name 'u8'
+ void RCC_voidEnablePeripheral(u8 bus,u32 peripheral,u8 state)
+                                                     ^~
+../src/RCC.c:35:27: error: unknown type name 'u8'
+ void RCC_voidSelectSysClk(u8 clk)
+                           ^~
+../src/RCC.c:70:25: error: unknown type name 'u8'
+ void RCC_voidClkControl(u8 clk,u8 state)
+                         ^~
+../src/RCC.c:70:32: error: unknown type name 'u8'
+ void RCC_voidClkControl(u8 clk,u8 state)
+                                ^~
+../src/RCC.c:89:24: error: unknown type name 'u32'
+ void RCC_voidPLLConfig(u32 PLLMULmask,u32 PPLXTPREmask,u32 PLLSRCmask)
+                        ^~~
+../src/RCC.c:89:39: error: unknown type name 'u32'
+ void RCC_voidPLLConfig(u32 PLLMULmask,u32 PPLXTPREmask,u32 PLLSRCmask)
+                                       ^~~
+../src/RCC.c:89:56: error: unknown type name 'u32'
+ void RCC_voidPLLConfig(u32 PLLMULmask,u32 PPLXTPREmask,u32 PLLSRCmask)
+                                                        ^~~
+../src/RCC.c:132:24: error: unknown type name 'u32'
+ void RCC_voidPreConfig(u32 PREtype,u32 PREmask)
+                        ^~~
+../src/RCC.c:132:36: error: unknown type name 'u32'
+ void RCC_voidPreConfig(u32 PREtype,u32 PREmask)
+                                    ^~~
+../src/RCC.c:159:24: error: unknown type name 'u32'
+ void RCC_voidMCOConfig(u32 MCOmask)
+                        ^~~
+src/subdir.mk:27: recipe for target 'src/RCC.o' failed
+make: *** [src/RCC.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:32:11 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Building file: ../src/GPIO.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/GPIO.d" -MT"src/GPIO.o" -c -o "src/GPIO.o" "../src/GPIO.c"
+'Finished building: ../src/GPIO.c'
+' '
+'Building file: ../src/RCC.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/RCC.d" -MT"src/RCC.o" -c -o "src/RCC.o" "../src/RCC.c"
+'Finished building: ../src/RCC.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:3:
+../include/RCC.h:12: warning: "s8" redefined
+ #define s8  signed char
+ 
+In file included from ../src/main.c:2:
+../include/GPIO.h:9: note: this is the location of the previous definition
+ #define s8 signed
+ 
+'Finished building: ../src/main.c'
+' '
+'Building target: SysTick_Driver.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"SysTick_Driver.map" --specs=nano.specs -o "SysTick_Driver.elf"  ./system/src/stm32f1-stdperiph/misc.o ./system/src/stm32f1-stdperiph/stm32f10x_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f10x.o ./system/src/cmsis/vectors_stm32f10x.o  ./src/GPIO.o ./src/RCC.o ./src/Systick.o ./src/main.o   
+'Finished building target: SysTick_Driver.elf'
+' '
+'Invoking: GNU ARM Cross Create Flash Image'
+arm-none-eabi-objcopy -O ihex "SysTick_Driver.elf"  "SysTick_Driver.hex"
+'Finished building: SysTick_Driver.hex'
+' '
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4975	    176	    436	   5587	   15d3	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+16:35:17 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Building file: ../src/GPIO.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/GPIO.d" -MT"src/GPIO.o" -c -o "src/GPIO.o" "../src/GPIO.c"
+'Finished building: ../src/GPIO.c'
+' '
+'Building file: ../src/RCC.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/RCC.d" -MT"src/RCC.o" -c -o "src/RCC.o" "../src/RCC.c"
+'Finished building: ../src/RCC.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: SysTick_Driver.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"SysTick_Driver.map" --specs=nano.specs -o "SysTick_Driver.elf"  ./system/src/stm32f1-stdperiph/misc.o ./system/src/stm32f1-stdperiph/stm32f10x_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f10x.o ./system/src/cmsis/vectors_stm32f10x.o  ./src/GPIO.o ./src/RCC.o ./src/Systick.o ./src/main.o   
+'Finished building target: SysTick_Driver.elf'
+' '
+'Invoking: GNU ARM Cross Create Flash Image'
+arm-none-eabi-objcopy -O ihex "SysTick_Driver.elf"  "SysTick_Driver.hex"
+'Finished building: SysTick_Driver.hex'
+' '
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4975	    176	    436	   5587	   15d3	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+16:35:31 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4975	    176	    436	   5587	   15d3	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+16:40:08 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Building file: ../src/GPIO.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/GPIO.d" -MT"src/GPIO.o" -c -o "src/GPIO.o" "../src/GPIO.c"
+'Finished building: ../src/GPIO.c'
+' '
+'Building target: SysTick_Driver.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"SysTick_Driver.map" --specs=nano.specs -o "SysTick_Driver.elf"  ./system/src/stm32f1-stdperiph/misc.o ./system/src/stm32f1-stdperiph/stm32f10x_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f10x.o ./system/src/cmsis/vectors_stm32f10x.o  ./src/GPIO.o ./src/RCC.o ./src/Systick.o ./src/main.o   
+'Finished building target: SysTick_Driver.elf'
+' '
+'Invoking: GNU ARM Cross Create Flash Image'
+arm-none-eabi-objcopy -O ihex "SysTick_Driver.elf"  "SysTick_Driver.hex"
+'Finished building: SysTick_Driver.hex'
+' '
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4979	    176	    436	   5591	   15d7	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+16:40:11 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4979	    176	    436	   5591	   15d7	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+17:11:11 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4979	    176	    436	   5591	   15d7	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+17:35:16 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4979	    176	    436	   5591	   15d7	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+17:37:54 **** Clean-only build of configuration Debug for project 3_blink_Led_through_AVR_button ****
+make clean 
+rm -rf  ./system/src/stm32f1-stdperiph/misc.o ./system/src/stm32f1-stdperiph/stm32f10x_gpio.o ./system/src/stm32f1-stdperiph/stm32f10x_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f10x.o ./system/src/cmsis/vectors_stm32f10x.o  ./src/DIO_program.o ./src/RCC_program.o ./src/main.o  3_blink_Led_through_AVR_button.hex  3_blink_Led_through_AVR_button.siz  ./system/src/stm32f1-stdperiph/misc.d ./system/src/stm32f1-stdperiph/stm32f10x_gpio.d ./system/src/stm32f1-stdperiph/stm32f10x_rcc.d  ./system/src/newlib/_exit.d ./system/src/newlib/_sbrk.d ./system/src/newlib/_startup.d ./system/src/newlib/_syscalls.d ./system/src/newlib/assert.d  ./system/src/diag/Trace.d ./system/src/diag/trace_impl.d  ./system/src/cortexm/_initialize_hardware.d ./system/src/cortexm/_reset_hardware.d ./system/src/cortexm/exception_handlers.d  ./system/src/cmsis/system_stm32f10x.d ./system/src/cmsis/vectors_stm32f10x.d  ./src/DIO_program.d ./src/RCC_program.d ./src/main.d  ./system/src/newlib/_cxx.d  3_blink_Led_through_AVR_button.elf
+makefile:82: recipe for target 'clean' failed
+process_begin: CreateProcess(NULL, rm -rf ./system/src/stm32f1-stdperiph/misc.o ./system/src/stm32f1-stdperiph/stm32f10x_gpio.o ./system/src/stm32f1-stdperiph/stm32f10x_rcc.o ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o ./system/src/cmsis/system_stm32f10x.o ./system/src/cmsis/vectors_stm32f10x.o ./src/DIO_program.o ./src/RCC_program.o ./src/main.o 3_blink_Led_through_AVR_button.hex 3_blink_Led_through_AVR_button.siz ./system/src/stm32f1-stdperiph/misc.d ./system/src/stm32f1-stdperiph/stm32f10x_gpio.d ./system/src/stm32f1-stdperiph/stm32f10x_rcc.d ./system/src/newlib/_exit.d ./system/src/newlib/_sbrk.d ./system/src/newlib/_startup.d ./system/src/newlib/_syscalls.d ./system/src/newlib/assert.d ./system/src/diag/Trace.d ./system/src/diag/trace_impl.d ./system/src/cortexm/_initialize_hardware.d ./system/src/cortexm/_reset_hardware.d ./system/src/cortexm/exception_handlers.d ./system/src/cmsis/system_stm32f10x.d ./system/src/cmsis/vectors_stm32f10x.d ./src/DIO_program.d ./src/RCC_program.d ./src/main.d ./system/src/newlib/_cxx.d 3_blink_Led_through_AVR_button.elf, ...) failed.
+make (e=2): The system cannot find the file specified.
+
+make: [clean] Error 2 (ignored)
+' '
+17:37:55 **** Build of configuration Debug for project 3_blink_Led_through_AVR_button ****
+make all 
+'Invoking: Cross ARM GNU Print Size'
+arm-none-eabi-size --format=berkeley "3_blink_Led_through_AVR_button.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4927	    176	    412	   5515	   158b	3_blink_Led_through_AVR_button.elf
+'Finished building: 3_blink_Led_through_AVR_button.siz'
+' '
+17:38:02 **** Incremental Build of configuration Debug for project 3_blink_Led_through_AVR_button ****
+make all 
+'Invoking: Cross ARM GNU Print Size'
+arm-none-eabi-size --format=berkeley "3_blink_Led_through_AVR_button.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4927	    176	    412	   5515	   158b	3_blink_Led_through_AVR_button.elf
+'Finished building: 3_blink_Led_through_AVR_button.siz'
+' '
+17:38:07 **** Incremental Build of configuration Debug for project 3_blink_Led_through_AVR_button ****
+make all 
+'Invoking: Cross ARM GNU Print Size'
+arm-none-eabi-size --format=berkeley "3_blink_Led_through_AVR_button.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4927	    176	    412	   5515	   158b	3_blink_Led_through_AVR_button.elf
+'Finished building: 3_blink_Led_through_AVR_button.siz'
+' '
+17:38:36 **** Incremental Build of configuration Debug for project 3_blink_Led_through_AVR_button ****
+make all 
+'Invoking: Cross ARM GNU Print Size'
+arm-none-eabi-size --format=berkeley "3_blink_Led_through_AVR_button.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4927	    176	    412	   5515	   158b	3_blink_Led_through_AVR_button.elf
+'Finished building: 3_blink_Led_through_AVR_button.siz'
+' '
+17:39:25 **** Incremental Build of configuration Debug for project 3_blink_Led_through_AVR_button ****
+make all 
+'Invoking: Cross ARM GNU Print Size'
+arm-none-eabi-size --format=berkeley "3_blink_Led_through_AVR_button.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4927	    176	    412	   5515	   158b	3_blink_Led_through_AVR_button.elf
+'Finished building: 3_blink_Led_through_AVR_button.siz'
+' '
+17:39:32 **** Incremental Build of configuration Debug for project 3_blink_Led_through_AVR_button ****
+make all 
+'Invoking: Cross ARM GNU Print Size'
+arm-none-eabi-size --format=berkeley "3_blink_Led_through_AVR_button.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4927	    176	    412	   5515	   158b	3_blink_Led_through_AVR_button.elf
+'Finished building: 3_blink_Led_through_AVR_button.siz'
+' '
+17:40:15 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4979	    176	    436	   5591	   15d7	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+17:40:44 **** Incremental Build of configuration Debug for project 3_blink_Led_through_AVR_button ****
+make all 
+'Invoking: Cross ARM GNU Print Size'
+arm-none-eabi-size --format=berkeley "3_blink_Led_through_AVR_button.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4927	    176	    412	   5515	   158b	3_blink_Led_through_AVR_button.elf
+'Finished building: 3_blink_Led_through_AVR_button.siz'
+' '
+17:42:11 **** Build of configuration Debug for project hello ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: hello.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"hello.map" --specs=nano.specs -o "hello.elf"  ./system/src/stm32f1-stdperiph/misc.o ./system/src/stm32f1-stdperiph/stm32f10x_gpio.o ./system/src/stm32f1-stdperiph/stm32f10x_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f10x.o ./system/src/cmsis/vectors_stm32f10x.o  ./src/DIO_program.o ./src/RCC_program.o ./src/main.o   
+'Finished building target: hello.elf'
+' '
+'Invoking: GNU ARM Cross Create Flash Image'
+arm-none-eabi-objcopy -O ihex "hello.elf"  "hello.hex"
+'Finished building: hello.hex'
+' '
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "hello.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4923	    176	    424	   5523	   1593	hello.elf
+'Finished building: hello.siz'
+' '
+17:42:24 **** Incremental Build of configuration Debug for project hello ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "hello.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4923	    176	    424	   5523	   1593	hello.elf
+'Finished building: hello.siz'
+' '
+17:44:46 **** Incremental Build of configuration Debug for project hello ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "hello.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4923	    176	    424	   5523	   1593	hello.elf
+'Finished building: hello.siz'
+' '
+17:45:17 **** Incremental Build of configuration Debug for project hello ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: hello.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"hello.map" --specs=nano.specs -o "hello.elf"  ./system/src/stm32f1-stdperiph/misc.o ./system/src/stm32f1-stdperiph/stm32f10x_gpio.o ./system/src/stm32f1-stdperiph/stm32f10x_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f10x.o ./system/src/cmsis/vectors_stm32f10x.o  ./src/DIO_program.o ./src/RCC_program.o ./src/main.o   
+'Finished building target: hello.elf'
+' '
+'Invoking: GNU ARM Cross Create Flash Image'
+arm-none-eabi-objcopy -O ihex "hello.elf"  "hello.hex"
+'Finished building: hello.hex'
+' '
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "hello.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4919	    176	    424	   5519	   158f	hello.elf
+'Finished building: hello.siz'
+' '
+17:45:20 **** Incremental Build of configuration Debug for project hello ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "hello.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4919	    176	    424	   5519	   158f	hello.elf
+'Finished building: hello.siz'
+' '
+17:47:10 **** Incremental Build of configuration Debug for project hello ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: hello.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"hello.map" --specs=nano.specs -o "hello.elf"  ./system/src/stm32f1-stdperiph/misc.o ./system/src/stm32f1-stdperiph/stm32f10x_gpio.o ./system/src/stm32f1-stdperiph/stm32f10x_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f10x.o ./system/src/cmsis/vectors_stm32f10x.o  ./src/DIO_program.o ./src/RCC_program.o ./src/main.o   
+'Finished building target: hello.elf'
+' '
+'Invoking: GNU ARM Cross Create Flash Image'
+arm-none-eabi-objcopy -O ihex "hello.elf"  "hello.hex"
+'Finished building: hello.hex'
+' '
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "hello.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4923	    176	    424	   5523	   1593	hello.elf
+'Finished building: hello.siz'
+' '
+17:47:47 **** Incremental Build of configuration Debug for project hello ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: hello.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"hello.map" --specs=nano.specs -o "hello.elf"  ./system/src/stm32f1-stdperiph/misc.o ./system/src/stm32f1-stdperiph/stm32f10x_gpio.o ./system/src/stm32f1-stdperiph/stm32f10x_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f10x.o ./system/src/cmsis/vectors_stm32f10x.o  ./src/DIO_program.o ./src/RCC_program.o ./src/main.o   
+'Finished building target: hello.elf'
+' '
+'Invoking: GNU ARM Cross Create Flash Image'
+arm-none-eabi-objcopy -O ihex "hello.elf"  "hello.hex"
+'Finished building: hello.hex'
+' '
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "hello.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4927	    176	    424	   5527	   1597	hello.elf
+'Finished building: hello.siz'
+' '
+17:48:29 **** Incremental Build of configuration Debug for project hello ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "hello.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4927	    176	    424	   5527	   1597	hello.elf
+'Finished building: hello.siz'
+' '
+17:48:58 **** Incremental Build of configuration Debug for project hello ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "hello.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4927	    176	    424	   5527	   1597	hello.elf
+'Finished building: hello.siz'
+' '
+17:49:43 **** Incremental Build of configuration Debug for project hello ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "hello.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4927	    176	    424	   5527	   1597	hello.elf
+'Finished building: hello.siz'
+' '
+18:26:48 **** Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: SysTick_Driver.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"SysTick_Driver.map" --specs=nano.specs -o "SysTick_Driver.elf"  ./system/src/stm32f1-stdperiph/misc.o ./system/src/stm32f1-stdperiph/stm32f10x_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f10x.o ./system/src/cmsis/vectors_stm32f10x.o  ./src/GPIO.o ./src/RCC.o ./src/Systick.o ./src/main.o   
+'Finished building target: SysTick_Driver.elf'
+' '
+'Invoking: GNU ARM Cross Create Flash Image'
+arm-none-eabi-objcopy -O ihex "SysTick_Driver.elf"  "SysTick_Driver.hex"
+'Finished building: SysTick_Driver.hex'
+' '
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4979	    176	    436	   5591	   15d7	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+18:27:00 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4979	    176	    436	   5591	   15d7	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+18:29:36 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Building file: ../src/GPIO.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/GPIO.d" -MT"src/GPIO.o" -c -o "src/GPIO.o" "../src/GPIO.c"
+'Finished building: ../src/GPIO.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: SysTick_Driver.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"SysTick_Driver.map" --specs=nano.specs -o "SysTick_Driver.elf"  ./system/src/stm32f1-stdperiph/misc.o ./system/src/stm32f1-stdperiph/stm32f10x_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f10x.o ./system/src/cmsis/vectors_stm32f10x.o  ./src/GPIO.o ./src/RCC.o ./src/Systick.o ./src/main.o   
+'Finished building target: SysTick_Driver.elf'
+' '
+'Invoking: GNU ARM Cross Create Flash Image'
+arm-none-eabi-objcopy -O ihex "SysTick_Driver.elf"  "SysTick_Driver.hex"
+'Finished building: SysTick_Driver.hex'
+' '
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4979	    176	    436	   5591	   15d7	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+18:29:40 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4979	    176	    436	   5591	   15d7	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+18:29:45 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4979	    176	    436	   5591	   15d7	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+18:30:12 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4979	    176	    436	   5591	   15d7	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+18:35:45 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Building file: ../src/GPIO.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/GPIO.d" -MT"src/GPIO.o" -c -o "src/GPIO.o" "../src/GPIO.c"
+'Finished building: ../src/GPIO.c'
+' '
+'Building target: SysTick_Driver.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"SysTick_Driver.map" --specs=nano.specs -o "SysTick_Driver.elf"  ./system/src/stm32f1-stdperiph/misc.o ./system/src/stm32f1-stdperiph/stm32f10x_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f10x.o ./system/src/cmsis/vectors_stm32f10x.o  ./src/GPIO.o ./src/RCC.o ./src/Systick.o ./src/main.o   
+'Finished building target: SysTick_Driver.elf'
+' '
+'Invoking: GNU ARM Cross Create Flash Image'
+arm-none-eabi-objcopy -O ihex "SysTick_Driver.elf"  "SysTick_Driver.hex"
+'Finished building: SysTick_Driver.hex'
+' '
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4975	    176	    436	   5587	   15d3	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+18:35:52 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4975	    176	    436	   5587	   15d3	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+18:37:31 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: SysTick_Driver.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"SysTick_Driver.map" --specs=nano.specs -o "SysTick_Driver.elf"  ./system/src/stm32f1-stdperiph/misc.o ./system/src/stm32f1-stdperiph/stm32f10x_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f10x.o ./system/src/cmsis/vectors_stm32f10x.o  ./src/GPIO.o ./src/RCC.o ./src/Systick.o ./src/main.o   
+'Finished building target: SysTick_Driver.elf'
+' '
+'Invoking: GNU ARM Cross Create Flash Image'
+arm-none-eabi-objcopy -O ihex "SysTick_Driver.elf"  "SysTick_Driver.hex"
+'Finished building: SysTick_Driver.hex'
+' '
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4987	    176	    436	   5599	   15df	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+18:37:38 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4987	    176	    436	   5599	   15df	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+18:38:05 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4987	    176	    436	   5599	   15df	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+18:39:32 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Building file: ../src/GPIO.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/GPIO.d" -MT"src/GPIO.o" -c -o "src/GPIO.o" "../src/GPIO.c"
+'Finished building: ../src/GPIO.c'
+' '
+'Building target: SysTick_Driver.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"SysTick_Driver.map" --specs=nano.specs -o "SysTick_Driver.elf"  ./system/src/stm32f1-stdperiph/misc.o ./system/src/stm32f1-stdperiph/stm32f10x_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f10x.o ./system/src/cmsis/vectors_stm32f10x.o  ./src/GPIO.o ./src/RCC.o ./src/Systick.o ./src/main.o   
+'Finished building target: SysTick_Driver.elf'
+' '
+'Invoking: GNU ARM Cross Create Flash Image'
+arm-none-eabi-objcopy -O ihex "SysTick_Driver.elf"  "SysTick_Driver.hex"
+'Finished building: SysTick_Driver.hex'
+' '
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4995	    176	    436	   5607	   15e7	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+18:39:40 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4995	    176	    436	   5607	   15e7	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+18:41:08 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4995	    176	    436	   5607	   15e7	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+18:41:13 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4995	    176	    436	   5607	   15e7	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+18:42:38 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Building file: ../src/GPIO.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/GPIO.d" -MT"src/GPIO.o" -c -o "src/GPIO.o" "../src/GPIO.c"
+'Finished building: ../src/GPIO.c'
+' '
+'Building target: SysTick_Driver.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"SysTick_Driver.map" --specs=nano.specs -o "SysTick_Driver.elf"  ./system/src/stm32f1-stdperiph/misc.o ./system/src/stm32f1-stdperiph/stm32f10x_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f10x.o ./system/src/cmsis/vectors_stm32f10x.o  ./src/GPIO.o ./src/RCC.o ./src/Systick.o ./src/main.o   
+'Finished building target: SysTick_Driver.elf'
+' '
+'Invoking: GNU ARM Cross Create Flash Image'
+arm-none-eabi-objcopy -O ihex "SysTick_Driver.elf"  "SysTick_Driver.hex"
+'Finished building: SysTick_Driver.hex'
+' '
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5003	    176	    436	   5615	   15ef	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+18:42:42 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5003	    176	    436	   5615	   15ef	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+18:44:22 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Building file: ../src/GPIO.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/GPIO.d" -MT"src/GPIO.o" -c -o "src/GPIO.o" "../src/GPIO.c"
+'Finished building: ../src/GPIO.c'
+' '
+'Building target: SysTick_Driver.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"SysTick_Driver.map" --specs=nano.specs -o "SysTick_Driver.elf"  ./system/src/stm32f1-stdperiph/misc.o ./system/src/stm32f1-stdperiph/stm32f10x_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f10x.o ./system/src/cmsis/vectors_stm32f10x.o  ./src/GPIO.o ./src/RCC.o ./src/Systick.o ./src/main.o   
+'Finished building target: SysTick_Driver.elf'
+' '
+'Invoking: GNU ARM Cross Create Flash Image'
+arm-none-eabi-objcopy -O ihex "SysTick_Driver.elf"  "SysTick_Driver.hex"
+'Finished building: SysTick_Driver.hex'
+' '
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5003	    176	    436	   5615	   15ef	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+18:44:25 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5003	    176	    436	   5615	   15ef	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+18:44:53 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: SysTick_Driver.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"SysTick_Driver.map" --specs=nano.specs -o "SysTick_Driver.elf"  ./system/src/stm32f1-stdperiph/misc.o ./system/src/stm32f1-stdperiph/stm32f10x_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f10x.o ./system/src/cmsis/vectors_stm32f10x.o  ./src/GPIO.o ./src/RCC.o ./src/Systick.o ./src/main.o   
+'Finished building target: SysTick_Driver.elf'
+' '
+'Invoking: GNU ARM Cross Create Flash Image'
+arm-none-eabi-objcopy -O ihex "SysTick_Driver.elf"  "SysTick_Driver.hex"
+'Finished building: SysTick_Driver.hex'
+' '
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4991	    176	    436	   5603	   15e3	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+18:44:56 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4991	    176	    436	   5603	   15e3	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+18:46:07 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4991	    176	    436	   5603	   15e3	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+18:55:09 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4991	    176	    436	   5603	   15e3	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+18:59:20 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Building file: ../src/Systick.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/Systick.d" -MT"src/Systick.o" -c -o "src/Systick.o" "../src/Systick.c"
+../src/Systick.c: In function 'SYSTICK_SetTime_us':
+../src/Systick.c:70:36: warning: unused parameter 'timeus' [-Wunused-parameter]
+ extern void SYSTICK_SetTime_us(u32 timeus,u32 AHB_clcHz)
+                                ~~~~^~~~~~
+../src/Systick.c:70:47: warning: unused parameter 'AHB_clcHz' [-Wunused-parameter]
+ extern void SYSTICK_SetTime_us(u32 timeus,u32 AHB_clcHz)
+                                           ~~~~^~~~~~~~~
+'Finished building: ../src/Systick.c'
+' '
+'Building target: SysTick_Driver.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"SysTick_Driver.map" --specs=nano.specs -o "SysTick_Driver.elf"  ./system/src/stm32f1-stdperiph/misc.o ./system/src/stm32f1-stdperiph/stm32f10x_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f10x.o ./system/src/cmsis/vectors_stm32f10x.o  ./src/GPIO.o ./src/RCC.o ./src/Systick.o ./src/main.o   
+'Finished building target: SysTick_Driver.elf'
+' '
+'Invoking: GNU ARM Cross Create Flash Image'
+arm-none-eabi-objcopy -O ihex "SysTick_Driver.elf"  "SysTick_Driver.hex"
+'Finished building: SysTick_Driver.hex'
+' '
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4995	    176	    436	   5607	   15e7	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+18:59:34 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4995	    176	    436	   5607	   15e7	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+18:59:40 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4995	    176	    436	   5607	   15e7	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+19:02:19 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Building file: ../src/Systick.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/Systick.d" -MT"src/Systick.o" -c -o "src/Systick.o" "../src/Systick.c"
+../src/Systick.c: In function 'SYSTICK_SetTime_us':
+../src/Systick.c:70:36: warning: unused parameter 'timeus' [-Wunused-parameter]
+ extern void SYSTICK_SetTime_us(u32 timeus,u32 AHB_clcHz)
+                                ~~~~^~~~~~
+../src/Systick.c:70:47: warning: unused parameter 'AHB_clcHz' [-Wunused-parameter]
+ extern void SYSTICK_SetTime_us(u32 timeus,u32 AHB_clcHz)
+                                           ~~~~^~~~~~~~~
+'Finished building: ../src/Systick.c'
+' '
+'Building target: SysTick_Driver.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"SysTick_Driver.map" --specs=nano.specs -o "SysTick_Driver.elf"  ./system/src/stm32f1-stdperiph/misc.o ./system/src/stm32f1-stdperiph/stm32f10x_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f10x.o ./system/src/cmsis/vectors_stm32f10x.o  ./src/GPIO.o ./src/RCC.o ./src/Systick.o ./src/main.o   
+'Finished building target: SysTick_Driver.elf'
+' '
+'Invoking: GNU ARM Cross Create Flash Image'
+arm-none-eabi-objcopy -O ihex "SysTick_Driver.elf"  "SysTick_Driver.hex"
+'Finished building: SysTick_Driver.hex'
+' '
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4999	    176	    436	   5611	   15eb	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+19:03:54 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4999	    176	    436	   5611	   15eb	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+19:07:43 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4999	    176	    436	   5611	   15eb	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+19:23:34 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Building file: ../src/Systick.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/Systick.d" -MT"src/Systick.o" -c -o "src/Systick.o" "../src/Systick.c"
+../src/Systick.c: In function 'SYSTICK_SetTime_us':
+../src/Systick.c:70:36: warning: unused parameter 'timeus' [-Wunused-parameter]
+ extern void SYSTICK_SetTime_us(u32 timeus,u32 AHB_clcHz)
+                                ~~~~^~~~~~
+../src/Systick.c:70:47: warning: unused parameter 'AHB_clcHz' [-Wunused-parameter]
+ extern void SYSTICK_SetTime_us(u32 timeus,u32 AHB_clcHz)
+                                           ~~~~^~~~~~~~~
+'Finished building: ../src/Systick.c'
+' '
+'Building target: SysTick_Driver.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"SysTick_Driver.map" --specs=nano.specs -o "SysTick_Driver.elf"  ./system/src/stm32f1-stdperiph/misc.o ./system/src/stm32f1-stdperiph/stm32f10x_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f10x.o ./system/src/cmsis/vectors_stm32f10x.o  ./src/GPIO.o ./src/RCC.o ./src/Systick.o ./src/main.o   
+'Finished building target: SysTick_Driver.elf'
+' '
+'Invoking: GNU ARM Cross Create Flash Image'
+arm-none-eabi-objcopy -O ihex "SysTick_Driver.elf"  "SysTick_Driver.hex"
+'Finished building: SysTick_Driver.hex'
+' '
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4999	    176	    436	   5611	   15eb	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+19:23:38 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4999	    176	    436	   5611	   15eb	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+19:24:25 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Building file: ../src/Systick.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/Systick.d" -MT"src/Systick.o" -c -o "src/Systick.o" "../src/Systick.c"
+../src/Systick.c: In function 'SYSTICK_SetTime_us':
+../src/Systick.c:70:36: warning: unused parameter 'timeus' [-Wunused-parameter]
+ extern void SYSTICK_SetTime_us(u32 timeus,u32 AHB_clcHz)
+                                ~~~~^~~~~~
+../src/Systick.c:70:47: warning: unused parameter 'AHB_clcHz' [-Wunused-parameter]
+ extern void SYSTICK_SetTime_us(u32 timeus,u32 AHB_clcHz)
+                                           ~~~~^~~~~~~~~
+'Finished building: ../src/Systick.c'
+' '
+'Building target: SysTick_Driver.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"SysTick_Driver.map" --specs=nano.specs -o "SysTick_Driver.elf"  ./system/src/stm32f1-stdperiph/misc.o ./system/src/stm32f1-stdperiph/stm32f10x_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f10x.o ./system/src/cmsis/vectors_stm32f10x.o  ./src/GPIO.o ./src/RCC.o ./src/Systick.o ./src/main.o   
+'Finished building target: SysTick_Driver.elf'
+' '
+'Invoking: GNU ARM Cross Create Flash Image'
+arm-none-eabi-objcopy -O ihex "SysTick_Driver.elf"  "SysTick_Driver.hex"
+'Finished building: SysTick_Driver.hex'
+' '
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4999	    176	    436	   5611	   15eb	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+19:24:30 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4999	    176	    436	   5611	   15eb	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+19:26:43 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Building file: ../src/Systick.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/Systick.d" -MT"src/Systick.o" -c -o "src/Systick.o" "../src/Systick.c"
+../src/Systick.c: In function 'SYSTICK_Init':
+../src/Systick.c:49:10: warning: value computed is not used [-Wunused-value]
+  STK_CTRL>>24;
+          ^
+../src/Systick.c: In function 'SYSTICK_SetTime_us':
+../src/Systick.c:71:36: warning: unused parameter 'timeus' [-Wunused-parameter]
+ extern void SYSTICK_SetTime_us(u32 timeus,u32 AHB_clcHz)
+                                ~~~~^~~~~~
+../src/Systick.c:71:47: warning: unused parameter 'AHB_clcHz' [-Wunused-parameter]
+ extern void SYSTICK_SetTime_us(u32 timeus,u32 AHB_clcHz)
+                                           ~~~~^~~~~~~~~
+'Finished building: ../src/Systick.c'
+' '
+'Building target: SysTick_Driver.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"SysTick_Driver.map" --specs=nano.specs -o "SysTick_Driver.elf"  ./system/src/stm32f1-stdperiph/misc.o ./system/src/stm32f1-stdperiph/stm32f10x_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f10x.o ./system/src/cmsis/vectors_stm32f10x.o  ./src/GPIO.o ./src/RCC.o ./src/Systick.o ./src/main.o   
+'Finished building target: SysTick_Driver.elf'
+' '
+'Invoking: GNU ARM Cross Create Flash Image'
+arm-none-eabi-objcopy -O ihex "SysTick_Driver.elf"  "SysTick_Driver.hex"
+'Finished building: SysTick_Driver.hex'
+' '
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5003	    176	    436	   5615	   15ef	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+19:27:11 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Building file: ../src/Systick.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/Systick.d" -MT"src/Systick.o" -c -o "src/Systick.o" "../src/Systick.c"
+../src/Systick.c: In function 'SYSTICK_SetTime_us':
+../src/Systick.c:71:36: warning: unused parameter 'timeus' [-Wunused-parameter]
+ extern void SYSTICK_SetTime_us(u32 timeus,u32 AHB_clcHz)
+                                ~~~~^~~~~~
+../src/Systick.c:71:47: warning: unused parameter 'AHB_clcHz' [-Wunused-parameter]
+ extern void SYSTICK_SetTime_us(u32 timeus,u32 AHB_clcHz)
+                                           ~~~~^~~~~~~~~
+'Finished building: ../src/Systick.c'
+' '
+'Building target: SysTick_Driver.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"SysTick_Driver.map" --specs=nano.specs -o "SysTick_Driver.elf"  ./system/src/stm32f1-stdperiph/misc.o ./system/src/stm32f1-stdperiph/stm32f10x_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f10x.o ./system/src/cmsis/vectors_stm32f10x.o  ./src/GPIO.o ./src/RCC.o ./src/Systick.o ./src/main.o   
+'Finished building target: SysTick_Driver.elf'
+' '
+'Invoking: GNU ARM Cross Create Flash Image'
+arm-none-eabi-objcopy -O ihex "SysTick_Driver.elf"  "SysTick_Driver.hex"
+'Finished building: SysTick_Driver.hex'
+' '
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5011	    176	    436	   5623	   15f7	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+19:27:15 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5011	    176	    436	   5623	   15f7	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+19:27:17 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5011	    176	    436	   5623	   15f7	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+19:30:55 **** Build of configuration Debug for project NVIC_Driver ****
+make all 
+'Building file: ../src/NVIC.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/NVIC.d" -MT"src/NVIC.o" -c -o "src/NVIC.o" "../src/NVIC.c"
+../src/NVIC.c:13:34: warning: "/*" within comment [-Wcomment]
+ /*#define NVIC_CCR    0xE000ED14 /*Used to enable writing to STIR, FROM M3 Guide but different address
+                                   
+../src/NVIC.c: In function 'NVIC_voidFilterEXTI_lowerThan':
+../src/NVIC.c:206:42: warning: unused parameter 'cancelStart_inum' [-Wunused-parameter]
+ void    NVIC_voidFilterEXTI_lowerThan(u8 cancelStart_inum)
+                                       ~~~^~~~~~~~~~~~~~~~
+'Finished building: ../src/NVIC.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:8:2: warning: implicit declaration of function 'voidEnableAllEXTI'; did you mean 'NVIC_voidEnableAllEXTI'? [-Wimplicit-function-declaration]
+  voidEnableAllEXTI();
+  ^~~~~~~~~~~~~~~~~
+  NVIC_voidEnableAllEXTI
+../src/main.c:9:2: warning: implicit declaration of function 'voidFilterEXTI_lowerThan'; did you mean 'NVIC_voidFilterEXTI_lowerThan'? [-Wimplicit-function-declaration]
+  voidFilterEXTI_lowerThan(1);
+  ^~~~~~~~~~~~~~~~~~~~~~~~
+  NVIC_voidFilterEXTI_lowerThan
+'Finished building: ../src/main.c'
+' '
+'Building target: NVIC_Driver.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"NVIC_Driver.map" --specs=nano.specs -o "NVIC_Driver.elf"  ./system/src/stm32f1-stdperiph/misc.o ./system/src/stm32f1-stdperiph/stm32f10x_gpio.o ./system/src/stm32f1-stdperiph/stm32f10x_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f10x.o ./system/src/cmsis/vectors_stm32f10x.o  ./src/NVIC.o ./src/main.o   
+c:/program files (x86)/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./src/main.o: in function `main':
+D:\ITI\Subjects\Embedded_Computer_Architecture_Eng.Tourky\Nafe3_Workspace-v2019\NVIC_Driver\Debug/../src/main.c:8: undefined reference to `voidEnableAllEXTI'
+c:/program files (x86)/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: D:\ITI\Subjects\Embedded_Computer_Architecture_Eng.Tourky\Nafe3_Workspace-v2019\NVIC_Driver\Debug/../src/main.c:9: undefined reference to `voidFilterEXTI_lowerThan'
+c:/program files (x86)/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: D:\ITI\Subjects\Embedded_Computer_Architecture_Eng.Tourky\Nafe3_Workspace-v2019\NVIC_Driver\Debug/../src/main.c:10: undefined reference to `voidFilterEXTI_lowerThan'
+c:/program files (x86)/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: D:\ITI\Subjects\Embedded_Computer_Architecture_Eng.Tourky\Nafe3_Workspace-v2019\NVIC_Driver\Debug/../src/main.c:11: undefined reference to `voidFilterEXTI_lowerThan'
+c:/program files (x86)/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: D:\ITI\Subjects\Embedded_Computer_Architecture_Eng.Tourky\Nafe3_Workspace-v2019\NVIC_Driver\Debug/../src/main.c:12: undefined reference to `voidFilterEXTI_lowerThan'
+c:/program files (x86)/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: D:\ITI\Subjects\Embedded_Computer_Architecture_Eng.Tourky\Nafe3_Workspace-v2019\NVIC_Driver\Debug/../src/main.c:13: undefined reference to `voidFilterEXTI_lowerThan'
+c:/program files (x86)/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./src/main.o:D:\ITI\Subjects\Embedded_Computer_Architecture_Eng.Tourky\Nafe3_Workspace-v2019\NVIC_Driver\Debug/../src/main.c:14: more undefined references to `voidFilterEXTI_lowerThan' follow
+collect2.exe: error: ld returned 1 exit status
+makefile:62: recipe for target 'NVIC_Driver.elf' failed
+make: *** [NVIC_Driver.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:30:57 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Building file: ../src/NVIC.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/NVIC.d" -MT"src/NVIC.o" -c -o "src/NVIC.o" "../src/NVIC.c"
+../src/NVIC.c:13:34: warning: "/*" within comment [-Wcomment]
+ /*#define NVIC_CCR    0xE000ED14 /*Used to enable writing to STIR, FROM M3 Guide but different address
+                                   
+../src/NVIC.c: In function 'NVIC_voidFilterEXTI_lowerThan':
+../src/NVIC.c:206:42: warning: unused parameter 'cancelStart_inum' [-Wunused-parameter]
+ void    NVIC_voidFilterEXTI_lowerThan(u8 cancelStart_inum)
+                                       ~~~^~~~~~~~~~~~~~~~
+'Finished building: ../src/NVIC.c'
+' '
+'Building file: ../src/Systick.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/Systick.d" -MT"src/Systick.o" -c -o "src/Systick.o" "../src/Systick.c"
+../src/Systick.c: In function 'SYSTICK_SetTime_us':
+../src/Systick.c:71:36: warning: unused parameter 'timeus' [-Wunused-parameter]
+ extern void SYSTICK_SetTime_us(u32 timeus,u32 AHB_clcHz)
+                                ~~~~^~~~~~
+../src/Systick.c:71:47: warning: unused parameter 'AHB_clcHz' [-Wunused-parameter]
+ extern void SYSTICK_SetTime_us(u32 timeus,u32 AHB_clcHz)
+                                           ~~~~^~~~~~~~~
+'Finished building: ../src/Systick.c'
+' '
+'Building target: SysTick_Driver.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"SysTick_Driver.map" --specs=nano.specs -o "SysTick_Driver.elf"  ./system/src/stm32f1-stdperiph/misc.o ./system/src/stm32f1-stdperiph/stm32f10x_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f10x.o ./system/src/cmsis/vectors_stm32f10x.o  ./src/GPIO.o ./src/NVIC.o ./src/RCC.o ./src/Systick.o ./src/main.o   
+'Finished building target: SysTick_Driver.elf'
+' '
+'Invoking: GNU ARM Cross Create Flash Image'
+arm-none-eabi-objcopy -O ihex "SysTick_Driver.elf"  "SysTick_Driver.hex"
+'Finished building: SysTick_Driver.hex'
+' '
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4999	    176	    436	   5611	   15eb	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+19:31:00 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4999	    176	    436	   5611	   15eb	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+19:32:15 **** Incremental Build of configuration Debug for project NVIC_Driver ****
+make all 
+'Building target: NVIC_Driver.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"NVIC_Driver.map" --specs=nano.specs -o "NVIC_Driver.elf"  ./system/src/stm32f1-stdperiph/misc.o ./system/src/stm32f1-stdperiph/stm32f10x_gpio.o ./system/src/stm32f1-stdperiph/stm32f10x_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f10x.o ./system/src/cmsis/vectors_stm32f10x.o  ./src/NVIC.o ./src/main.o   
+c:/program files (x86)/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./src/main.o: in function `main':
+D:\ITI\Subjects\Embedded_Computer_Architecture_Eng.Tourky\Nafe3_Workspace-v2019\NVIC_Driver\Debug/../src/main.c:8: undefined reference to `voidEnableAllEXTI'
+c:/program files (x86)/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: D:\ITI\Subjects\Embedded_Computer_Architecture_Eng.Tourky\Nafe3_Workspace-v2019\NVIC_Driver\Debug/../src/main.c:9: undefined reference to `voidFilterEXTI_lowerThan'
+c:/program files (x86)/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: D:\ITI\Subjects\Embedded_Computer_Architecture_Eng.Tourky\Nafe3_Workspace-v2019\NVIC_Driver\Debug/../src/main.c:10: undefined reference to `voidFilterEXTI_lowerThan'
+c:/program files (x86)/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: D:\ITI\Subjects\Embedded_Computer_Architecture_Eng.Tourky\Nafe3_Workspace-v2019\NVIC_Driver\Debug/../src/main.c:11: undefined reference to `voidFilterEXTI_lowerThan'
+c:/program files (x86)/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: D:\ITI\Subjects\Embedded_Computer_Architecture_Eng.Tourky\Nafe3_Workspace-v2019\NVIC_Driver\Debug/../src/main.c:12: undefined reference to `voidFilterEXTI_lowerThan'
+c:/program files (x86)/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: D:\ITI\Subjects\Embedded_Computer_Architecture_Eng.Tourky\Nafe3_Workspace-v2019\NVIC_Driver\Debug/../src/main.c:13: undefined reference to `voidFilterEXTI_lowerThan'
+c:/program files (x86)/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./src/main.o:D:\ITI\Subjects\Embedded_Computer_Architecture_Eng.Tourky\Nafe3_Workspace-v2019\NVIC_Driver\Debug/../src/main.c:14: more undefined references to `voidFilterEXTI_lowerThan' follow
+collect2.exe: error: ld returned 1 exit status
+make: *** [NVIC_Driver.elf] Error 1
+makefile:62: recipe for target 'NVIC_Driver.elf' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+19:32:19 **** Incremental Build of configuration Debug for project NVIC_Driver ****
+make all 
+'Building target: NVIC_Driver.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"NVIC_Driver.map" --specs=nano.specs -o "NVIC_Driver.elf"  ./system/src/stm32f1-stdperiph/misc.o ./system/src/stm32f1-stdperiph/stm32f10x_gpio.o ./system/src/stm32f1-stdperiph/stm32f10x_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f10x.o ./system/src/cmsis/vectors_stm32f10x.o  ./src/NVIC.o ./src/main.o   
+c:/program files (x86)/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./src/main.o: in function `main':
+D:\ITI\Subjects\Embedded_Computer_Architecture_Eng.Tourky\Nafe3_Workspace-v2019\NVIC_Driver\Debug/../src/main.c:8: undefined reference to `voidEnableAllEXTI'
+c:/program files (x86)/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: D:\ITI\Subjects\Embedded_Computer_Architecture_Eng.Tourky\Nafe3_Workspace-v2019\NVIC_Driver\Debug/../src/main.c:9: undefined reference to `voidFilterEXTI_lowerThan'
+c:/program files (x86)/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: D:\ITI\Subjects\Embedded_Computer_Architecture_Eng.Tourky\Nafe3_Workspace-v2019\NVIC_Driver\Debug/../src/main.c:10: undefined reference to `voidFilterEXTI_lowerThan'
+c:/program files (x86)/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: D:\ITI\Subjects\Embedded_Computer_Architecture_Eng.Tourky\Nafe3_Workspace-v2019\NVIC_Driver\Debug/../src/main.c:11: undefined reference to `voidFilterEXTI_lowerThan'
+c:/program files (x86)/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: D:\ITI\Subjects\Embedded_Computer_Architecture_Eng.Tourky\Nafe3_Workspace-v2019\NVIC_Driver\Debug/../src/main.c:12: undefined reference to `voidFilterEXTI_lowerThan'
+c:/program files (x86)/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: D:\ITI\Subjects\Embedded_Computer_Architecture_Eng.Tourky\Nafe3_Workspace-v2019\NVIC_Driver\Debug/../src/main.c:13: undefined reference to `voidFilterEXTI_lowerThan'
+c:/program files (x86)/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./src/main.o:D:\ITI\Subjects\Embedded_Computer_Architecture_Eng.Tourky\Nafe3_Workspace-v2019\NVIC_Driver\Debug/../src/main.c:14: more undefined references to `voidFilterEXTI_lowerThan' follow
+collect2.exe: error: ld returned 1 exit status
+make: *** [NVIC_Driver.elf] Error 1
+makefile:62: recipe for target 'NVIC_Driver.elf' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+19:32:19 **** Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4999	    176	    436	   5611	   15eb	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+19:32:22 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4999	    176	    436	   5611	   15eb	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+19:36:47 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4999	    176	    436	   5611	   15eb	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+19:37:19 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4999	    176	    436	   5611	   15eb	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+19:37:46 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4999	    176	    436	   5611	   15eb	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+19:51:33 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4999	    176	    436	   5611	   15eb	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+19:57:16 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Building file: ../system/src/cortexm/exception_handlers.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"system/src/cortexm/exception_handlers.d" -MT"system/src/cortexm/exception_handlers.o" -c -o "system/src/cortexm/exception_handlers.o" "../system/src/cortexm/exception_handlers.c"
+'Finished building: ../system/src/cortexm/exception_handlers.c'
+' '
+'Building file: ../system/src/cmsis/vectors_stm32f10x.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"system/src/cmsis/vectors_stm32f10x.d" -MT"system/src/cmsis/vectors_stm32f10x.o" -c -o "system/src/cmsis/vectors_stm32f10x.o" "../system/src/cmsis/vectors_stm32f10x.c"
+'Finished building: ../system/src/cmsis/vectors_stm32f10x.c'
+' '
+'Building file: ../src/Systick.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/Systick.d" -MT"src/Systick.o" -c -o "src/Systick.o" "../src/Systick.c"
+../src/Systick.c: In function 'SYSTICK_SetTime_us':
+../src/Systick.c:71:36: warning: unused parameter 'timeus' [-Wunused-parameter]
+ extern void SYSTICK_SetTime_us(u32 timeus,u32 AHB_clcHz)
+                                ~~~~^~~~~~
+../src/Systick.c:71:47: warning: unused parameter 'AHB_clcHz' [-Wunused-parameter]
+ extern void SYSTICK_SetTime_us(u32 timeus,u32 AHB_clcHz)
+                                           ~~~~^~~~~~~~~
+'Finished building: ../src/Systick.c'
+' '
+'Building target: SysTick_Driver.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"SysTick_Driver.map" --specs=nano.specs -o "SysTick_Driver.elf"  ./system/src/stm32f1-stdperiph/misc.o ./system/src/stm32f1-stdperiph/stm32f10x_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f10x.o ./system/src/cmsis/vectors_stm32f10x.o  ./src/GPIO.o ./src/NVIC.o ./src/RCC.o ./src/Systick.o ./src/main.o   
+c:/program files (x86)/gnu tools arm embedded/8 2019-q3-update/bin/../lib/gcc/arm-none-eabi/8.3.1/../../../../arm-none-eabi/bin/ld.exe: ./system/src/cmsis/vectors_stm32f10x.o:(.isr_vector+0x3c): undefined reference to `SysT_Handler'
+makefile:62: recipe for target 'SysTick_Driver.elf' failed
+collect2.exe: error: ld returned 1 exit status
+make: *** [SysTick_Driver.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:24:36 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Building file: ../src/Systick.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/Systick.d" -MT"src/Systick.o" -c -o "src/Systick.o" "../src/Systick.c"
+../src/Systick.c: In function 'SYSTICK_SetTime_us':
+../src/Systick.c:71:36: warning: unused parameter 'timeus' [-Wunused-parameter]
+ extern void SYSTICK_SetTime_us(u32 timeus,u32 AHB_clcHz)
+                                ~~~~^~~~~~
+../src/Systick.c:71:47: warning: unused parameter 'AHB_clcHz' [-Wunused-parameter]
+ extern void SYSTICK_SetTime_us(u32 timeus,u32 AHB_clcHz)
+                                           ~~~~^~~~~~~~~
+'Finished building: ../src/Systick.c'
+' '
+'Building target: SysTick_Driver.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"SysTick_Driver.map" --specs=nano.specs -o "SysTick_Driver.elf"  ./system/src/stm32f1-stdperiph/misc.o ./system/src/stm32f1-stdperiph/stm32f10x_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f10x.o ./system/src/cmsis/vectors_stm32f10x.o  ./src/GPIO.o ./src/NVIC.o ./src/RCC.o ./src/Systick.o ./src/main.o   
+'Finished building target: SysTick_Driver.elf'
+' '
+'Invoking: GNU ARM Cross Create Flash Image'
+arm-none-eabi-objcopy -O ihex "SysTick_Driver.elf"  "SysTick_Driver.hex"
+'Finished building: SysTick_Driver.hex'
+' '
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4999	    176	    436	   5611	   15eb	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+20:40:07 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: SysTick_Driver.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"SysTick_Driver.map" --specs=nano.specs -o "SysTick_Driver.elf"  ./system/src/stm32f1-stdperiph/misc.o ./system/src/stm32f1-stdperiph/stm32f10x_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f10x.o ./system/src/cmsis/vectors_stm32f10x.o  ./src/GPIO.o ./src/NVIC.o ./src/RCC.o ./src/Systick.o ./src/main.o   
+'Finished building target: SysTick_Driver.elf'
+' '
+'Invoking: GNU ARM Cross Create Flash Image'
+arm-none-eabi-objcopy -O ihex "SysTick_Driver.elf"  "SysTick_Driver.hex"
+'Finished building: SysTick_Driver.hex'
+' '
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5059	    176	    436	   5671	   1627	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+20:43:33 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: SysTick_Driver.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"SysTick_Driver.map" --specs=nano.specs -o "SysTick_Driver.elf"  ./system/src/stm32f1-stdperiph/misc.o ./system/src/stm32f1-stdperiph/stm32f10x_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f10x.o ./system/src/cmsis/vectors_stm32f10x.o  ./src/GPIO.o ./src/NVIC.o ./src/RCC.o ./src/Systick.o ./src/main.o   
+'Finished building target: SysTick_Driver.elf'
+' '
+'Invoking: GNU ARM Cross Create Flash Image'
+arm-none-eabi-objcopy -O ihex "SysTick_Driver.elf"  "SysTick_Driver.hex"
+'Finished building: SysTick_Driver.hex'
+' '
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4979	    176	    432	   5587	   15d3	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+20:45:54 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: SysTick_Driver.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"SysTick_Driver.map" --specs=nano.specs -o "SysTick_Driver.elf"  ./system/src/stm32f1-stdperiph/misc.o ./system/src/stm32f1-stdperiph/stm32f10x_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f10x.o ./system/src/cmsis/vectors_stm32f10x.o  ./src/GPIO.o ./src/NVIC.o ./src/RCC.o ./src/Systick.o ./src/main.o   
+'Finished building target: SysTick_Driver.elf'
+' '
+'Invoking: GNU ARM Cross Create Flash Image'
+arm-none-eabi-objcopy -O ihex "SysTick_Driver.elf"  "SysTick_Driver.hex"
+'Finished building: SysTick_Driver.hex'
+' '
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5011	    176	    436	   5623	   15f7	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+20:51:01 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5011	    176	    436	   5623	   15f7	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+20:58:35 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:46:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/main.c'
+' '
+'Building target: SysTick_Driver.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"SysTick_Driver.map" --specs=nano.specs -o "SysTick_Driver.elf"  ./system/src/stm32f1-stdperiph/misc.o ./system/src/stm32f1-stdperiph/stm32f10x_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f10x.o ./system/src/cmsis/vectors_stm32f10x.o  ./src/GPIO.o ./src/NVIC.o ./src/RCC.o ./src/Systick.o ./src/main.o   
+'Finished building target: SysTick_Driver.elf'
+' '
+'Invoking: GNU ARM Cross Create Flash Image'
+arm-none-eabi-objcopy -O ihex "SysTick_Driver.elf"  "SysTick_Driver.hex"
+'Finished building: SysTick_Driver.hex'
+' '
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5011	    176	    436	   5623	   15f7	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+20:58:40 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5011	    176	    436	   5623	   15f7	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+20:58:47 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5011	    176	    436	   5623	   15f7	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+21:04:10 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: SysTick_Driver.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"SysTick_Driver.map" --specs=nano.specs -o "SysTick_Driver.elf"  ./system/src/stm32f1-stdperiph/misc.o ./system/src/stm32f1-stdperiph/stm32f10x_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f10x.o ./system/src/cmsis/vectors_stm32f10x.o  ./src/GPIO.o ./src/NVIC.o ./src/RCC.o ./src/Systick.o ./src/main.o   
+'Finished building target: SysTick_Driver.elf'
+' '
+'Invoking: GNU ARM Cross Create Flash Image'
+arm-none-eabi-objcopy -O ihex "SysTick_Driver.elf"  "SysTick_Driver.hex"
+'Finished building: SysTick_Driver.hex'
+' '
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5011	    176	    436	   5623	   15f7	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+21:06:39 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Building file: ../src/Systick.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/Systick.d" -MT"src/Systick.o" -c -o "src/Systick.o" "../src/Systick.c"
+../src/Systick.c: In function 'SYSTICK_SetTime_us':
+../src/Systick.c:73:36: warning: unused parameter 'timeus' [-Wunused-parameter]
+ extern void SYSTICK_SetTime_us(u32 timeus,u32 AHB_clcHz)
+                                ~~~~^~~~~~
+../src/Systick.c:73:47: warning: unused parameter 'AHB_clcHz' [-Wunused-parameter]
+ extern void SYSTICK_SetTime_us(u32 timeus,u32 AHB_clcHz)
+                                           ~~~~^~~~~~~~~
+'Finished building: ../src/Systick.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:46:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/main.c'
+' '
+'Building target: SysTick_Driver.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"SysTick_Driver.map" --specs=nano.specs -o "SysTick_Driver.elf"  ./system/src/stm32f1-stdperiph/misc.o ./system/src/stm32f1-stdperiph/stm32f10x_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f10x.o ./system/src/cmsis/vectors_stm32f10x.o  ./src/GPIO.o ./src/NVIC.o ./src/RCC.o ./src/Systick.o ./src/main.o   
+'Finished building target: SysTick_Driver.elf'
+' '
+'Invoking: GNU ARM Cross Create Flash Image'
+arm-none-eabi-objcopy -O ihex "SysTick_Driver.elf"  "SysTick_Driver.hex"
+'Finished building: SysTick_Driver.hex'
+' '
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5023	    176	    436	   5635	   1603	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+21:06:47 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5023	    176	    436	   5635	   1603	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+21:07:25 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5023	    176	    436	   5635	   1603	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+21:07:28 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5023	    176	    436	   5635	   1603	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+21:08:41 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:46:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/main.c'
+' '
+'Building target: SysTick_Driver.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"SysTick_Driver.map" --specs=nano.specs -o "SysTick_Driver.elf"  ./system/src/stm32f1-stdperiph/misc.o ./system/src/stm32f1-stdperiph/stm32f10x_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f10x.o ./system/src/cmsis/vectors_stm32f10x.o  ./src/GPIO.o ./src/NVIC.o ./src/RCC.o ./src/Systick.o ./src/main.o   
+'Finished building target: SysTick_Driver.elf'
+' '
+'Invoking: GNU ARM Cross Create Flash Image'
+arm-none-eabi-objcopy -O ihex "SysTick_Driver.elf"  "SysTick_Driver.hex"
+'Finished building: SysTick_Driver.hex'
+' '
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5023	    176	    436	   5635	   1603	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+21:09:00 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5023	    176	    436	   5635	   1603	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+21:09:04 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5023	    176	    436	   5635	   1603	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+21:10:36 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5023	    176	    436	   5635	   1603	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+21:11:49 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: SysTick_Driver.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"SysTick_Driver.map" --specs=nano.specs -o "SysTick_Driver.elf"  ./system/src/stm32f1-stdperiph/misc.o ./system/src/stm32f1-stdperiph/stm32f10x_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f10x.o ./system/src/cmsis/vectors_stm32f10x.o  ./src/GPIO.o ./src/NVIC.o ./src/RCC.o ./src/Systick.o ./src/main.o   
+'Finished building target: SysTick_Driver.elf'
+' '
+'Invoking: GNU ARM Cross Create Flash Image'
+arm-none-eabi-objcopy -O ihex "SysTick_Driver.elf"  "SysTick_Driver.hex"
+'Finished building: SysTick_Driver.hex'
+' '
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5023	    176	    436	   5635	   1603	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+21:11:54 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: SysTick_Driver.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"SysTick_Driver.map" --specs=nano.specs -o "SysTick_Driver.elf"  ./system/src/stm32f1-stdperiph/misc.o ./system/src/stm32f1-stdperiph/stm32f10x_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f10x.o ./system/src/cmsis/vectors_stm32f10x.o  ./src/GPIO.o ./src/NVIC.o ./src/RCC.o ./src/Systick.o ./src/main.o   
+'Finished building target: SysTick_Driver.elf'
+' '
+'Invoking: GNU ARM Cross Create Flash Image'
+arm-none-eabi-objcopy -O ihex "SysTick_Driver.elf"  "SysTick_Driver.hex"
+'Finished building: SysTick_Driver.hex'
+' '
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5023	    176	    436	   5635	   1603	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+21:19:30 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Building file: ../src/Systick.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/Systick.d" -MT"src/Systick.o" -c -o "src/Systick.o" "../src/Systick.c"
+../src/Systick.c: In function 'SYSTICK_SetTime_us':
+../src/Systick.c:74:36: warning: unused parameter 'timeus' [-Wunused-parameter]
+ extern void SYSTICK_SetTime_us(u32 timeus,u32 AHB_clcHz)
+                                ~~~~^~~~~~
+../src/Systick.c:74:47: warning: unused parameter 'AHB_clcHz' [-Wunused-parameter]
+ extern void SYSTICK_SetTime_us(u32 timeus,u32 AHB_clcHz)
+                                           ~~~~^~~~~~~~~
+'Finished building: ../src/Systick.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: SysTick_Driver.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"SysTick_Driver.map" --specs=nano.specs -o "SysTick_Driver.elf"  ./system/src/stm32f1-stdperiph/misc.o ./system/src/stm32f1-stdperiph/stm32f10x_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f10x.o ./system/src/cmsis/vectors_stm32f10x.o  ./src/GPIO.o ./src/NVIC.o ./src/RCC.o ./src/Systick.o ./src/main.o   
+'Finished building target: SysTick_Driver.elf'
+' '
+'Invoking: GNU ARM Cross Create Flash Image'
+arm-none-eabi-objcopy -O ihex "SysTick_Driver.elf"  "SysTick_Driver.hex"
+'Finished building: SysTick_Driver.hex'
+' '
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5035	    176	    436	   5647	   160f	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+21:20:44 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5035	    176	    436	   5647	   160f	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+21:25:50 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Building file: ../src/Systick.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/Systick.d" -MT"src/Systick.o" -c -o "src/Systick.o" "../src/Systick.c"
+../src/Systick.c: In function 'SYSTICK_SetTime_us':
+../src/Systick.c:73:36: warning: unused parameter 'timeus' [-Wunused-parameter]
+ extern void SYSTICK_SetTime_us(u32 timeus,u32 AHB_clcHz)
+                                ~~~~^~~~~~
+../src/Systick.c:73:47: warning: unused parameter 'AHB_clcHz' [-Wunused-parameter]
+ extern void SYSTICK_SetTime_us(u32 timeus,u32 AHB_clcHz)
+                                           ~~~~^~~~~~~~~
+'Finished building: ../src/Systick.c'
+' '
+'Building target: SysTick_Driver.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"SysTick_Driver.map" --specs=nano.specs -o "SysTick_Driver.elf"  ./system/src/stm32f1-stdperiph/misc.o ./system/src/stm32f1-stdperiph/stm32f10x_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f10x.o ./system/src/cmsis/vectors_stm32f10x.o  ./src/GPIO.o ./src/NVIC.o ./src/RCC.o ./src/Systick.o ./src/main.o   
+'Finished building target: SysTick_Driver.elf'
+' '
+'Invoking: GNU ARM Cross Create Flash Image'
+arm-none-eabi-objcopy -O ihex "SysTick_Driver.elf"  "SysTick_Driver.hex"
+'Finished building: SysTick_Driver.hex'
+' '
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5027	    176	    436	   5639	   1607	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+21:26:45 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5027	    176	    436	   5639	   1607	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+21:27:17 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: SysTick_Driver.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"SysTick_Driver.map" --specs=nano.specs -o "SysTick_Driver.elf"  ./system/src/stm32f1-stdperiph/misc.o ./system/src/stm32f1-stdperiph/stm32f10x_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f10x.o ./system/src/cmsis/vectors_stm32f10x.o  ./src/GPIO.o ./src/NVIC.o ./src/RCC.o ./src/Systick.o ./src/main.o   
+'Finished building target: SysTick_Driver.elf'
+' '
+'Invoking: GNU ARM Cross Create Flash Image'
+arm-none-eabi-objcopy -O ihex "SysTick_Driver.elf"  "SysTick_Driver.hex"
+'Finished building: SysTick_Driver.hex'
+' '
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5035	    176	    436	   5647	   160f	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+21:27:22 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5035	    176	    436	   5647	   160f	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+21:29:10 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+../src/main.c:10:1: warning: 'static' is not at beginning of declaration [-Wold-style-declaration]
+ u8 static f=0;
+ ^~
+'Finished building: ../src/main.c'
+' '
+'Building target: SysTick_Driver.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"SysTick_Driver.map" --specs=nano.specs -o "SysTick_Driver.elf"  ./system/src/stm32f1-stdperiph/misc.o ./system/src/stm32f1-stdperiph/stm32f10x_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f10x.o ./system/src/cmsis/vectors_stm32f10x.o  ./src/GPIO.o ./src/NVIC.o ./src/RCC.o ./src/Systick.o ./src/main.o   
+'Finished building target: SysTick_Driver.elf'
+' '
+'Invoking: GNU ARM Cross Create Flash Image'
+arm-none-eabi-objcopy -O ihex "SysTick_Driver.elf"  "SysTick_Driver.hex"
+'Finished building: SysTick_Driver.hex'
+' '
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5035	    176	    436	   5647	   160f	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+21:32:04 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Building file: ../src/Systick.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/Systick.d" -MT"src/Systick.o" -c -o "src/Systick.o" "../src/Systick.c"
+../src/Systick.c: In function 'SYSTICK_SetTime_us':
+../src/Systick.c:73:36: warning: unused parameter 'timeus' [-Wunused-parameter]
+ extern void SYSTICK_SetTime_us(u32 timeus,u32 AHB_clcHz)
+                                ~~~~^~~~~~
+../src/Systick.c:73:47: warning: unused parameter 'AHB_clcHz' [-Wunused-parameter]
+ extern void SYSTICK_SetTime_us(u32 timeus,u32 AHB_clcHz)
+                                           ~~~~^~~~~~~~~
+'Finished building: ../src/Systick.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: SysTick_Driver.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"SysTick_Driver.map" --specs=nano.specs -o "SysTick_Driver.elf"  ./system/src/stm32f1-stdperiph/misc.o ./system/src/stm32f1-stdperiph/stm32f10x_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f10x.o ./system/src/cmsis/vectors_stm32f10x.o  ./src/GPIO.o ./src/NVIC.o ./src/RCC.o ./src/Systick.o ./src/main.o   
+'Finished building target: SysTick_Driver.elf'
+' '
+'Invoking: GNU ARM Cross Create Flash Image'
+arm-none-eabi-objcopy -O ihex "SysTick_Driver.elf"  "SysTick_Driver.hex"
+'Finished building: SysTick_Driver.hex'
+' '
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5031	    176	    436	   5643	   160b	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+21:36:49 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Building file: ../src/Systick.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/Systick.d" -MT"src/Systick.o" -c -o "src/Systick.o" "../src/Systick.c"
+../src/Systick.c: In function 'SYSTICK_SetTime_us':
+../src/Systick.c:73:36: warning: unused parameter 'timeus' [-Wunused-parameter]
+ extern void SYSTICK_SetTime_us(u32 timeus,u32 AHB_clcHz)
+                                ~~~~^~~~~~
+../src/Systick.c:73:47: warning: unused parameter 'AHB_clcHz' [-Wunused-parameter]
+ extern void SYSTICK_SetTime_us(u32 timeus,u32 AHB_clcHz)
+                                           ~~~~^~~~~~~~~
+'Finished building: ../src/Systick.c'
+' '
+'Building target: SysTick_Driver.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"SysTick_Driver.map" --specs=nano.specs -o "SysTick_Driver.elf"  ./system/src/stm32f1-stdperiph/misc.o ./system/src/stm32f1-stdperiph/stm32f10x_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f10x.o ./system/src/cmsis/vectors_stm32f10x.o  ./src/GPIO.o ./src/NVIC.o ./src/RCC.o ./src/Systick.o ./src/main.o   
+'Finished building target: SysTick_Driver.elf'
+' '
+'Invoking: GNU ARM Cross Create Flash Image'
+arm-none-eabi-objcopy -O ihex "SysTick_Driver.elf"  "SysTick_Driver.hex"
+'Finished building: SysTick_Driver.hex'
+' '
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5031	    176	    436	   5643	   160b	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+21:36:57 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: SysTick_Driver.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"SysTick_Driver.map" --specs=nano.specs -o "SysTick_Driver.elf"  ./system/src/stm32f1-stdperiph/misc.o ./system/src/stm32f1-stdperiph/stm32f10x_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f10x.o ./system/src/cmsis/vectors_stm32f10x.o  ./src/GPIO.o ./src/NVIC.o ./src/RCC.o ./src/Systick.o ./src/main.o   
+'Finished building target: SysTick_Driver.elf'
+' '
+'Invoking: GNU ARM Cross Create Flash Image'
+arm-none-eabi-objcopy -O ihex "SysTick_Driver.elf"  "SysTick_Driver.hex"
+'Finished building: SysTick_Driver.hex'
+' '
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5027	    176	    436	   5639	   1607	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+21:42:05 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: SysTick_Driver.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"SysTick_Driver.map" --specs=nano.specs -o "SysTick_Driver.elf"  ./system/src/stm32f1-stdperiph/misc.o ./system/src/stm32f1-stdperiph/stm32f10x_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f10x.o ./system/src/cmsis/vectors_stm32f10x.o  ./src/GPIO.o ./src/NVIC.o ./src/RCC.o ./src/Systick.o ./src/main.o   
+'Finished building target: SysTick_Driver.elf'
+' '
+'Invoking: GNU ARM Cross Create Flash Image'
+arm-none-eabi-objcopy -O ihex "SysTick_Driver.elf"  "SysTick_Driver.hex"
+'Finished building: SysTick_Driver.hex'
+' '
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5027	    176	    436	   5639	   1607	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+21:54:00 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Building file: ../src/Systick.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/Systick.d" -MT"src/Systick.o" -c -o "src/Systick.o" "../src/Systick.c"
+../src/Systick.c: In function 'SYSTICK_SetTime_us':
+../src/Systick.c:73:36: warning: unused parameter 'timeus' [-Wunused-parameter]
+ extern void SYSTICK_SetTime_us(u32 timeus,u32 AHB_clcHz)
+                                ~~~~^~~~~~
+../src/Systick.c:73:47: warning: unused parameter 'AHB_clcHz' [-Wunused-parameter]
+ extern void SYSTICK_SetTime_us(u32 timeus,u32 AHB_clcHz)
+                                           ~~~~^~~~~~~~~
+'Finished building: ../src/Systick.c'
+' '
+'Building target: SysTick_Driver.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"SysTick_Driver.map" --specs=nano.specs -o "SysTick_Driver.elf"  ./system/src/stm32f1-stdperiph/misc.o ./system/src/stm32f1-stdperiph/stm32f10x_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f10x.o ./system/src/cmsis/vectors_stm32f10x.o  ./src/GPIO.o ./src/NVIC.o ./src/RCC.o ./src/Systick.o ./src/main.o   
+'Finished building target: SysTick_Driver.elf'
+' '
+'Invoking: GNU ARM Cross Create Flash Image'
+arm-none-eabi-objcopy -O ihex "SysTick_Driver.elf"  "SysTick_Driver.hex"
+'Finished building: SysTick_Driver.hex'
+' '
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5023	    176	    436	   5635	   1603	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+21:58:15 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5023	    176	    436	   5635	   1603	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+21:58:17 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5023	    176	    436	   5635	   1603	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+21:58:32 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5023	    176	    436	   5635	   1603	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+22:00:08 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Building file: ../src/GPIO.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/GPIO.d" -MT"src/GPIO.o" -c -o "src/GPIO.o" "../src/GPIO.c"
+'Finished building: ../src/GPIO.c'
+' '
+'Building target: SysTick_Driver.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"SysTick_Driver.map" --specs=nano.specs -o "SysTick_Driver.elf"  ./system/src/stm32f1-stdperiph/misc.o ./system/src/stm32f1-stdperiph/stm32f10x_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f10x.o ./system/src/cmsis/vectors_stm32f10x.o  ./src/GPIO.o ./src/NVIC.o ./src/RCC.o ./src/Systick.o ./src/main.o   
+'Finished building target: SysTick_Driver.elf'
+' '
+'Invoking: GNU ARM Cross Create Flash Image'
+arm-none-eabi-objcopy -O ihex "SysTick_Driver.elf"  "SysTick_Driver.hex"
+'Finished building: SysTick_Driver.hex'
+' '
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5027	    176	    436	   5639	   1607	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+22:00:16 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5027	    176	    436	   5639	   1607	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+22:01:10 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Building file: ../src/Systick.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/Systick.d" -MT"src/Systick.o" -c -o "src/Systick.o" "../src/Systick.c"
+../src/Systick.c: In function 'SYSTICK_SetTime_us':
+../src/Systick.c:73:36: warning: unused parameter 'timeus' [-Wunused-parameter]
+ extern void SYSTICK_SetTime_us(u32 timeus,u32 AHB_clcHz)
+                                ~~~~^~~~~~
+../src/Systick.c:73:47: warning: unused parameter 'AHB_clcHz' [-Wunused-parameter]
+ extern void SYSTICK_SetTime_us(u32 timeus,u32 AHB_clcHz)
+                                           ~~~~^~~~~~~~~
+'Finished building: ../src/Systick.c'
+' '
+'Building target: SysTick_Driver.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"SysTick_Driver.map" --specs=nano.specs -o "SysTick_Driver.elf"  ./system/src/stm32f1-stdperiph/misc.o ./system/src/stm32f1-stdperiph/stm32f10x_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f10x.o ./system/src/cmsis/vectors_stm32f10x.o  ./src/GPIO.o ./src/NVIC.o ./src/RCC.o ./src/Systick.o ./src/main.o   
+'Finished building target: SysTick_Driver.elf'
+' '
+'Invoking: GNU ARM Cross Create Flash Image'
+arm-none-eabi-objcopy -O ihex "SysTick_Driver.elf"  "SysTick_Driver.hex"
+'Finished building: SysTick_Driver.hex'
+' '
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5015	    176	    436	   5627	   15fb	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+22:20:32 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5015	    176	    436	   5627	   15fb	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+22:20:41 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5015	    176	    436	   5627	   15fb	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+22:20:56 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: SysTick_Driver.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"SysTick_Driver.map" --specs=nano.specs -o "SysTick_Driver.elf"  ./system/src/stm32f1-stdperiph/misc.o ./system/src/stm32f1-stdperiph/stm32f10x_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f10x.o ./system/src/cmsis/vectors_stm32f10x.o  ./src/GPIO.o ./src/NVIC.o ./src/RCC.o ./src/Systick.o ./src/main.o   
+'Finished building target: SysTick_Driver.elf'
+' '
+'Invoking: GNU ARM Cross Create Flash Image'
+arm-none-eabi-objcopy -O ihex "SysTick_Driver.elf"  "SysTick_Driver.hex"
+'Finished building: SysTick_Driver.hex'
+' '
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5019	    176	    436	   5631	   15ff	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+22:22:01 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: SysTick_Driver.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"SysTick_Driver.map" --specs=nano.specs -o "SysTick_Driver.elf"  ./system/src/stm32f1-stdperiph/misc.o ./system/src/stm32f1-stdperiph/stm32f10x_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f10x.o ./system/src/cmsis/vectors_stm32f10x.o  ./src/GPIO.o ./src/NVIC.o ./src/RCC.o ./src/Systick.o ./src/main.o   
+'Finished building target: SysTick_Driver.elf'
+' '
+'Invoking: GNU ARM Cross Create Flash Image'
+arm-none-eabi-objcopy -O ihex "SysTick_Driver.elf"  "SysTick_Driver.hex"
+'Finished building: SysTick_Driver.hex'
+' '
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5019	    176	    436	   5631	   15ff	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '
+22:24:21 **** Incremental Build of configuration Debug for project SysTick_Driver ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: GNU ARM Cross C Compiler'
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000 -I"../include" -I"../system/include" -I"../system/include/cmsis" -I"../system/include/stm32f1-stdperiph" -std=gnu11 -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: SysTick_Driver.elf'
+'Invoking: GNU ARM Cross C++ Linker'
+arm-none-eabi-g++ -mcpu=cortex-m3 -mthumb -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -T mem.ld -T libs.ld -T sections.ld -nostartfiles -Xlinker --gc-sections -L"../ldscripts" -Wl,-Map,"SysTick_Driver.map" --specs=nano.specs -o "SysTick_Driver.elf"  ./system/src/stm32f1-stdperiph/misc.o ./system/src/stm32f1-stdperiph/stm32f10x_rcc.o  ./system/src/newlib/_cxx.o ./system/src/newlib/_exit.o ./system/src/newlib/_sbrk.o ./system/src/newlib/_startup.o ./system/src/newlib/_syscalls.o ./system/src/newlib/assert.o  ./system/src/diag/Trace.o ./system/src/diag/trace_impl.o  ./system/src/cortexm/_initialize_hardware.o ./system/src/cortexm/_reset_hardware.o ./system/src/cortexm/exception_handlers.o  ./system/src/cmsis/system_stm32f10x.o ./system/src/cmsis/vectors_stm32f10x.o  ./src/GPIO.o ./src/NVIC.o ./src/RCC.o ./src/Systick.o ./src/main.o   
+'Finished building target: SysTick_Driver.elf'
+' '
+'Invoking: GNU ARM Cross Create Flash Image'
+arm-none-eabi-objcopy -O ihex "SysTick_Driver.elf"  "SysTick_Driver.hex"
+'Finished building: SysTick_Driver.hex'
+' '
+'Invoking: GNU ARM Cross Print Size'
+arm-none-eabi-size --format=berkeley "SysTick_Driver.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5019	    176	    436	   5631	   15ff	SysTick_Driver.elf
+'Finished building: SysTick_Driver.siz'
+' '

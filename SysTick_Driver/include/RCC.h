@@ -4,14 +4,7 @@
 /* Release Date	: 25-1-2020		*/
 /********************************/
 
-/*special defined types*/
-#define u8 	unsigned char
-#define u16 unsigned short int
-#define u32 unsigned long int
 
-#define s8 	signed char
-#define s16 signed short int
-#define s32 signed long int
 
 /*Macros for user input arguments*/
 //bus

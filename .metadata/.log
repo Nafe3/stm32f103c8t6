@@ -6134,3 +6134,454 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.eclipse.cdt.core 1 0 2020-03-15 02:46:47.468
 !MESSAGE Indexed '3_blink_Led_through_AVR_button' (19 sources, 184 headers) in 5.79 sec: 12,332 declarations; 18,652 references; 0 unresolved inclusions; 90 syntax errors; 677 unresolved names (2.1%)
+
+!ENTRY ilg.gnumcueclipse.packs.core 4 1 2020-03-15 13:30:43.327
+!MESSAGE C:\Program Files\GNU ARM Eclipse\OpenOCD\0.10.0-201601101000-dev\bin\openocd.exe -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -f st/stm32f103c8tx.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY ilg.gnumcueclipse.packs.core 4 1 2020-03-15 13:30:43.862
+!MESSAGE arm-none-eabi-gdb --interpreter=mi2 --nx
+
+!ENTRY ilg.gnumcueclipse.packs.core 4 1 2020-03-15 13:37:31.918
+!MESSAGE C:\Program Files\GNU ARM Eclipse\OpenOCD\0.10.0-201601101000-dev\bin\openocd.exe -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -f st/stm32f103c8tx.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY ilg.gnumcueclipse.packs.core 4 1 2020-03-15 13:37:32.019
+!MESSAGE arm-none-eabi-gdb --interpreter=mi2 --nx
+
+!ENTRY ilg.gnumcueclipse.packs.core 4 1 2020-03-15 13:37:44.188
+!MESSAGE C:\Program Files\GNU ARM Eclipse\OpenOCD\0.10.0-201601101000-dev\bin\openocd.exe -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -f st/stm32f103c8tx.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY ilg.gnumcueclipse.packs.core 4 1 2020-03-15 13:37:44.291
+!MESSAGE arm-none-eabi-gdb --interpreter=mi2 --nx
+
+!ENTRY ilg.gnumcueclipse.packs.core 4 1 2020-03-15 13:43:06.369
+!MESSAGE C:\Program Files\GNU ARM Eclipse\OpenOCD\0.10.0-201601101000-dev\bin\openocd.exe -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -f st/stm32f103c8tx.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY ilg.gnumcueclipse.packs.core 4 1 2020-03-15 13:43:06.488
+!MESSAGE arm-none-eabi-gdb --interpreter=mi2 --nx
+
+!ENTRY ilg.gnumcueclipse.packs.core 4 1 2020-03-15 13:53:48.018
+!MESSAGE C:\Program Files\GNU ARM Eclipse\OpenOCD\0.10.0-201601101000-dev\bin\openocd.exe -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -f st/stm32f103c8tx.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY ilg.gnumcueclipse.packs.core 4 1 2020-03-15 13:53:48.128
+!MESSAGE arm-none-eabi-gdb --interpreter=mi2 --nx
+
+!ENTRY ilg.gnumcueclipse.packs.core 4 1 2020-03-15 14:32:32.915
+!MESSAGE C:\Program Files\GNU ARM Eclipse\OpenOCD\0.10.0-201601101000-dev\bin\openocd.exe -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -f st/stm32f103c8tx.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY ilg.gnumcueclipse.packs.core 4 1 2020-03-15 14:32:33.050
+!MESSAGE arm-none-eabi-gdb --interpreter=mi2 --nx
+
+!ENTRY ilg.gnumcueclipse.packs.core 4 1 2020-03-15 14:44:54.656
+!MESSAGE C:\Program Files\GNU ARM Eclipse\OpenOCD\0.10.0-201601101000-dev\bin\openocd.exe -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -f st/stm32f103c8tx.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY ilg.gnumcueclipse.packs.core 4 1 2020-03-15 14:44:54.753
+!MESSAGE arm-none-eabi-gdb --interpreter=mi2 --nx
+
+!ENTRY ilg.gnumcueclipse.packs.core 4 1 2020-03-15 16:35:31.926
+!MESSAGE C:\Program Files\GNU ARM Eclipse\OpenOCD\0.10.0-201601101000-dev\bin\openocd.exe -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -f st/stm32f103c8tx.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY ilg.gnumcueclipse.packs.core 4 1 2020-03-15 16:35:32.028
+!MESSAGE arm-none-eabi-gdb --interpreter=mi2 --nx
+
+!ENTRY ilg.gnumcueclipse.packs.core 4 1 2020-03-15 16:40:12.346
+!MESSAGE C:\Program Files\GNU ARM Eclipse\OpenOCD\0.10.0-201601101000-dev\bin\openocd.exe -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -f st/stm32f103c8tx.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY ilg.gnumcueclipse.packs.core 4 1 2020-03-15 16:40:12.447
+!MESSAGE arm-none-eabi-gdb --interpreter=mi2 --nx
+
+!ENTRY ilg.gnumcueclipse.debug.gdbjtag 4 0 2020-03-15 17:11:06.388
+!MESSAGE Debug session 'SysTick_Driver Debug' already started. Terminate the first one before restarting.
+
+!ENTRY ilg.gnumcueclipse.managedbuild.packs 4 1 2020-03-15 17:11:12.337
+!MESSAGE C:\Program Files\GNU ARM Eclipse\OpenOCD\0.10.0-201601101000-dev\bin\openocd.exe -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -f st/stm32f103c8tx.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY ilg.gnumcueclipse.managedbuild.packs 4 1 2020-03-15 17:11:12.436
+!MESSAGE arm-none-eabi-gdb --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.jface 2 0 2020-03-15 17:18:25.310
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-03-15 17:18:25.310
+!MESSAGE A conflict occurred for CTRL+G:
+Binding(CTRL+G,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.search.finddecl,Declaration,
+		Searches for declarations of the selected element in the workspace,
+		Category(org.eclipse.cdt.ui.category.source,Source,Source commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@f0752f1,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cEditorScope,,,system)
+Binding(CTRL+G,
+	ParameterizedCommand(Command(org.eclipse.debug.ui.command.gotoaddress,Go to Address,
+		Go to Address,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.debug.ui.memory.abstractasynctablerendering,,,system)
+
+!ENTRY ilg.gnumcueclipse.managedbuild.packs 4 1 2020-03-15 17:35:17.088
+!MESSAGE C:\Program Files\GNU ARM Eclipse\OpenOCD\0.10.0-201601101000-dev\bin\openocd.exe -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -f st/stm32f103c8tx.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY ilg.gnumcueclipse.managedbuild.packs 4 1 2020-03-15 17:35:17.191
+!MESSAGE arm-none-eabi-gdb --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 104 2020-03-15 17:37:55.845
+!MESSAGE Program file does not exist
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 104 2020-03-15 17:37:55.845
+!MESSAGE 
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 104 2020-03-15 17:38:07.940
+!MESSAGE Program file does not exist
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 104 2020-03-15 17:38:07.940
+!MESSAGE 
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 104 2020-03-15 17:39:26.094
+!MESSAGE Program file does not exist
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 104 2020-03-15 17:39:26.094
+!MESSAGE 
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 104 2020-03-15 17:39:33.001
+!MESSAGE Program file does not exist
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 104 2020-03-15 17:39:33.001
+!MESSAGE 
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 104 2020-03-15 17:39:55.774
+!MESSAGE Program file does not exist
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 104 2020-03-15 17:39:55.774
+!MESSAGE 
+
+!ENTRY ilg.gnumcueclipse.debug.gdbjtag.qemu 4 1 2020-03-15 17:40:16.204
+!MESSAGE C:\Program Files\GNU ARM Eclipse\OpenOCD\0.10.0-201601101000-dev\bin\openocd.exe -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -f st/stm32f103c8tx.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY ilg.gnumcueclipse.debug.gdbjtag.qemu 4 1 2020-03-15 17:40:16.301
+!MESSAGE arm-none-eabi-gdb --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 104 2020-03-15 17:40:45.047
+!MESSAGE Program file does not exist
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 104 2020-03-15 17:40:45.047
+!MESSAGE 
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 104 2020-03-15 17:42:13.238
+!MESSAGE Program file does not exist
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 104 2020-03-15 17:42:13.238
+!MESSAGE 
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 104 2020-03-15 17:42:25.308
+!MESSAGE Program file does not exist
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 104 2020-03-15 17:42:25.308
+!MESSAGE 
+
+!ENTRY ilg.gnumcueclipse.debug.gdbjtag.qemu 4 1 2020-03-15 17:44:47.262
+!MESSAGE C:\Program Files\GNU ARM Eclipse\OpenOCD\0.10.0-201601101000-dev\bin\openocd.exe -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -f st/stm32f103c8tx.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY ilg.gnumcueclipse.debug.gdbjtag.qemu 4 1 2020-03-15 17:44:47.359
+!MESSAGE arm-none-eabi-gdb --interpreter=mi2 --nx
+
+!ENTRY ilg.gnumcueclipse.packs.data 4 1 2020-03-15 17:44:50.637
+!MESSAGE 
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 10001 2020-03-15 17:45:14.345
+!MESSAGE Connection is shut down
+
+!ENTRY ilg.gnumcueclipse.debug.gdbjtag.qemu 4 1 2020-03-15 17:45:21.102
+!MESSAGE C:\Program Files\GNU ARM Eclipse\OpenOCD\0.10.0-201601101000-dev\bin\openocd.exe -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -f st/stm32f103c8tx.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY ilg.gnumcueclipse.debug.gdbjtag.qemu 4 1 2020-03-15 17:45:21.196
+!MESSAGE arm-none-eabi-gdb --interpreter=mi2 --nx
+
+!ENTRY ilg.gnumcueclipse.packs.data 4 1 2020-03-15 17:45:24.400
+!MESSAGE 
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 10001 2020-03-15 17:45:54.324
+!MESSAGE Connection is shut down
+
+!ENTRY ilg.gnumcueclipse.debug.gdbjtag.qemu 4 1 2020-03-15 17:48:29.901
+!MESSAGE C:\Program Files\GNU ARM Eclipse\OpenOCD\0.10.0-201601101000-dev\bin\openocd.exe -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -f st/stm32f103c8tx.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY ilg.gnumcueclipse.debug.gdbjtag.qemu 4 1 2020-03-15 17:48:30.017
+!MESSAGE arm-none-eabi-gdb --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 10001 2020-03-15 17:48:54.801
+!MESSAGE Connection is shut down
+
+!ENTRY ilg.gnumcueclipse.debug.gdbjtag.qemu 4 1 2020-03-15 17:48:59.298
+!MESSAGE C:\Program Files\GNU ARM Eclipse\OpenOCD\0.10.0-201601101000-dev\bin\openocd.exe -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -f st/stm32f103c8tx.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY ilg.gnumcueclipse.debug.gdbjtag.qemu 4 1 2020-03-15 17:48:59.393
+!MESSAGE arm-none-eabi-gdb --interpreter=mi2 --nx
+
+!ENTRY ilg.gnumcueclipse.debug.gdbjtag.qemu 4 1 2020-03-15 17:49:44.691
+!MESSAGE C:\Program Files\GNU ARM Eclipse\OpenOCD\0.10.0-201601101000-dev\bin\openocd.exe -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -f st/stm32f103c8tx.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY ilg.gnumcueclipse.debug.gdbjtag.qemu 4 1 2020-03-15 17:49:44.790
+!MESSAGE arm-none-eabi-gdb --interpreter=mi2 --nx
+
+!ENTRY ilg.gnumcueclipse.packs.data 4 1 2020-03-15 17:49:48.005
+!MESSAGE 
+
+!ENTRY ilg.gnumcueclipse.debug.gdbjtag.qemu 4 1 2020-03-15 18:27:00.936
+!MESSAGE C:\Program Files\GNU ARM Eclipse\OpenOCD\0.10.0-201601101000-dev\bin\openocd.exe -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -f st/stm32f103c8tx.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY ilg.gnumcueclipse.debug.gdbjtag.qemu 4 1 2020-03-15 18:27:01.034
+!MESSAGE arm-none-eabi-gdb --interpreter=mi2 --nx
+
+!ENTRY ilg.gnumcueclipse.debug.gdbjtag.qemu 4 1 2020-03-15 18:29:46.285
+!MESSAGE C:\Program Files\GNU ARM Eclipse\OpenOCD\0.10.0-201601101000-dev\bin\openocd.exe -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -f st/stm32f103c8tx.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY ilg.gnumcueclipse.debug.gdbjtag.qemu 4 1 2020-03-15 18:29:46.388
+!MESSAGE arm-none-eabi-gdb --interpreter=mi2 --nx
+
+!ENTRY ilg.gnumcueclipse.debug.gdbjtag.qemu 4 1 2020-03-15 18:30:13.343
+!MESSAGE C:\Program Files\GNU ARM Eclipse\OpenOCD\0.10.0-201601101000-dev\bin\openocd.exe -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -f st/stm32f103c8tx.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY ilg.gnumcueclipse.debug.gdbjtag.qemu 4 1 2020-03-15 18:30:13.438
+!MESSAGE arm-none-eabi-gdb --interpreter=mi2 --nx
+
+!ENTRY ilg.gnumcueclipse.debug.gdbjtag.qemu 4 1 2020-03-15 18:35:53.086
+!MESSAGE C:\Program Files\GNU ARM Eclipse\OpenOCD\0.10.0-201601101000-dev\bin\openocd.exe -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -f st/stm32f103c8tx.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY ilg.gnumcueclipse.debug.gdbjtag.qemu 4 1 2020-03-15 18:35:53.187
+!MESSAGE arm-none-eabi-gdb --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 10001 2020-03-15 18:37:30.390
+!MESSAGE Connection is shut down
+
+!ENTRY ilg.gnumcueclipse.debug.gdbjtag.qemu 4 1 2020-03-15 18:37:39.343
+!MESSAGE C:\Program Files\GNU ARM Eclipse\OpenOCD\0.10.0-201601101000-dev\bin\openocd.exe -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -f st/stm32f103c8tx.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY ilg.gnumcueclipse.debug.gdbjtag.qemu 4 1 2020-03-15 18:37:39.439
+!MESSAGE arm-none-eabi-gdb --interpreter=mi2 --nx
+
+!ENTRY ilg.gnumcueclipse.debug.gdbjtag.qemu 4 1 2020-03-15 18:38:06.085
+!MESSAGE C:\Program Files\GNU ARM Eclipse\OpenOCD\0.10.0-201601101000-dev\bin\openocd.exe -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -f st/stm32f103c8tx.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY ilg.gnumcueclipse.debug.gdbjtag.qemu 4 1 2020-03-15 18:38:06.191
+!MESSAGE arm-none-eabi-gdb --interpreter=mi2 --nx
+
+!ENTRY ilg.gnumcueclipse.packs.data 4 1 2020-03-15 18:38:09.524
+!MESSAGE 
+
+!ENTRY ilg.gnumcueclipse.debug.gdbjtag.qemu 4 1 2020-03-15 18:39:40.829
+!MESSAGE C:\Program Files\GNU ARM Eclipse\OpenOCD\0.10.0-201601101000-dev\bin\openocd.exe -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -f st/stm32f103c8tx.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY ilg.gnumcueclipse.debug.gdbjtag.qemu 4 1 2020-03-15 18:39:40.925
+!MESSAGE arm-none-eabi-gdb --interpreter=mi2 --nx
+
+!ENTRY ilg.gnumcueclipse.debug.gdbjtag.qemu 4 1 2020-03-15 18:41:13.777
+!MESSAGE C:\Program Files\GNU ARM Eclipse\OpenOCD\0.10.0-201601101000-dev\bin\openocd.exe -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -f st/stm32f103c8tx.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY ilg.gnumcueclipse.debug.gdbjtag.qemu 4 1 2020-03-15 18:41:13.891
+!MESSAGE arm-none-eabi-gdb --interpreter=mi2 --nx
+
+!ENTRY ilg.gnumcueclipse.debug.gdbjtag.qemu 4 1 2020-03-15 18:42:42.929
+!MESSAGE C:\Program Files\GNU ARM Eclipse\OpenOCD\0.10.0-201601101000-dev\bin\openocd.exe -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -f st/stm32f103c8tx.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY ilg.gnumcueclipse.debug.gdbjtag.qemu 4 1 2020-03-15 18:42:43.036
+!MESSAGE arm-none-eabi-gdb --interpreter=mi2 --nx
+
+!ENTRY ilg.gnumcueclipse.debug.gdbjtag.qemu 4 1 2020-03-15 18:44:26.135
+!MESSAGE C:\Program Files\GNU ARM Eclipse\OpenOCD\0.10.0-201601101000-dev\bin\openocd.exe -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -f st/stm32f103c8tx.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY ilg.gnumcueclipse.debug.gdbjtag.qemu 4 1 2020-03-15 18:44:26.238
+!MESSAGE arm-none-eabi-gdb --interpreter=mi2 --nx
+
+!ENTRY ilg.gnumcueclipse.debug.gdbjtag.qemu 4 1 2020-03-15 18:44:57.350
+!MESSAGE C:\Program Files\GNU ARM Eclipse\OpenOCD\0.10.0-201601101000-dev\bin\openocd.exe -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -f st/stm32f103c8tx.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY ilg.gnumcueclipse.debug.gdbjtag.qemu 4 1 2020-03-15 18:44:57.445
+!MESSAGE arm-none-eabi-gdb --interpreter=mi2 --nx
+
+!ENTRY ilg.gnumcueclipse.debug.gdbjtag.qemu 4 1 2020-03-15 18:55:10.314
+!MESSAGE C:\Program Files\GNU ARM Eclipse\OpenOCD\0.10.0-201601101000-dev\bin\openocd.exe -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -f st/stm32f103c8tx.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY ilg.gnumcueclipse.debug.gdbjtag.qemu 4 1 2020-03-15 18:55:10.411
+!MESSAGE arm-none-eabi-gdb --interpreter=mi2 --nx
+
+!ENTRY ilg.gnumcueclipse.debug.gdbjtag.qemu 4 1 2020-03-15 18:59:40.943
+!MESSAGE C:\Program Files\GNU ARM Eclipse\OpenOCD\0.10.0-201601101000-dev\bin\openocd.exe -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -f st/stm32f103c8tx.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY ilg.gnumcueclipse.debug.gdbjtag.qemu 4 1 2020-03-15 18:59:41.045
+!MESSAGE arm-none-eabi-gdb --interpreter=mi2 --nx
+
+!ENTRY ilg.gnumcueclipse.debug.gdbjtag.qemu 4 1 2020-03-15 19:03:54.978
+!MESSAGE C:\Program Files\GNU ARM Eclipse\OpenOCD\0.10.0-201601101000-dev\bin\openocd.exe -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -f st/stm32f103c8tx.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY ilg.gnumcueclipse.debug.gdbjtag.qemu 4 1 2020-03-15 19:03:55.084
+!MESSAGE arm-none-eabi-gdb --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 10001 2020-03-15 19:06:26.154
+!MESSAGE Connection is shut down
+
+!ENTRY ilg.gnumcueclipse.debug.gdbjtag.qemu 4 1 2020-03-15 19:07:43.591
+!MESSAGE C:\Program Files\GNU ARM Eclipse\OpenOCD\0.10.0-201601101000-dev\bin\openocd.exe -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -f st/stm32f103c8tx.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY ilg.gnumcueclipse.debug.gdbjtag.qemu 4 1 2020-03-15 19:07:43.687
+!MESSAGE arm-none-eabi-gdb --interpreter=mi2 --nx
+
+!ENTRY ilg.gnumcueclipse.debug.gdbjtag.qemu 4 1 2020-03-15 19:23:39.368
+!MESSAGE C:\Program Files\GNU ARM Eclipse\OpenOCD\0.10.0-201601101000-dev\bin\openocd.exe -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -f st/stm32f103c8tx.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY ilg.gnumcueclipse.debug.gdbjtag.qemu 4 1 2020-03-15 19:23:39.468
+!MESSAGE arm-none-eabi-gdb --interpreter=mi2 --nx
+
+!ENTRY ilg.gnumcueclipse.debug.gdbjtag.qemu 4 1 2020-03-15 19:24:31.289
+!MESSAGE C:\Program Files\GNU ARM Eclipse\OpenOCD\0.10.0-201601101000-dev\bin\openocd.exe -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -f st/stm32f103c8tx.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY ilg.gnumcueclipse.debug.gdbjtag.qemu 4 1 2020-03-15 19:24:31.384
+!MESSAGE arm-none-eabi-gdb --interpreter=mi2 --nx
+
+!ENTRY ilg.gnumcueclipse.debug.gdbjtag.qemu 4 1 2020-03-15 19:27:17.568
+!MESSAGE C:\Program Files\GNU ARM Eclipse\OpenOCD\0.10.0-201601101000-dev\bin\openocd.exe -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -f st/stm32f103c8tx.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY ilg.gnumcueclipse.debug.gdbjtag.qemu 4 1 2020-03-15 19:27:17.673
+!MESSAGE arm-none-eabi-gdb --interpreter=mi2 --nx
+
+!ENTRY ilg.gnumcueclipse.debug.gdbjtag.qemu 4 1 2020-03-15 19:31:01.056
+!MESSAGE C:\Program Files\GNU ARM Eclipse\OpenOCD\0.10.0-201601101000-dev\bin\openocd.exe -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -f st/stm32f103c8tx.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY ilg.gnumcueclipse.debug.gdbjtag.qemu 4 1 2020-03-15 19:31:01.151
+!MESSAGE arm-none-eabi-gdb --interpreter=mi2 --nx
+
+!ENTRY ilg.gnumcueclipse.debug.gdbjtag.qemu 4 1 2020-03-15 19:32:23.094
+!MESSAGE C:\Program Files\GNU ARM Eclipse\OpenOCD\0.10.0-201601101000-dev\bin\openocd.exe -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -f st/stm32f103c8tx.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY ilg.gnumcueclipse.debug.gdbjtag.qemu 4 1 2020-03-15 19:32:23.189
+!MESSAGE arm-none-eabi-gdb --interpreter=mi2 --nx
+
+!ENTRY ilg.gnumcueclipse.debug.gdbjtag.qemu 4 1 2020-03-15 19:36:48.489
+!MESSAGE C:\Program Files\GNU ARM Eclipse\OpenOCD\0.10.0-201601101000-dev\bin\openocd.exe -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -f st/stm32f103c8tx.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY ilg.gnumcueclipse.debug.gdbjtag.qemu 4 1 2020-03-15 19:36:48.584
+!MESSAGE arm-none-eabi-gdb --interpreter=mi2 --nx
+
+!ENTRY ilg.gnumcueclipse.debug.gdbjtag 4 0 2020-03-15 19:37:11.970
+!MESSAGE Debug session 'SysTick_Driver Debug' already started. Terminate the first one before restarting.
+
+!ENTRY ilg.gnumcueclipse.debug.gdbjtag.qemu 4 1 2020-03-15 19:37:20.460
+!MESSAGE C:\Program Files\GNU ARM Eclipse\OpenOCD\0.10.0-201601101000-dev\bin\openocd.exe -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -f st/stm32f103c8tx.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY ilg.gnumcueclipse.debug.gdbjtag.qemu 4 1 2020-03-15 19:37:20.567
+!MESSAGE arm-none-eabi-gdb --interpreter=mi2 --nx
+
+!ENTRY ilg.gnumcueclipse.debug.gdbjtag.qemu 4 1 2020-03-15 19:37:47.543
+!MESSAGE C:\Program Files\GNU ARM Eclipse\OpenOCD\0.10.0-201601101000-dev\bin\openocd.exe -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -f st/stm32f103c8tx.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY ilg.gnumcueclipse.debug.gdbjtag.qemu 4 1 2020-03-15 19:37:47.647
+!MESSAGE arm-none-eabi-gdb --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2020-03-15 19:38:13.534
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.mi.service.MIRunControl$9@52481bc0): Status ERROR: org.eclipse.cdt.dsf.gdb code=10004 Interrupt failed. null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2020-03-15 19:38:13.534
+!MESSAGE Interrupt failed.
+
+!ENTRY ilg.gnumcueclipse.debug.gdbjtag 4 0 2020-03-15 19:51:06.313
+!MESSAGE Debug session 'SysTick_Driver Debug' already started. Terminate the first one before restarting.
+
+!ENTRY ilg.gnumcueclipse.debug.gdbjtag.qemu 4 1 2020-03-15 19:51:33.736
+!MESSAGE C:\Program Files\GNU ARM Eclipse\OpenOCD\0.10.0-201601101000-dev\bin\openocd.exe -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -f st/stm32f103c8tx.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY ilg.gnumcueclipse.debug.gdbjtag.qemu 4 1 2020-03-15 19:51:33.851
+!MESSAGE arm-none-eabi-gdb --interpreter=mi2 --nx
+
+!ENTRY ilg.gnumcueclipse.debug.gdbjtag.qemu 4 1 2020-03-15 20:51:02.456
+!MESSAGE C:\Program Files\GNU ARM Eclipse\OpenOCD\0.10.0-201601101000-dev\bin\openocd.exe -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -f st/stm32f103c8tx.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY ilg.gnumcueclipse.debug.gdbjtag.qemu 4 1 2020-03-15 20:51:02.554
+!MESSAGE arm-none-eabi-gdb --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 10001 2020-03-15 20:58:34.365
+!MESSAGE Connection is shut down
+
+!ENTRY ilg.gnumcueclipse.debug.gdbjtag.qemu 4 1 2020-03-15 20:58:47.772
+!MESSAGE C:\Program Files\GNU ARM Eclipse\OpenOCD\0.10.0-201601101000-dev\bin\openocd.exe -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -f st/stm32f103c8tx.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY ilg.gnumcueclipse.debug.gdbjtag.qemu 4 1 2020-03-15 20:58:47.868
+!MESSAGE arm-none-eabi-gdb --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 10001 2020-03-15 21:00:59.849
+!MESSAGE Connection is shut down
+
+!ENTRY ilg.gnumcueclipse.debug.gdbjtag.qemu 4 1 2020-03-15 21:07:29.409
+!MESSAGE C:\Program Files\GNU ARM Eclipse\OpenOCD\0.10.0-201601101000-dev\bin\openocd.exe -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -f st/stm32f103c8tx.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY ilg.gnumcueclipse.debug.gdbjtag.qemu 4 1 2020-03-15 21:07:29.505
+!MESSAGE arm-none-eabi-gdb --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 10001 2020-03-15 21:08:47.673
+!MESSAGE Connection is shut down
+
+!ENTRY ilg.gnumcueclipse.debug.gdbjtag.qemu 4 1 2020-03-15 21:09:05.343
+!MESSAGE C:\Program Files\GNU ARM Eclipse\OpenOCD\0.10.0-201601101000-dev\bin\openocd.exe -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -f st/stm32f103c8tx.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY ilg.gnumcueclipse.debug.gdbjtag.qemu 4 1 2020-03-15 21:09:05.444
+!MESSAGE arm-none-eabi-gdb --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 10001 2020-03-15 21:10:30.346
+!MESSAGE Connection is shut down
+
+!ENTRY ilg.gnumcueclipse.debug.gdbjtag.qemu 4 1 2020-03-15 21:20:45.287
+!MESSAGE C:\Program Files\GNU ARM Eclipse\OpenOCD\0.10.0-201601101000-dev\bin\openocd.exe -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -f st/stm32f103c8tx.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY ilg.gnumcueclipse.debug.gdbjtag.qemu 4 1 2020-03-15 21:20:45.387
+!MESSAGE arm-none-eabi-gdb --interpreter=mi2 --nx
+
+!ENTRY ilg.gnumcueclipse.debug.gdbjtag 4 0 2020-03-15 21:25:37.989
+!MESSAGE Debug session 'SysTick_Driver Debug' already started. Terminate the first one before restarting.
+
+!ENTRY ilg.gnumcueclipse.debug.gdbjtag.qemu 4 1 2020-03-15 21:25:52.186
+!MESSAGE C:\Program Files\GNU ARM Eclipse\OpenOCD\0.10.0-201601101000-dev\bin\openocd.exe -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -f st/stm32f103c8tx.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY ilg.gnumcueclipse.debug.gdbjtag.qemu 4 1 2020-03-15 21:25:52.283
+!MESSAGE arm-none-eabi-gdb --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.cdt.dsf 4 10001 2020-03-15 21:25:55.543
+!MESSAGE Target not available.
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 10001 2020-03-15 21:26:44.336
+!MESSAGE Connection is shut down
+
+!ENTRY ilg.gnumcueclipse.debug.gdbjtag.qemu 4 1 2020-03-15 21:26:46.539
+!MESSAGE C:\Program Files\GNU ARM Eclipse\OpenOCD\0.10.0-201601101000-dev\bin\openocd.exe -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -f st/stm32f103c8tx.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY ilg.gnumcueclipse.debug.gdbjtag.qemu 4 1 2020-03-15 21:26:46.636
+!MESSAGE arm-none-eabi-gdb --interpreter=mi2 --nx
+
+!ENTRY ilg.gnumcueclipse.debug.gdbjtag.qemu 4 1 2020-03-15 21:27:23.265
+!MESSAGE C:\Program Files\GNU ARM Eclipse\OpenOCD\0.10.0-201601101000-dev\bin\openocd.exe -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -f st/stm32f103c8tx.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY ilg.gnumcueclipse.debug.gdbjtag.qemu 4 1 2020-03-15 21:27:23.360
+!MESSAGE arm-none-eabi-gdb --interpreter=mi2 --nx
+
+!ENTRY ilg.gnumcueclipse.debug.gdbjtag.qemu 4 1 2020-03-15 21:58:18.321
+!MESSAGE C:\Program Files\GNU ARM Eclipse\OpenOCD\0.10.0-201601101000-dev\bin\openocd.exe -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -f st/stm32f103c8tx.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY ilg.gnumcueclipse.debug.gdbjtag.qemu 4 1 2020-03-15 21:58:18.430
+!MESSAGE arm-none-eabi-gdb --interpreter=mi2 --nx
+
+!ENTRY ilg.gnumcueclipse.debug.gdbjtag.openocd 4 5012 2020-03-15 21:58:18.702
+!MESSAGE Error in final launch sequence
+!STACK 1
+org.eclipse.core.runtime.CoreException: Connection is shut down
+	at org.eclipse.cdt.dsf.concurrent.Query.get(Query.java:112)
+	at ilg.gnumcueclipse.debug.gdbjtag.openocd.dsf.LaunchConfigurationDelegate.launchDebugSession(LaunchConfigurationDelegate.java:448)
+	at ilg.gnumcueclipse.debug.gdbjtag.openocd.dsf.LaunchConfigurationDelegate.launchDebugger(LaunchConfigurationDelegate.java:174)
+	at ilg.gnumcueclipse.debug.gdbjtag.openocd.dsf.LaunchConfigurationDelegate.launch(LaunchConfigurationDelegate.java:150)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:860)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:719)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1017)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1220)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2020-03-15 21:58:18.706
+!MESSAGE Connection is shut down
+
+!ENTRY ilg.gnumcueclipse.debug.gdbjtag.qemu 4 1 2020-03-15 21:58:33.342
+!MESSAGE C:\Program Files\GNU ARM Eclipse\OpenOCD\0.10.0-201601101000-dev\bin\openocd.exe -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -f st/stm32f103c8tx.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY ilg.gnumcueclipse.debug.gdbjtag.qemu 4 1 2020-03-15 21:58:33.440
+!MESSAGE arm-none-eabi-gdb --interpreter=mi2 --nx
+
+!ENTRY ilg.gnumcueclipse.debug.gdbjtag.qemu 4 1 2020-03-15 22:00:17.107
+!MESSAGE C:\Program Files\GNU ARM Eclipse\OpenOCD\0.10.0-201601101000-dev\bin\openocd.exe -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -f st/stm32f103c8tx.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY ilg.gnumcueclipse.debug.gdbjtag.qemu 4 1 2020-03-15 22:00:17.206
+!MESSAGE arm-none-eabi-gdb --interpreter=mi2 --nx

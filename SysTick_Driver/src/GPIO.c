@@ -1,3 +1,4 @@
+#include "STD_TYPES.h"
 #include  "GPIO.h"
 
 /******************************************************************************/
@@ -285,10 +286,12 @@ std_err GPIO_Init         (u32* Port_Mask, GPIO_Pin_t* Pin){
 	}
 	else if((Pin->pin >  7) && (Pin->pin <=15))//CRH
 	{
+		Pin->pin -= 8;
 		localTemp 	= 	RegPtr->CRH;							//saving register data to a temporary variable
 		localTemp 	&=	Clear_4bits << (Pin->pin*4);			//clear the 4 bits of the required mode
-		localTemp 	|=  (Pin->mode|Pin->speed) << (Pin->pin*4); //setting the input mode to their matching bits in the register
+		localTemp 	=  (Pin->mode|Pin->speed) << ((Pin->pin)*4); //setting the input mode to their matching bits in the register
 		RegPtr->CRH = 	localTemp;                              //updating the register with the new input
+		Pin->pin += 8;
 	}
 	else err.error_status= STATUS_NOK;
 
@@ -301,8 +304,8 @@ std_err GPIO_Pin_Write    (u32* Port_Mask, GPIO_Pin_t* Pin,u8  State){
 	err.error_status= STATUS_OK;
 	GPIO_t* RegPtr = (GPIO_t*) Port_Mask;//casting
 
-	if(State == HIGH)		RegPtr->ODR |=  Pin->pin;
-	else if(State == LOW) 	RegPtr->ODR	&=~ Pin->pin;
+	if(State == HIGH)		RegPtr->ODR |=  (1U<<(Pin->pin));
+	else if(State == LOW) 	RegPtr->ODR	&=~ (1U<<(Pin->pin));
 	else      				err.error_status= STATUS_NOK;
 
 	return err;
