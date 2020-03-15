@@ -109,18 +109,18 @@ typedef  long double             f96;
  * |____________________________________________________________________________________________|_______________________|
  * */
 
-STD_ERR u8EnableEXTI 			(u8 inum)				;
-STD_ERR u8DisableEXTI			(u8 inum)				;
-STD_ERR u8SetPendFlag			(u8 inum)				;
-STD_ERR u8ClrPendFlag			(u8 inum)				;
-STD_ERR u8IsActive   			(u8 inum,u8* state)		;
-STD_ERR u8SetPriority			(u8 inum, u8  priority)	;
-u8      u8GetPriority			(u8 inum)				;
-STD_ERR u8SetGrpBits 			(u32 PRIGROUP_MASK)		;
-void	voidEnableAllEXTI		(void)					;
-void    voidDisableAllEXTI 		(void)					;
-void    voidEnableAllFaults		(void)					;
-void    voidDisableAllFaults	(void)					;
-void    voidFilterEXTI_lowerThan(u8 cancelStart_inum)	;
-void    voidCancelFilterEXTI    (void)					;
-STD_ERR u8GenerateSWI			(u8 inum)				;
+STD_ERR NVIC_u8EnableEXTI 			(u8 inum)				;
+STD_ERR NVIC_u8DisableEXTI			(u8 inum)				;
+STD_ERR NVIC_u8SetPendFlag			(u8 inum)				;
+STD_ERR NVIC_u8ClrPendFlag			(u8 inum)				;
+STD_ERR NVIC_u8IsActive   			(u8 inum,u8* state)		;
+STD_ERR NVIC_u8SetPriority			(u8 inum, u8  priority)	;
+u8      NVIC_u8GetPriority			(u8 inum)				;
+STD_ERR NVIC_u8SetGrpBits 			(u32 PRIGROUP_MASK)		;
+void	NVIC_voidEnableAllEXTI		(void)					;
+void    NVIC_voidDisableAllEXTI 	(void)					;
+void    NVIC_voidEnableAllFaults	(void)					;
+void    NVIC_voidDisableAllFaults	(void)					;
+void    NVIC_voidFilterEXTI_lowerThan(u8 cancelStart_inum)	;
+void    NVIC_voidCancelFilterEXTI   (void)					;
+STD_ERR NVIC_u8GenerateSWI			(u8 inum)				;

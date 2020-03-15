@@ -6086,3 +6086,51 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY ilg.gnumcueclipse.packs.core 4 1 2020-03-13 23:19:22.982
 !MESSAGE arm-none-eabi-gdb --interpreter=mi2 --nx
+
+!ENTRY ilg.gnumcueclipse.packs.core 4 1 2020-03-15 02:37:52.267
+!MESSAGE C:\Program Files\GNU ARM Eclipse\OpenOCD\0.10.0-201601101000-dev\bin\openocd.exe -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -f st/stm32f103c8tx.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY ilg.gnumcueclipse.packs.core 4 1 2020-03-15 02:37:52.860
+!MESSAGE arm-none-eabi-gdb --interpreter=mi2 --nx
+
+!ENTRY ilg.gnumcueclipse.packs.data 4 1 2020-03-15 02:37:56.275
+!MESSAGE Assign a device to the project.
+
+!ENTRY ilg.gnumcueclipse.packs.data 4 1 2020-03-15 02:38:02.436
+!MESSAGE Assign a device to the project.
+
+!ENTRY ilg.gnumcueclipse.packs.data 4 1 2020-03-15 02:38:27.351
+!MESSAGE Assign a device to the project.
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 10001 2020-03-15 02:38:27.383
+!MESSAGE Connection is shut down
+
+!ENTRY ilg.gnumcueclipse.packs.core 4 1 2020-03-15 02:38:51.109
+!MESSAGE C:\Program Files\GNU ARM Eclipse\OpenOCD\0.10.0-201601101000-dev\bin\openocd.exe -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -f st/stm32f103c8tx.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY ilg.gnumcueclipse.packs.core 4 1 2020-03-15 02:38:51.209
+!MESSAGE arm-none-eabi-gdb --interpreter=mi2 --nx
+
+!ENTRY ilg.gnumcueclipse.packs.data 4 1 2020-03-15 02:38:54.496
+!MESSAGE 
+
+!ENTRY ilg.gnumcueclipse.packs.data 4 1 2020-03-15 02:38:54.515
+!MESSAGE Assign a device to the project.
+
+!ENTRY ilg.gnumcueclipse.packs.data 4 1 2020-03-15 02:38:58.028
+!MESSAGE Assign a device to the project.
+
+!ENTRY ilg.gnumcueclipse.packs.data 4 1 2020-03-15 02:39:20.338
+!MESSAGE Assign a device to the project.
+
+!ENTRY ilg.gnumcueclipse.packs.core 4 1 2020-03-15 02:39:34.693
+!MESSAGE C:\Program Files\GNU ARM Eclipse\OpenOCD\0.10.0-201601101000-dev\bin\openocd.exe -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -f st/stm32f103c8tx.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY ilg.gnumcueclipse.packs.core 4 1 2020-03-15 02:39:34.789
+!MESSAGE arm-none-eabi-gdb --interpreter=mi2 --nx
+
+!ENTRY ilg.gnumcueclipse.packs.data 4 1 2020-03-15 02:39:38.086
+!MESSAGE 
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-03-15 02:46:47.468
+!MESSAGE Indexed '3_blink_Led_through_AVR_button' (19 sources, 184 headers) in 5.79 sec: 12,332 declarations; 18,652 references; 0 unresolved inclusions; 90 syntax errors; 677 unresolved names (2.1%)
