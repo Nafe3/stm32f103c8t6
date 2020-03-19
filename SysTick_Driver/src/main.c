@@ -42,7 +42,7 @@ int main(void)
 	//GPIO_Pin_Write(PORTC,&led,1);
 	SYSTICK_Init();
 	SYSTICK_SetCallback(func);
-	SYSTICK_Start(0x007A11FF);
+	SYSTICK_Start(0x003D08FF);
 	while(1);
 }
 
