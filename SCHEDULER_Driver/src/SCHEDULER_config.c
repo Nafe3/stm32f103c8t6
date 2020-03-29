@@ -12,20 +12,13 @@
 #include "SCHEDULER_private.h"
 
 
-
-extern typedef struct{
-	const task_t*const appTask;
-	u32 delayTicks;
-}sysTaskInfo_t;
-
 extern task_t app1;
 extern task_t app2;
 extern task_t LCDTask;
 extern task_t SwitchTask;
 
-const sysTaskInfo_t sysTaskInfo[]={
-									{&app1			,0},
+const sysTaskInfo_t sysTaskInfo[]={ {&app1			,0},
 									{&app2			,0},
 									{&LCDTask		,0},
 									{&SwitchTask	,0}
-};
+							   	  };

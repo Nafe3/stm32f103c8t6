@@ -11,16 +11,8 @@
 #include "SCHEDULER_private.h"
 
 
-/*typedef struct{
-	task_t* appTask;
-	u32		RemainToExec;
-	u32 	PeriodTicks;
-	u32		FirstTickDelay;
-}systask_t;*/
-
-
 typedef struct{
-	 * appTask;
+	task_t* appTask;
 	u32		RemainToExec;
 	u32 	PeriodTicks;
 	u32		FirstTickDelay;
@@ -30,8 +22,37 @@ typedef struct{
 static systask_t sysTasks[MAX];
 static u8 OSFlag =0;
 
+extern const sysTaskInfo_t sysTaskInfo[];
 
 
+
+/*Step 1: */
+/*
+void sched_CreateTask(task_t* appTask)
+{
+	if(appTask)
+	{
+		sysTasks[appTask->Priority].appTask     = appTask;
+		sysTasks[appTask->Priority].PeriodTicks = ((appTask->PeriodicTime)/TICK_MS);
+	}
+}
+*/
+
+/*Step 2: */
+void sched_init(void)
+{
+	u8 i;
+
+	//configure timer
+	//set callback(scheduler) :: call this function -> SetOSflag
+	//start timer
+	for(i=0;i<MAX;i++)
+	{
+		sysTasks[i].appTask      = &sysTaskInfo[i].appTaskinfo;
+		sysTasks[i].RemainToExec = sysTaskInfo[i].delayTicks;
+		sysTasks[i].PeriodTicks  = sysTaskInfo[i].appTaskinfo->PeriodicTime/TICK_MS;
+	}
+}
 ///////////////////////////////////////////////////////////
 static void Scheduler(void)
 {
@@ -54,16 +75,7 @@ static void Scheduler(void)
 
 }
 
-//////////////////////////////////////////////////////////
-void sched_init(void)
-{
-	//configure timer
-	//set callback(scheduler) :: call this function -> SetOSflag
-	//start timer
-	systask.task=&systaskInfo[i].apptask;
-	systask[i]].Remain=task->delaytick;
-	systaskPeriodtick=task->;
-}
+
 /////////////////////////////////////////////////////////
 void setOSFlag(void)
 {
@@ -80,15 +92,6 @@ void Sched_Start(void)
 			OSFlag=0;
 			Scheduler();
 		}
-	}
-}
-/////////////////////////////////////////////////////////
-void sched_CreateTask(task_t* appTask)
-{
-	if(appTask)
-	{
-		sysTasks[appTask->Priority].appTask     = appTask;
-		sysTasks[appTask->Priority].PeriodTicks = ((appTask->PeriodicTime)/TICK_MS);
 	}
 }
 
