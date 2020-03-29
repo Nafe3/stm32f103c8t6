@@ -7697,3 +7697,9 @@ java.lang.Exception: The project description file (.project) for 'HSwitch' is mi
 
 !ENTRY org.eclipse.cdt.core 1 0 2020-03-29 10:21:38.279
 !MESSAGE Indexed 'H_Switch' (20 sources, 173 headers) in 1.91 sec: 12,028 declarations; 18,287 references; 4 unresolved inclusions; 90 syntax errors; 696 unresolved names (2.2%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-03-29 10:58:44.280
+!MESSAGE Indexed 'USART_Driver' (20 sources, 175 headers) in 1.5 sec: 12,044 declarations; 18,364 references; 0 unresolved inclusions; 90 syntax errors; 677 unresolved names (2.2%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-03-29 10:59:36.516
+!MESSAGE Indexed 'H_USART' (20 sources, 175 headers) in 1.41 sec: 12,044 declarations; 18,364 references; 0 unresolved inclusions; 90 syntax errors; 677 unresolved names (2.2%)

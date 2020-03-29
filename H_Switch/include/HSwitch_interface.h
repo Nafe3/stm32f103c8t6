@@ -31,7 +31,7 @@
  *	u8 state;
  * 	HSwitch_getSwitchState(SwitchNum)
  * 	{
- * 		return State[];
+ * 		return state;
  * 	}
  *
  *application should be written like this
