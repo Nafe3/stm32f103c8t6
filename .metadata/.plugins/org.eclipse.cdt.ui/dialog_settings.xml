@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<item key="LastUsedSourceTemplate" value="Default C++ source template"/>
-	<item key="LexicalSortingAction.sort" value="true"/>
+	<item key="LexicalSortingAction.sort" value="false"/>
 	<item key="LastUsedHeaderTemplate" value="Default C++ header template"/>
 	<section name="completion_proposal_size">
 		<item key="size.x" value="552"/>
@@ -14,6 +14,17 @@
 		<item key="size.height" value="180"/>
 	</section>
 	<section name="PDOMSearchPage">
+		<item key="caseSensitive" value="false"/>
+		<item key="searchFlags" value="227191"/>
+		<list key="previousPatterns">
+			<item value="UART_CR2"/>
+			<item value="UART_CR3"/>
+			<item value="UART_GTPR"/>
+			<item value="HLCD_initProcess"/>
+			<item value="cbf"/>
+			<item value="HCLCD_voidSetWriteDoneNotification"/>
+			<item value="LCD_CB"/>
+		</list>
 	</section>
 	<section name="CResourceRenameRefactoringInputPage">
 		<item key="updateReferences" value="true"/>
@@ -24,5 +35,22 @@
 		<item key="DIALOG_WIDTH" value="662"/>
 		<item key="DIALOG_HEIGHT" value="438"/>
 		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
+	<section name="org.eclipse.cdt.internal.ui.typehierarchy.OpenTypeInHierarchyActionSettings">
+		<item key="show_namespaces" value="false"/>
+		<item key="show_classes" value="true"/>
+		<item key="show_structs" value="true"/>
+		<item key="show_typedefs" value="true"/>
+		<item key="show_enums" value="true"/>
+		<item key="show_unions" value="true"/>
+		<item key="show_functions" value="false"/>
+		<item key="show_variables" value="false"/>
+		<item key="show_enumerators" value="false"/>
+		<item key="show_macros" value="false"/>
+		<item key="show_lowlevel" value="true"/>
+		<item key="x" value="467"/>
+		<item key="y" value="0"/>
+		<item key="width" value="432"/>
+		<item key="height" value="663"/>
 	</section>
 </section>

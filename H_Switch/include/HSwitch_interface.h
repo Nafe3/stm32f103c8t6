@@ -29,7 +29,7 @@
  *
  //global variable used in application
  *	u8 state;
- * 	HSwitch_getSwitchState(SwitchNum)
+ * 	u8 HSwitch_getSwitchState(SwitchNum)
  * 	{
  * 		return state;
  * 	}
@@ -46,3 +46,18 @@
  *
  *
  * */
+
+#define ON 	1
+#define OFF 0
+
+#define PRESSED	0
+
+
+typedef struct{
+u8 Switch_Port;
+u8 Switch_Pin;
+}Switch_t;
+
+void HSwitch_init           ( Switch_t Switch);
+u8   HSwitch_getSwitchState ( u8 SwitchNum )  ;
+

@@ -12,11 +12,24 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="D:\ITI\Subjects\Intro to ES-Assaf\Tools\workspace_AVR\Tooling_MakeTool"/>
+			<item value="D:\ITI\Subjects\Embedded_Computer_Architecture_Eng.Tourky\Nafe3_Workspace-v2019\Project01_Turkey"/>
+			<item value="D:\ITI\Others\Mernaat\H_Switch2"/>
+			<item value="D:\ITI\Subjects\Embedded_Computer_Architecture_Eng.Tourky\Nafe3_Workspace-v2019\30-3-2020_try_HLED_HSwitch"/>
 			<item value="D:\ITI\Subjects\Embedded_Computer_Architecture_Eng.Tourky\Nafe3_Workspace-v2019\Switch_Handler"/>
 			<item value="D:\ITI\Subjects\Embedded_Computer_Architecture_Eng.Tourky\Nafe3_Workspace-v2019\Introduction_to_Embedded_Systems\3_blink_Led_through_AVR_button"/>
 			<item value="D:\ITI\Subjects\Embedded_Computer_Architecture_Eng.Tourky\Nafe3_Workspace-v2019\Introduction_to_Embedded_Systems\6_Keypad(In)_Buzzer(Out)_Piano"/>
 			<item value="D:\ITI\Subjects\Embedded_Computer_Architecture_Eng.Tourky\Nafe3_Workspace-v2019\Introduction_to_Embedded_Systems\8-3-2020_CLCD_charachter_generation"/>
 			<item value="D:\ITI\Subjects\Embedded_Computer_Architecture_Eng.Tourky\Nafe3_Workspace-v2019\hello"/>
 		</list>
+	</section>
+	<section name="CleanDialogSettings">
+		<item key="DIALOG_X_ORIGIN" value="433"/>
+		<item key="DIALOG_Y_ORIGIN" value="53"/>
+		<item key="DIALOG_WIDTH" value="500"/>
+		<item key="DIALOG_HEIGHT" value="467"/>
+		<item key="BUILD_NOW" value="true"/>
+		<item key="BUILD_ALL" value="true"/>
+		<item key="TOGGLE_SELECTED" value="false"/>
 	</section>
 </section>

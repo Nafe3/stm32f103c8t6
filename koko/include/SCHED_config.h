@@ -1,0 +1,10 @@
+#define TickMS		1U
+#define NumOfTasks	2U
+
+typedef struct{
+	task_t* appTask;/*typedef struct{
+										taskRunnable_t runnable;
+										u32 periodicTime;
+									}task_t;*/
+	u32 firstDelay;
+}sysTask_t;

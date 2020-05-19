@@ -1,17 +1,7 @@
 #include "STD_TYPES.h"
+
 #include "RCC.h"
-/*RCC Registers Addresses*/
-#define RCC_BASE_ADDRESS 	 0x40021000
-#define RCC_CR				 *((volatile u32*)(RCC_BASE_ADDRESS + 0x00))/*Control Register*/
-#define RCC_CFGR			 *((volatile u32*)(RCC_BASE_ADDRESS + 0X04))/*Clock Configuration Register*/
-#define RCC_CIR              *((volatile u32*)(RCC_BASE_ADDRESS + 0X08))/*Clock Interrupt  Register*/
-#define RCC_APB2RSTR         *((volatile u32*)(RCC_BASE_ADDRESS + 0X0C))/*APB2 Peripheral reset register*/
-#define RCC_APB1RSTR         *((volatile u32*)(RCC_BASE_ADDRESS + 0X10))/*APB1 Peripheral reset register*/
-#define RCC_AHBENR           *((volatile u32*)(RCC_BASE_ADDRESS + 0X14))/*AHB  peripheral clock enable register*/
-#define RCC_APB2ENR          *((volatile u32*)(RCC_BASE_ADDRESS + 0X18))/*APB2 peripheral clock enable register*/
-#define RCC_APB1ENR          *((volatile u32*)(RCC_BASE_ADDRESS + 0X1C))/*APB1 peripheral clock enable register*/
-#define RCC_BDCR             *((volatile u32*)(RCC_BASE_ADDRESS + 0X20))/*Backup Domain control register*/
-#define RCC_CSR              *((volatile u32*)(RCC_BASE_ADDRESS + 0X24))/*Control/status register*/
+#include "RCC_private.h"
 
 /*Description: user chooses the state(on/off) of a certain peripheral and certain bus*/
 void RCC_voidEnablePeripheral(u8 bus,u32 peripheral,u8 state)
@@ -43,6 +33,7 @@ void RCC_voidSelectSysClk(u8 clk)
 				{
 					RCC_CR 	 |= RCC_CR_HSION;//Setting HSION bit
 					while((RCC_CR & RCC_CR_HSIRDY) != RCC_CR_HSIRDY);//wait until HSI is ready
+					RCC_CFGR &=~RCC_CFGR_SW;//clear
 					RCC_CFGR |= RCC_CFGR_SW_HSI;//switch system clock to HSI
 				}
 			break;
@@ -62,6 +53,7 @@ void RCC_voidSelectSysClk(u8 clk)
 				{
 					RCC_CR	 |= RCC_CR_PLLON;//Setting PLLON bit
 					while((RCC_CR & RCC_CR_PLLRDY) != RCC_CR_PLLRDY);//wait until PLL is ready
+					RCC_CFGR &=~RCC_CFGR_SW;//clear
 					RCC_CFGR |= RCC_CFGR_SW_PLL;//switch system clock to HSE
 				}
 			break;

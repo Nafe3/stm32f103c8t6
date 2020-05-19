@@ -23,6 +23,7 @@ int main (void)
 	delay_setCPUclockFactor(8000000);
 	RCC_Init();
 	RCC_EnablePeripheralClock(2,2);
+	RCC_EnablePeripheralClock(2,3);
 	//portInitialize();
 	setPinMode('A',0,1);
 	setPinMode('A',1,1);
@@ -33,8 +34,8 @@ int main (void)
 	setPinMode('A',6,1);
 	setPinMode('A',7,1);
 	setPinMode('A',8,1);
-	setPinMode('A',9,1);
-	setPinMode('A',10,1);
+	setPinMode('B',12,1);
+	setPinMode('B',13,1);
 
 	CLCD_voidInitialize();
 

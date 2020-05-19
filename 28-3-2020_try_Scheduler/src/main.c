@@ -36,7 +36,6 @@ int main(void)
 	t2.periodicTime=2;
 	t3.periodicTime=3;
 
-
 	led.mode = GPIO_MODE_OUTPUT_PUSH_PULL;
 	led.pin  = GPIO_PIN_13;
 	led.speed= GPIO_OUTPUT_SPEED_2MHz;
@@ -46,12 +45,8 @@ int main(void)
 
 	GPIO_Init(PORTC,&led);
 
-
 	SCHED_Init();
 	SCHED_Start();
 
 	return 0;
 }
-
-// ----------------------------------------------------------------------------
-

@@ -8,11 +8,11 @@
 #define CLCD_u8_RS_PORT	'A'
 #define CLCD_u8_RS_PIN	 8
 
-#define CLCD_u8_RW_PORT	'A'
-#define CLCD_u8_RW_PIN	 9
+#define CLCD_u8_RW_PORT	'B'
+#define CLCD_u8_RW_PIN	 12
 
-#define CLCD_u8_E_PORT	'A'
-#define CLCD_u8_E_PIN	 10
+#define CLCD_u8_E_PORT	'B'
+#define CLCD_u8_E_PIN	 13
 
 /*	Data Pins 	*/
 #define CLCD_u8_D0_PORT	'A'

@@ -1,39 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="SysT"/>
+		<item key="selection" value="ENABLE"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="enable"/>
+			<item value="init_ptoc"/>
+			<item value="cbf"/>
+			<item value="lcd"/>
+			<item value="UART_TX_COMPLETE_INTERRUPT_ENABLE_MASK"/>
+			<item value="current"/>
+			<item value="Alarm_Switch"/>
+			<item value="setcall"/>
+			<item value="u8"/>
+			<item value="usart"/>
+			<item value="uart"/>
 			<item value="syst"/>
-			<item value="3"/>
-			<item value="sys"/>
-			<item value="vector"/>
-			<item value="table"/>
-			<item value="uint32_t"/>
-			<item value="bss"/>
-			<item value="han"/>
-			<item value="handler"/>
-			<item value="gpioa"/>
-			<item value="nvic"/>
-			<item value="_delay_ms"/>
-			<item value="OK"/>
-			<item value="PERIPH_BASE"/>
-			<item value="APB1PERIPH_BASE"/>
+			<item value="idle_proc"/>
+			<item value="curProcess"/>
+			<item value="tas"/>
 		</list>
 		<list key="replacehistory">
+			<item value="Dec_Switch"/>
+			<item value="Inc_Switch"/>
 			<item value="u32"/>
+			<item value="GPIO_MODE_OUTPUT_PUSH_PULL"/>
+			<item value="LCD1"/>
+			<item value="GPIO_Init"/>
+			<item value="GPIO_Pin_Write"/>
+			<item value="GPIO_Pin_t"/>
 			<item value="delay_ms"/>
 			<item value="STATUS_OK"/>
 			<item value="u16"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="959"/>
-		<item key="DIALOG_Y_ORIGIN" value="126"/>
+		<item key="DIALOG_X_ORIGIN" value="973"/>
+		<item key="DIALOG_Y_ORIGIN" value="337"/>
 		<item key="DIALOG_WIDTH" value="284"/>
 		<item key="DIALOG_HEIGHT" value="391"/>
 		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>

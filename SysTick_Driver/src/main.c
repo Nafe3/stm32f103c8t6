@@ -3,39 +3,20 @@
 #include "RCC.h"
 #include "Systick.h"
 
-#include "SCHED_interface.h"
 
+u8 counter=0;
 GPIO_Pin_t led;
 
-void app1(void)
+static u8  volatile f=0;
+void func (void)
 {
-	static u8 f=1;
-	GPIO_Pin_Write(PORTC,&led,f);
 	f^=1;
+		GPIO_Pin_Write(PORTC,&led,f);
+
 }
 
-void app2(void)
-{
-	static u8 j=0;
-	j++;
-}
-
-void app3(void)
-{
-	static u8 k=0;
-	k++;
-}
-task_t t1,t2,t3;
 int main(void)
 {
-	//task_t t1,t2,t3;
-	t1.runnable=app1;
-	t2.runnable=app2;
-	t3.runnable=app3;
-	t1.periodicTime=1;
-	t2.periodicTime=2;
-	t3.periodicTime=3;
-
 
 	led.mode = GPIO_MODE_OUTPUT_PUSH_PULL;
 	led.pin  = GPIO_PIN_13;
@@ -45,13 +26,10 @@ int main(void)
 	RCC_voidEnablePeripheral(APB2,RCC_APB2ENR_IOPCEN,1);
 
 	GPIO_Init(PORTC,&led);
-
-
-	SCHED_Init();
-	SCHED_Start();
-
-	return 0;
+	//GPIO_Pin_Write(PORTC,&led,1);
+	SYSTICK_Init();
+	SYSTICK_SetCallback(func);
+	SYSTICK_SetTime_us(5000000);
+	SYSTICK_Start();
+	while(1);
 }
-
-// ----------------------------------------------------------------------------
-

@@ -14,7 +14,7 @@
 #include"Delay_interface.h"
 void CLCD_voidInitialize(void)
 {
-	/*	wait more than 30 us	*/
+	/*	wait more than 30 ms	*/
 	delay_ms(40);
 
 	/**/
@@ -105,4 +105,18 @@ void CLCD_voidWriteString(u8* copy_pu8String)
     CLCD_voidWriteData(copy_pu8String[Local_u8Counter]);
     Local_u8Counter++;
   }
+}
+
+void CLCD_voidGenerateCharachter(u8 copy_pu8Arr[][8])
+{
+	u8 i=0,j=0;
+	CLCD_voidWriteCmd(START_OF_CGRAM);//Start of CGRAM
+	for(i=0;i<8;i++)
+	{
+		for(j=0;j<8;j++)
+		{
+			CLCD_voidWriteData(copy_pu8Arr[i][j]);
+		}
+	}
+	CLCD_voidWriteCmd(0b10000000);//goto the first address in DDRAM
 }
